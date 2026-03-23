@@ -14,11 +14,11 @@ import { RequestFile } from './models';
 import { SubscriptionStatus } from './subscriptionStatus';
 
 export class Subscription {
-    'name'?: string;
-    'platformSubscriptionId'?: string;
-    'platformPlanId'?: string;
-    'status'?: SubscriptionStatus;
-    'recurring'?: boolean;
+    'name': string;
+    'platformSubscriptionId': string;
+    'platformPlanId': string;
+    'status': SubscriptionStatus;
+    'recurring': boolean;
     'trialEndsAt'?: Date;
     'pausedFrom'?: Date;
     'endsAt'?: Date;

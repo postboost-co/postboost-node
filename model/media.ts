@@ -13,15 +13,15 @@
 import { RequestFile } from './models';
 
 export class Media {
-    'id'?: number;
-    'uuid'?: string;
-    'name'?: string;
-    'mimeType'?: string;
-    'type'?: Media.TypeEnum;
-    'url'?: string;
+    'id': number;
+    'uuid': string;
+    'name': string;
+    'mimeType': string;
+    'type': Media.TypeEnum;
+    'url': string;
     'thumbUrl'?: string;
-    'isVideo'?: boolean;
-    'createdAt'?: Date;
+    'isVideo': boolean;
+    'createdAt': Date;
 
     static discriminator: string | undefined = undefined;
 

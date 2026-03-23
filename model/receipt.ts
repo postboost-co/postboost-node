@@ -13,16 +13,16 @@
 import { RequestFile } from './models';
 
 export class Receipt {
-    'uuid'?: string;
-    'transactionId'?: string;
-    'invoiceNumber'?: string;
-    'amount'?: number;
-    'tax'?: number;
-    'currency'?: string;
+    'uuid': string;
+    'transactionId': string;
+    'invoiceNumber': string;
+    'amount': number;
+    'tax': number;
+    'currency': string;
     'receiptUrl'?: string;
     'description'?: string;
-    'paidAt'?: Date;
-    'createdAt'?: Date;
+    'paidAt': Date;
+    'createdAt': Date;
 
     static discriminator: string | undefined = undefined;
 

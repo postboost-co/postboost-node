@@ -97,7 +97,7 @@ export class ReceiptsApi {
     }
 
     /**
-     * 
+     * Creates a billing receipt record for a workspace. Admin only.
      * @summary Create receipt
      * @param receiptInput 
      */
@@ -169,7 +169,7 @@ export class ReceiptsApi {
         });
     }
     /**
-     * 
+     * Permanently deletes a single receipt. Admin only.
      * @summary Delete receipt
      * @param receiptUuid UUID of the receipt.
      */
@@ -241,7 +241,7 @@ export class ReceiptsApi {
         });
     }
     /**
-     * 
+     * Permanently deletes one or more receipt records. Admin only.
      * @summary Delete receipts (bulk)
      * @param deleteReceiptsBulkRequest 
      */
@@ -313,7 +313,7 @@ export class ReceiptsApi {
         });
     }
     /**
-     * 
+     * Returns a single receipt by UUID. Admin only.
      * @summary Get receipt
      * @param receiptUuid UUID of the receipt.
      */
@@ -385,12 +385,13 @@ export class ReceiptsApi {
         });
     }
     /**
-     * 
+     * Returns a paginated list of billing receipts. Filter by workspace UUID or invoice number. Admin only.
      * @summary List receipts
      * @param workspaceUuid 
      * @param invoiceNumber 
+     * @param page Page number (15 items per page).
      */
-    public async listReceipts (workspaceUuid?: string, invoiceNumber?: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ListReceipts200Response;  }> {
+    public async listReceipts (workspaceUuid?: string, invoiceNumber?: string, page?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ListReceipts200Response;  }> {
         const localVarPath = this.basePath + '/panel/receipts';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -409,6 +410,10 @@ export class ReceiptsApi {
 
         if (invoiceNumber !== undefined) {
             localVarQueryParameters['invoice_number'] = ObjectSerializer.serialize(invoiceNumber, "string");
+        }
+
+        if (page !== undefined) {
+            localVarQueryParameters['page'] = ObjectSerializer.serialize(page, "number");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -460,7 +465,7 @@ export class ReceiptsApi {
         });
     }
     /**
-     * 
+     * Updates a receipt\'s transaction details, amount, or payment date. Admin only.
      * @summary Update receipt
      * @param receiptUuid UUID of the receipt.
      * @param receiptUpdateInput 

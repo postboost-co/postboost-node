@@ -12,7 +12,7 @@
 
 import { RequestFile } from './models';
 
-export class UploadChunk200Response {
+export class UploadChunk201Response {
     /**
     * Number of chunks received so far.
     */
@@ -28,7 +28,7 @@ export class UploadChunk200Response {
         }    ];
 
     static getAttributeTypeMap() {
-        return UploadChunk200Response.attributeTypeMap;
+        return UploadChunk201Response.attributeTypeMap;
     }
 }
 

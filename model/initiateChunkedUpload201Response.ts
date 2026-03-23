@@ -12,7 +12,7 @@
 
 import { RequestFile } from './models';
 
-export class InitiateChunkedUpload200Response {
+export class InitiateChunkedUpload201Response {
     'uploadUuid'?: string;
     'chunkSize'?: number;
     'totalChunks'?: number;
@@ -37,7 +37,7 @@ export class InitiateChunkedUpload200Response {
         }    ];
 
     static getAttributeTypeMap() {
-        return InitiateChunkedUpload200Response.attributeTypeMap;
+        return InitiateChunkedUpload201Response.attributeTypeMap;
     }
 }
 

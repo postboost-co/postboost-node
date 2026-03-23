@@ -13,18 +13,18 @@
 import { RequestFile } from './models';
 
 export class Account {
-    'id'?: number;
-    'uuid'?: string;
-    'name'?: string;
-    'username'?: string;
+    'id': number;
+    'uuid': string;
+    'name': string;
+    'username': string;
     'image'?: string;
-    'provider'?: Account.ProviderEnum;
+    'provider': Account.ProviderEnum;
     /**
     * Provider-specific metadata.
     */
-    'data'?: object;
-    'authorized'?: boolean;
-    'createdAt'?: Date;
+    'data': object;
+    'authorized': boolean;
+    'createdAt': Date;
 
     static discriminator: string | undefined = undefined;
 

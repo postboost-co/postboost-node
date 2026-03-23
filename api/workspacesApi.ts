@@ -98,7 +98,7 @@ export class WorkspacesApi {
     }
 
     /**
-     * 
+     * Adds an existing user to the workspace with a specified role. Admin only.
      * @summary Add user to workspace
      * @param workspaceUuid UUID of the workspace.
      * @param workspaceUserInput 
@@ -249,7 +249,7 @@ export class WorkspacesApi {
         });
     }
     /**
-     * 
+     * Permanently deletes a single workspace and all its associated data. Admin only.
      * @summary Delete workspace
      * @param workspaceUuid UUID of the workspace.
      */
@@ -321,7 +321,7 @@ export class WorkspacesApi {
         });
     }
     /**
-     * 
+     * Permanently deletes one or more workspaces and all their associated data. Admin only.
      * @summary Delete workspaces (bulk)
      * @param deleteWorkspacesBulkRequest 
      */
@@ -393,7 +393,7 @@ export class WorkspacesApi {
         });
     }
     /**
-     * 
+     * Returns a single workspace by UUID including its subscription status. Admin only.
      * @summary Get workspace
      * @param workspaceUuid UUID of the workspace.
      */
@@ -470,8 +470,9 @@ export class WorkspacesApi {
      * @param keyword 
      * @param subscriptionStatus 
      * @param accessStatus 
+     * @param page Page number (15 items per page).
      */
-    public async listWorkspaces (keyword?: string, subscriptionStatus?: 'active' | 'trialing' | 'past_due' | 'paused' | 'canceled' | 'incomplete', accessStatus?: 'subscription' | 'unlimited' | 'locked', options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ListWorkspaces200Response;  }> {
+    public async listWorkspaces (keyword?: string, subscriptionStatus?: 'active' | 'trialing' | 'past_due' | 'paused' | 'canceled' | 'incomplete', accessStatus?: 'subscription' | 'unlimited' | 'locked', page?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ListWorkspaces200Response;  }> {
         const localVarPath = this.basePath + '/panel/workspaces';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -494,6 +495,10 @@ export class WorkspacesApi {
 
         if (accessStatus !== undefined) {
             localVarQueryParameters['access_status'] = ObjectSerializer.serialize(accessStatus, "'subscription' | 'unlimited' | 'locked'");
+        }
+
+        if (page !== undefined) {
+            localVarQueryParameters['page'] = ObjectSerializer.serialize(page, "number");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -545,7 +550,7 @@ export class WorkspacesApi {
         });
     }
     /**
-     * 
+     * Removes a user\'s access to the workspace. The user account is not deleted. Admin only.
      * @summary Remove user from workspace
      * @param workspaceUuid UUID of the workspace.
      * @param removeUserFromWorkspaceRequest 
@@ -624,7 +629,7 @@ export class WorkspacesApi {
         });
     }
     /**
-     * 
+     * Updates a workspace\'s name, color, or access status. Admin only.
      * @summary Update workspace
      * @param workspaceUuid UUID of the workspace.
      * @param workspaceInput 
@@ -703,7 +708,7 @@ export class WorkspacesApi {
         });
     }
     /**
-     * 
+     * Changes a user\'s role or permissions within the workspace. Admin only.
      * @summary Update user role in workspace
      * @param workspaceUuid UUID of the workspace.
      * @param workspaceUserInput 

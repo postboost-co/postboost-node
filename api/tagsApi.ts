@@ -95,7 +95,7 @@ export class TagsApi {
     }
 
     /**
-     * 
+     * Creates a new color-coded tag in the workspace for organizing posts.
      * @summary Create tag
      * @param workspaceUuid UUID of the workspace.
      * @param tagInput 
@@ -174,7 +174,7 @@ export class TagsApi {
         });
     }
     /**
-     * 
+     * Permanently deletes a tag. Posts that had this tag attached are unaffected.
      * @summary Delete tag
      * @param workspaceUuid UUID of the workspace.
      * @param tagUuid UUID of the tag.
@@ -253,7 +253,7 @@ export class TagsApi {
         });
     }
     /**
-     * 
+     * Returns a single tag by UUID.
      * @summary Get tag
      * @param workspaceUuid UUID of the workspace.
      * @param tagUuid UUID of the tag.
@@ -332,7 +332,7 @@ export class TagsApi {
         });
     }
     /**
-     * 
+     * Returns all tags defined in the workspace.
      * @summary List tags
      * @param workspaceUuid UUID of the workspace.
      */
@@ -404,7 +404,7 @@ export class TagsApi {
         });
     }
     /**
-     * 
+     * Updates a tag\'s name or color.
      * @summary Update tag
      * @param workspaceUuid UUID of the workspace.
      * @param tagUuid UUID of the tag.

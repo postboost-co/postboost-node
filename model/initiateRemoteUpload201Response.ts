@@ -11,19 +11,19 @@
  */
 
 import { RequestFile } from './models';
-import { InitiateRemoteUpload200ResponseOneOf } from './initiateRemoteUpload200ResponseOneOf';
+import { InitiateRemoteUpload201ResponseOneOf } from './initiateRemoteUpload201ResponseOneOf';
 import { Media } from './media';
 
-export class InitiateRemoteUpload200Response {
-    'id'?: number;
-    'uuid'?: string;
-    'name'?: string;
-    'mimeType'?: string;
-    'type'?: InitiateRemoteUpload200Response.TypeEnum;
-    'url'?: string;
+export class InitiateRemoteUpload201Response {
+    'id': number;
+    'uuid': string;
+    'name': string;
+    'mimeType': string;
+    'type': InitiateRemoteUpload201Response.TypeEnum;
+    'url': string;
     'thumbUrl'?: string;
-    'isVideo'?: boolean;
-    'createdAt'?: Date;
+    'isVideo': boolean;
+    'createdAt': Date;
     'downloadId'?: string;
 
     static discriminator: string | undefined = undefined;
@@ -52,7 +52,7 @@ export class InitiateRemoteUpload200Response {
         {
             "name": "type",
             "baseName": "type",
-            "type": "InitiateRemoteUpload200Response.TypeEnum"
+            "type": "InitiateRemoteUpload201Response.TypeEnum"
         },
         {
             "name": "url",
@@ -81,11 +81,11 @@ export class InitiateRemoteUpload200Response {
         }    ];
 
     static getAttributeTypeMap() {
-        return InitiateRemoteUpload200Response.attributeTypeMap;
+        return InitiateRemoteUpload201Response.attributeTypeMap;
     }
 }
 
-export namespace InitiateRemoteUpload200Response {
+export namespace InitiateRemoteUpload201Response {
     export enum TypeEnum {
         Image = <any> 'image',
         Video = <any> 'video',

@@ -17,14 +17,14 @@ import http from 'http';
 /* tslint:disable:no-unused-locals */
 import { DeleteMediaBulkRequest } from '../model/deleteMediaBulkRequest';
 import { GetRemoteUploadStatus200Response } from '../model/getRemoteUploadStatus200Response';
-import { InitiateChunkedUpload200Response } from '../model/initiateChunkedUpload200Response';
+import { InitiateChunkedUpload201Response } from '../model/initiateChunkedUpload201Response';
 import { InitiateChunkedUploadRequest } from '../model/initiateChunkedUploadRequest';
-import { InitiateRemoteUpload200Response } from '../model/initiateRemoteUpload200Response';
+import { InitiateRemoteUpload201Response } from '../model/initiateRemoteUpload201Response';
 import { InitiateRemoteUploadRequest } from '../model/initiateRemoteUploadRequest';
 import { ListMedia200Response } from '../model/listMedia200Response';
 import { Media } from '../model/media';
 import { UpdateMediaRequest } from '../model/updateMediaRequest';
-import { UploadChunk200Response } from '../model/uploadChunk200Response';
+import { UploadChunk201Response } from '../model/uploadChunk201Response';
 
 import { ObjectSerializer, Authentication, VoidAuth, Interceptor } from '../model/models';
 import { HttpBasicAuth, HttpBearerAuth, ApiKeyAuth, OAuth } from '../model/models';
@@ -501,7 +501,7 @@ export class MediaApi {
      * @param workspaceUuid UUID of the workspace.
      * @param initiateChunkedUploadRequest 
      */
-    public async initiateChunkedUpload (workspaceUuid: string, initiateChunkedUploadRequest: InitiateChunkedUploadRequest, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InitiateChunkedUpload200Response;  }> {
+    public async initiateChunkedUpload (workspaceUuid: string, initiateChunkedUploadRequest: InitiateChunkedUploadRequest, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InitiateChunkedUpload201Response;  }> {
         const localVarPath = this.basePath + '/{workspaceUuid}/media/chunked/initiate'
             .replace('{' + 'workspaceUuid' + '}', encodeURIComponent(String(workspaceUuid)));
         let localVarQueryParameters: any = {};
@@ -558,13 +558,13 @@ export class MediaApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InitiateChunkedUpload200Response;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InitiateChunkedUpload201Response;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InitiateChunkedUpload200Response");
+                            body = ObjectSerializer.deserialize(body, "InitiateChunkedUpload201Response");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
@@ -580,7 +580,7 @@ export class MediaApi {
      * @param workspaceUuid UUID of the workspace.
      * @param initiateRemoteUploadRequest 
      */
-    public async initiateRemoteUpload (workspaceUuid: string, initiateRemoteUploadRequest: InitiateRemoteUploadRequest, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InitiateRemoteUpload200Response;  }> {
+    public async initiateRemoteUpload (workspaceUuid: string, initiateRemoteUploadRequest: InitiateRemoteUploadRequest, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: InitiateRemoteUpload201Response;  }> {
         const localVarPath = this.basePath + '/{workspaceUuid}/media/remote/initiate'
             .replace('{' + 'workspaceUuid' + '}', encodeURIComponent(String(workspaceUuid)));
         let localVarQueryParameters: any = {};
@@ -637,13 +637,13 @@ export class MediaApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: InitiateRemoteUpload200Response;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: InitiateRemoteUpload201Response;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "InitiateRemoteUpload200Response");
+                            body = ObjectSerializer.deserialize(body, "InitiateRemoteUpload201Response");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));
@@ -824,7 +824,7 @@ export class MediaApi {
      * @param chunk 
      * @param chunkIndex Zero-based index of this chunk.
      */
-    public async uploadChunk (workspaceUuid: string, uploadUuid: string, chunk: RequestFile, chunkIndex: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: UploadChunk200Response;  }> {
+    public async uploadChunk (workspaceUuid: string, uploadUuid: string, chunk: RequestFile, chunkIndex: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: UploadChunk201Response;  }> {
         const localVarPath = this.basePath + '/{workspaceUuid}/media/chunked/{uploadUuid}/upload'
             .replace('{' + 'workspaceUuid' + '}', encodeURIComponent(String(workspaceUuid)))
             .replace('{' + 'uploadUuid' + '}', encodeURIComponent(String(uploadUuid)));
@@ -900,13 +900,13 @@ export class MediaApi {
                     localVarRequestOptions.form = localVarFormParams;
                 }
             }
-            return new Promise<{ response: http.IncomingMessage; body: UploadChunk200Response;  }>((resolve, reject) => {
+            return new Promise<{ response: http.IncomingMessage; body: UploadChunk201Response;  }>((resolve, reject) => {
                 localVarRequest(localVarRequestOptions, (error, response, body) => {
                     if (error) {
                         reject(error);
                     } else {
                         if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                            body = ObjectSerializer.deserialize(body, "UploadChunk200Response");
+                            body = ObjectSerializer.deserialize(body, "UploadChunk201Response");
                             resolve({ response: response, body: body });
                         } else {
                             reject(new HttpError(response, body, response.statusCode));

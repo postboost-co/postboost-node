@@ -17,16 +17,16 @@ import { PostVersion } from './postVersion';
 import { Tag } from './tag';
 
 export class Post {
-    'id'?: number;
-    'uuid'?: string;
-    'status'?: PostStatus;
-    'accounts'?: Array<Account>;
-    'versions'?: Array<PostVersion>;
-    'tags'?: Array<Tag>;
+    'id': number;
+    'uuid': string;
+    'status': PostStatus;
+    'accounts': Array<Account>;
+    'versions': Array<PostVersion>;
+    'tags': Array<Tag>;
     'scheduledAt'?: Date;
     'publishedAt'?: Date;
-    'createdAt'?: Date;
-    'trashed'?: boolean;
+    'createdAt': Date;
+    'trashed': boolean;
 
     static discriminator: string | undefined = undefined;
 

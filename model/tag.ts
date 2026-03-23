@@ -13,10 +13,10 @@
 import { RequestFile } from './models';
 
 export class Tag {
-    'id'?: number;
-    'uuid'?: string;
-    'name'?: string;
-    'hexColor'?: string;
+    'id': number;
+    'uuid': string;
+    'name': string;
+    'hexColor': string;
 
     static discriminator: string | undefined = undefined;
 

@@ -12,7 +12,7 @@
 
 import { RequestFile } from './models';
 
-export class InitiateRemoteUpload200ResponseOneOf {
+export class InitiateRemoteUpload201ResponseOneOf {
     'downloadId'?: string;
 
     static discriminator: string | undefined = undefined;
@@ -25,7 +25,7 @@ export class InitiateRemoteUpload200ResponseOneOf {
         }    ];
 
     static getAttributeTypeMap() {
-        return InitiateRemoteUpload200ResponseOneOf.attributeTypeMap;
+        return InitiateRemoteUpload201ResponseOneOf.attributeTypeMap;
     }
 }
 

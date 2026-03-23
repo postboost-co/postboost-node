@@ -13,12 +13,12 @@
 import { RequestFile } from './models';
 
 export class User {
-    'id'?: number;
-    'name'?: string;
-    'email'?: string;
-    'isAdmin'?: boolean;
+    'id': number;
+    'name': string;
+    'email': string;
+    'isAdmin': boolean;
     'emailVerifiedAt'?: Date;
-    'createdAt'?: Date;
+    'createdAt': Date;
 
     static discriminator: string | undefined = undefined;
 

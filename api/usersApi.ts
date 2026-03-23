@@ -98,7 +98,7 @@ export class UsersApi {
     }
 
     /**
-     * 
+     * Creates a new user account on the platform. Admin only.
      * @summary Create user
      * @param userInput 
      */
@@ -170,7 +170,7 @@ export class UsersApi {
         });
     }
     /**
-     * 
+     * Permanently deletes a user account. Returns 400 if you attempt to delete your own account. Admin only.
      * @summary Delete user
      * @param userId ID of the user.
      */
@@ -242,7 +242,7 @@ export class UsersApi {
         });
     }
     /**
-     * 
+     * Permanently deletes one or more user accounts. You cannot delete your own account. Admin only.
      * @summary Delete users (bulk)
      * @param deleteUsersBulkRequest 
      */
@@ -314,7 +314,7 @@ export class UsersApi {
         });
     }
     /**
-     * 
+     * Returns a single user account by ID. Admin only.
      * @summary Get user
      * @param userId ID of the user.
      */
@@ -386,11 +386,12 @@ export class UsersApi {
         });
     }
     /**
-     * 
+     * Returns a paginated list of all users on the platform. Optionally filter by name or email. Admin only.
      * @summary List users
      * @param keyword Search by name or email.
+     * @param page Page number (15 items per page).
      */
-    public async listUsers (keyword?: string, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ListUsers200Response;  }> {
+    public async listUsers (keyword?: string, page?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: ListUsers200Response;  }> {
         const localVarPath = this.basePath + '/panel/users';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -405,6 +406,10 @@ export class UsersApi {
 
         if (keyword !== undefined) {
             localVarQueryParameters['keyword'] = ObjectSerializer.serialize(keyword, "string");
+        }
+
+        if (page !== undefined) {
+            localVarQueryParameters['page'] = ObjectSerializer.serialize(page, "number");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -456,7 +461,7 @@ export class UsersApi {
         });
     }
     /**
-     * 
+     * Updates a user\'s name, email, admin status, or password. Admin only.
      * @summary Update user
      * @param userId ID of the user.
      * @param userUpdateInput 

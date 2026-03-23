@@ -15,10 +15,10 @@ export * from './deleteUser400Response';
 export * from './deleteUsersBulkRequest';
 export * from './deleteWorkspacesBulkRequest';
 export * from './getRemoteUploadStatus200Response';
-export * from './initiateChunkedUpload200Response';
+export * from './initiateChunkedUpload201Response';
 export * from './initiateChunkedUploadRequest';
-export * from './initiateRemoteUpload200Response';
-export * from './initiateRemoteUpload200ResponseOneOf';
+export * from './initiateRemoteUpload201Response';
+export * from './initiateRemoteUpload201ResponseOneOf';
 export * from './initiateRemoteUploadRequest';
 export * from './listAccounts200Response';
 export * from './listMedia200Response';
@@ -49,7 +49,7 @@ export * from './subscriptionUpdateInput';
 export * from './tag';
 export * from './tagInput';
 export * from './updateMediaRequest';
-export * from './uploadChunk200Response';
+export * from './uploadChunk201Response';
 export * from './user';
 export * from './userInput';
 export * from './userUpdateInput';
@@ -85,10 +85,10 @@ import { DeleteUser400Response } from './deleteUser400Response';
 import { DeleteUsersBulkRequest } from './deleteUsersBulkRequest';
 import { DeleteWorkspacesBulkRequest } from './deleteWorkspacesBulkRequest';
 import { GetRemoteUploadStatus200Response } from './getRemoteUploadStatus200Response';
-import { InitiateChunkedUpload200Response } from './initiateChunkedUpload200Response';
+import { InitiateChunkedUpload201Response } from './initiateChunkedUpload201Response';
 import { InitiateChunkedUploadRequest } from './initiateChunkedUploadRequest';
-import { InitiateRemoteUpload200Response } from './initiateRemoteUpload200Response';
-import { InitiateRemoteUpload200ResponseOneOf } from './initiateRemoteUpload200ResponseOneOf';
+import { InitiateRemoteUpload201Response } from './initiateRemoteUpload201Response';
+import { InitiateRemoteUpload201ResponseOneOf } from './initiateRemoteUpload201ResponseOneOf';
 import { InitiateRemoteUploadRequest } from './initiateRemoteUploadRequest';
 import { ListAccounts200Response } from './listAccounts200Response';
 import { ListMedia200Response } from './listMedia200Response';
@@ -119,7 +119,7 @@ import { SubscriptionUpdateInput } from './subscriptionUpdateInput';
 import { Tag } from './tag';
 import { TagInput } from './tagInput';
 import { UpdateMediaRequest } from './updateMediaRequest';
-import { UploadChunk200Response } from './uploadChunk200Response';
+import { UploadChunk201Response } from './uploadChunk201Response';
 import { User } from './user';
 import { UserInput } from './userInput';
 import { UserUpdateInput } from './userUpdateInput';
@@ -145,7 +145,7 @@ let enumsMap: {[index: string]: any} = {
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
         "DeleteMode": DeleteMode,
         "GetRemoteUploadStatus200Response.StatusEnum": GetRemoteUploadStatus200Response.StatusEnum,
-        "InitiateRemoteUpload200Response.TypeEnum": InitiateRemoteUpload200Response.TypeEnum,
+        "InitiateRemoteUpload201Response.TypeEnum": InitiateRemoteUpload201Response.TypeEnum,
         "Media.TypeEnum": Media.TypeEnum,
         "PostStatus": PostStatus,
         "SubscriptionStatus": SubscriptionStatus,
@@ -169,10 +169,10 @@ let typeMap: {[index: string]: any} = {
     "DeleteUsersBulkRequest": DeleteUsersBulkRequest,
     "DeleteWorkspacesBulkRequest": DeleteWorkspacesBulkRequest,
     "GetRemoteUploadStatus200Response": GetRemoteUploadStatus200Response,
-    "InitiateChunkedUpload200Response": InitiateChunkedUpload200Response,
+    "InitiateChunkedUpload201Response": InitiateChunkedUpload201Response,
     "InitiateChunkedUploadRequest": InitiateChunkedUploadRequest,
-    "InitiateRemoteUpload200Response": InitiateRemoteUpload200Response,
-    "InitiateRemoteUpload200ResponseOneOf": InitiateRemoteUpload200ResponseOneOf,
+    "InitiateRemoteUpload201Response": InitiateRemoteUpload201Response,
+    "InitiateRemoteUpload201ResponseOneOf": InitiateRemoteUpload201ResponseOneOf,
     "InitiateRemoteUploadRequest": InitiateRemoteUploadRequest,
     "ListAccounts200Response": ListAccounts200Response,
     "ListMedia200Response": ListMedia200Response,
@@ -201,7 +201,7 @@ let typeMap: {[index: string]: any} = {
     "Tag": Tag,
     "TagInput": TagInput,
     "UpdateMediaRequest": UpdateMediaRequest,
-    "UploadChunk200Response": UploadChunk200Response,
+    "UploadChunk201Response": UploadChunk201Response,
     "User": User,
     "UserInput": UserInput,
     "UserUpdateInput": UserUpdateInput,

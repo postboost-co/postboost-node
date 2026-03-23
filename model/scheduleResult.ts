@@ -13,7 +13,7 @@
 import { RequestFile } from './models';
 
 export class ScheduleResult {
-    'success'?: boolean;
+    'success': boolean;
     'scheduledAt'?: Date;
 
     static discriminator: string | undefined = undefined;

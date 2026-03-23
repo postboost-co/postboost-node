@@ -13,9 +13,9 @@
 import { RequestFile } from './models';
 
 export class DeleteResult {
-    'deleted'?: boolean;
-    'deletedFromApp'?: boolean;
-    'toTrash'?: boolean;
+    'deleted': boolean;
+    'deletedFromApp': boolean;
+    'toTrash': boolean;
 
     static discriminator: string | undefined = undefined;
 

@@ -99,7 +99,7 @@ export class SubscriptionsApi {
     }
 
     /**
-     * 
+     * Assigns a non-Stripe (generic) subscription plan to the workspace, optionally granting a trial period. Used for AppSumo-style lifetime deals. Admin only.
      * @summary Add generic subscription
      * @param workspaceUuid UUID of the workspace.
      * @param addGenericSubscriptionRequest 
@@ -178,7 +178,7 @@ export class SubscriptionsApi {
         });
     }
     /**
-     * 
+     * Cancels the workspace\'s Stripe subscription at the end of the current billing period. Admin only.
      * @summary Cancel subscription
      * @param workspaceUuid UUID of the workspace.
      */
@@ -250,7 +250,7 @@ export class SubscriptionsApi {
         });
     }
     /**
-     * 
+     * Switches the workspace to a different Stripe plan. Optionally prorates the change and bills immediately. Admin only.
      * @summary Change subscription plan
      * @param workspaceUuid UUID of the workspace.
      * @param changeSubscriptionPlanRequest 
@@ -408,7 +408,7 @@ export class SubscriptionsApi {
         });
     }
     /**
-     * 
+     * Manually creates a subscription record for the workspace (for external billing integrations). Admin only.
      * @summary Create subscription
      * @param workspaceUuid UUID of the workspace.
      * @param subscriptionInput 
@@ -487,7 +487,7 @@ export class SubscriptionsApi {
         });
     }
     /**
-     * 
+     * Removes the subscription record from the workspace. Admin only.
      * @summary Delete subscription
      * @param workspaceUuid UUID of the workspace.
      */
@@ -559,7 +559,7 @@ export class SubscriptionsApi {
         });
     }
     /**
-     * 
+     * Returns the active subscription for the workspace, or `null` if none exists. Admin only.
      * @summary Get subscription
      * @param workspaceUuid UUID of the workspace.
      */
@@ -631,7 +631,7 @@ export class SubscriptionsApi {
         });
     }
     /**
-     * 
+     * Removes the generic (non-Stripe) subscription from the workspace. Admin only.
      * @summary Remove generic subscription
      * @param workspaceUuid UUID of the workspace.
      */
@@ -703,7 +703,7 @@ export class SubscriptionsApi {
         });
     }
     /**
-     * 
+     * Resumes a previously canceled subscription before it expires. Admin only.
      * @summary Resume subscription
      * @param workspaceUuid UUID of the workspace.
      */
@@ -775,7 +775,7 @@ export class SubscriptionsApi {
         });
     }
     /**
-     * 
+     * Updates the plan ID, status, or trial/pause dates of an existing subscription. Admin only.
      * @summary Update subscription
      * @param workspaceUuid UUID of the workspace.
      * @param subscriptionUpdateInput 

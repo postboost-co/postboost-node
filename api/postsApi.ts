@@ -337,7 +337,7 @@ export class PostsApi {
         });
     }
     /**
-     * 
+     * Deletes a post. Use `delete_mode` to control whether to also remove the published content from social platforms.
      * @summary Delete post
      * @param workspaceUuid UUID of the workspace.
      * @param postUuid UUID of the post.
@@ -497,7 +497,7 @@ export class PostsApi {
         });
     }
     /**
-     * 
+     * Returns a single post with all its versions and associated accounts.
      * @summary Get post
      * @param workspaceUuid UUID of the workspace.
      * @param postUuid UUID of the post.
@@ -739,7 +739,7 @@ export class PostsApi {
         });
     }
     /**
-     * 
+     * Replaces a post\'s versions, accounts, tags, and scheduling options. The post must not be in a published state.
      * @summary Update post
      * @param workspaceUuid UUID of the workspace.
      * @param postUuid UUID of the post.

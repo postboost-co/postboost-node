@@ -14,12 +14,12 @@ import { RequestFile } from './models';
 import { User } from './user';
 
 export class Workspace {
-    'uuid'?: string;
-    'name'?: string;
-    'hexColor'?: string;
+    'uuid': string;
+    'name': string;
+    'hexColor': string;
     'owner'?: User;
-    'accessStatus'?: Workspace.AccessStatusEnum;
-    'createdAt'?: Date;
+    'accessStatus': Workspace.AccessStatusEnum;
+    'createdAt': Date;
 
     static discriminator: string | undefined = undefined;
 
