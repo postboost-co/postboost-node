@@ -13,7 +13,7 @@ npm install postboost
 | **npm** | [npmjs.com/package/postboost](https://www.npmjs.com/package/postboost) |
 | **GitHub** | [postboost-co/postboost-node](https://github.com/postboost-co/postboost-node) |
 | **Docs** | [postboost.co/docs/api](https://postboost.co/docs/api) |
-| **Version** | v1.0.0 |
+| **Version** | v1.1.0 |
 
 ## Quick start
 
