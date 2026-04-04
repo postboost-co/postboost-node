@@ -12,68 +12,68 @@
 
 import { RequestFile } from './models';
 
-export class ReceiptInput {
-    'workspaceUuid': string;
-    'transactionId': string;
-    'invoiceNumber': string;
-    'amount': number;
-    'tax': number;
-    'currency': string;
-    'description'?: string;
-    'receiptUrl'?: string;
-    'paidAt': string;
+export class BlogToSocialCaption {
+    /**
+    * ID of the social account this caption was generated for.
+    */
+    'accountId'?: number;
+    /**
+    * Social media platform identifier.
+    */
+    'provider'?: string;
+    /**
+    * The generated caption text. `null` if generation failed for this account.
+    */
+    'content'?: string;
+    /**
+    * Character count of the generated content. `null` if generation failed.
+    */
+    'characterCount'?: number;
+    /**
+    * Maximum allowed character count for this platform.
+    */
+    'characterLimit'?: number;
+    /**
+    * Error message if caption generation failed for this account. `null` on success.
+    */
+    'error'?: string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "workspaceUuid",
-            "baseName": "workspace_uuid",
-            "type": "string"
-        },
-        {
-            "name": "transactionId",
-            "baseName": "transaction_id",
-            "type": "string"
-        },
-        {
-            "name": "invoiceNumber",
-            "baseName": "invoice_number",
-            "type": "string"
-        },
-        {
-            "name": "amount",
-            "baseName": "amount",
+            "name": "accountId",
+            "baseName": "account_id",
             "type": "number"
         },
         {
-            "name": "tax",
-            "baseName": "tax",
+            "name": "provider",
+            "baseName": "provider",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "baseName": "content",
+            "type": "string"
+        },
+        {
+            "name": "characterCount",
+            "baseName": "character_count",
             "type": "number"
         },
         {
-            "name": "currency",
-            "baseName": "currency",
-            "type": "string"
+            "name": "characterLimit",
+            "baseName": "character_limit",
+            "type": "number"
         },
         {
-            "name": "description",
-            "baseName": "description",
-            "type": "string"
-        },
-        {
-            "name": "receiptUrl",
-            "baseName": "receipt_url",
-            "type": "string"
-        },
-        {
-            "name": "paidAt",
-            "baseName": "paid_at",
+            "name": "error",
+            "baseName": "error",
             "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return ReceiptInput.attributeTypeMap;
+        return BlogToSocialCaption.attributeTypeMap;
     }
 }
 

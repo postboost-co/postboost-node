@@ -12,20 +12,35 @@
 
 import { RequestFile } from './models';
 
-export class DeleteWorkspacesBulkRequest {
-    'workspaces': Array<string>;
+/**
+* The imported featured image. Only present when `create_post` was `true` and an image was available.
+*/
+export class BlogToSocialMedia {
+    /**
+    * Media library ID of the imported image.
+    */
+    'id'?: number;
+    /**
+    * Public URL of the imported image in the workspace media library.
+    */
+    'url'?: string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "workspaces",
-            "baseName": "workspaces",
-            "type": "Array<string>"
+            "name": "id",
+            "baseName": "id",
+            "type": "number"
+        },
+        {
+            "name": "url",
+            "baseName": "url",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return DeleteWorkspacesBulkRequest.attributeTypeMap;
+        return BlogToSocialMedia.attributeTypeMap;
     }
 }
 

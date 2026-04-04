@@ -1,3 +1,5 @@
+export * from './aIApi';
+import { AIApi } from './aIApi';
 export * from './accountsApi';
 import { AccountsApi } from './accountsApi';
 export * from './mediaApi';
@@ -25,4 +27,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [AccountsApi, MediaApi, PostsApi, ReceiptsApi, SubscriptionsApi, TagsApi, UsersApi, WorkspacesApi];
+export const APIS = [AIApi, AccountsApi, MediaApi, PostsApi, ReceiptsApi, SubscriptionsApi, TagsApi, UsersApi, WorkspacesApi];

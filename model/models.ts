@@ -2,6 +2,12 @@ import localVarRequest from 'request';
 
 export * from './account';
 export * from './addGenericSubscriptionRequest';
+export * from './blogToSocial200Response';
+export * from './blogToSocial429Response';
+export * from './blogToSocialCaption';
+export * from './blogToSocialInput';
+export * from './blogToSocialMedia';
+export * from './blogToSocialResponse';
 export * from './changeSubscriptionPlanRequest';
 export * from './checkoutSubscription200Response';
 export * from './checkoutSubscriptionRequest';
@@ -72,6 +78,12 @@ export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 
 import { Account } from './account';
 import { AddGenericSubscriptionRequest } from './addGenericSubscriptionRequest';
+import { BlogToSocial200Response } from './blogToSocial200Response';
+import { BlogToSocial429Response } from './blogToSocial429Response';
+import { BlogToSocialCaption } from './blogToSocialCaption';
+import { BlogToSocialInput } from './blogToSocialInput';
+import { BlogToSocialMedia } from './blogToSocialMedia';
+import { BlogToSocialResponse } from './blogToSocialResponse';
 import { ChangeSubscriptionPlanRequest } from './changeSubscriptionPlanRequest';
 import { CheckoutSubscription200Response } from './checkoutSubscription200Response';
 import { CheckoutSubscriptionRequest } from './checkoutSubscriptionRequest';
@@ -141,6 +153,11 @@ let primitives = [
 
 let enumsMap: {[index: string]: any} = {
         "Account.ProviderEnum": Account.ProviderEnum,
+        "BlogToSocialInput.PlatformsEnum": BlogToSocialInput.PlatformsEnum,
+        "BlogToSocialInput.ToneEnum": BlogToSocialInput.ToneEnum,
+        "BlogToSocialInput.ContentLengthEnum": BlogToSocialInput.ContentLengthEnum,
+        "BlogToSocialInput.HashtagsEnum": BlogToSocialInput.HashtagsEnum,
+        "BlogToSocialInput.CtaEnum": BlogToSocialInput.CtaEnum,
         "ChangeSubscriptionPlanRequest.CycleEnum": ChangeSubscriptionPlanRequest.CycleEnum,
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
         "DeleteMode": DeleteMode,
@@ -157,6 +174,12 @@ let enumsMap: {[index: string]: any} = {
 let typeMap: {[index: string]: any} = {
     "Account": Account,
     "AddGenericSubscriptionRequest": AddGenericSubscriptionRequest,
+    "BlogToSocial200Response": BlogToSocial200Response,
+    "BlogToSocial429Response": BlogToSocial429Response,
+    "BlogToSocialCaption": BlogToSocialCaption,
+    "BlogToSocialInput": BlogToSocialInput,
+    "BlogToSocialMedia": BlogToSocialMedia,
+    "BlogToSocialResponse": BlogToSocialResponse,
     "ChangeSubscriptionPlanRequest": ChangeSubscriptionPlanRequest,
     "CheckoutSubscription200Response": CheckoutSubscription200Response,
     "CheckoutSubscriptionRequest": CheckoutSubscriptionRequest,

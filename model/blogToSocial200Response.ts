@@ -11,21 +11,22 @@
  */
 
 import { RequestFile } from './models';
+import { BlogToSocialResponse } from './blogToSocialResponse';
 
-export class DeleteWorkspacesBulkRequest {
-    'workspaces': Array<string>;
+export class BlogToSocial200Response {
+    'data'?: BlogToSocialResponse;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "workspaces",
-            "baseName": "workspaces",
-            "type": "Array<string>"
+            "name": "data",
+            "baseName": "data",
+            "type": "BlogToSocialResponse"
         }    ];
 
     static getAttributeTypeMap() {
-        return DeleteWorkspacesBulkRequest.attributeTypeMap;
+        return BlogToSocial200Response.attributeTypeMap;
     }
 }
 

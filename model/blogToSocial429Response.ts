@@ -12,20 +12,20 @@
 
 import { RequestFile } from './models';
 
-export class DeleteWorkspacesBulkRequest {
-    'workspaces': Array<string>;
+export class BlogToSocial429Response {
+    'message'?: string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "workspaces",
-            "baseName": "workspaces",
-            "type": "Array<string>"
+            "name": "message",
+            "baseName": "message",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return DeleteWorkspacesBulkRequest.attributeTypeMap;
+        return BlogToSocial429Response.attributeTypeMap;
     }
 }
 
