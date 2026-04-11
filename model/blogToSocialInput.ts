@@ -145,17 +145,18 @@ export class BlogToSocialInput {
 
 export namespace BlogToSocialInput {
     export enum PlatformsEnum {
-        Facebook = <any> 'facebook',
+        Twitter = <any> 'twitter',
+        FacebookPage = <any> 'facebook_page',
         Instagram = <any> 'instagram',
-        X = <any> 'x',
-        Linkedin = <any> 'linkedin',
-        Pinterest = <any> 'pinterest',
-        Youtube = <any> 'youtube',
-        Tiktok = <any> 'tiktok',
-        Mastodon = <any> 'mastodon',
         Threads = <any> 'threads',
-        Bluesky = <any> 'bluesky',
-        GoogleBusiness = <any> 'google_business'
+        Mastodon = <any> 'mastodon',
+        Youtube = <any> 'youtube',
+        Gbp = <any> 'gbp',
+        Pinterest = <any> 'pinterest',
+        Linkedin = <any> 'linkedin',
+        LinkedinPage = <any> 'linkedin_page',
+        Tiktok = <any> 'tiktok',
+        Bluesky = <any> 'bluesky'
     }
     export enum ToneEnum {
         Neutral = <any> 'neutral',

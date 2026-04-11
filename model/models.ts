@@ -20,7 +20,23 @@ export * from './deleteResult';
 export * from './deleteUser400Response';
 export * from './deleteUsersBulkRequest';
 export * from './deleteWorkspacesBulkRequest';
+export * from './generatedImageItem';
 export * from './getRemoteUploadStatus200Response';
+export * from './imageAltText200Response';
+export * from './imageAltTextInput';
+export * from './imageAltTextResponse';
+export * from './imageEditInput';
+export * from './imageGenerate200Response';
+export * from './imageGenerate429Response';
+export * from './imageGenerateInput';
+export * from './imageGenerationResponse';
+export * from './imagePrompt200Response';
+export * from './imagePrompt429Response';
+export * from './imagePromptInput';
+export * from './imagePromptResponse';
+export * from './imageVariations200Response';
+export * from './imageVariationsInput';
+export * from './imageVariationsResponse';
 export * from './initiateChunkedUpload201Response';
 export * from './initiateChunkedUploadRequest';
 export * from './initiateRemoteUpload201Response';
@@ -96,7 +112,23 @@ import { DeleteResult } from './deleteResult';
 import { DeleteUser400Response } from './deleteUser400Response';
 import { DeleteUsersBulkRequest } from './deleteUsersBulkRequest';
 import { DeleteWorkspacesBulkRequest } from './deleteWorkspacesBulkRequest';
+import { GeneratedImageItem } from './generatedImageItem';
 import { GetRemoteUploadStatus200Response } from './getRemoteUploadStatus200Response';
+import { ImageAltText200Response } from './imageAltText200Response';
+import { ImageAltTextInput } from './imageAltTextInput';
+import { ImageAltTextResponse } from './imageAltTextResponse';
+import { ImageEditInput } from './imageEditInput';
+import { ImageGenerate200Response } from './imageGenerate200Response';
+import { ImageGenerate429Response } from './imageGenerate429Response';
+import { ImageGenerateInput } from './imageGenerateInput';
+import { ImageGenerationResponse } from './imageGenerationResponse';
+import { ImagePrompt200Response } from './imagePrompt200Response';
+import { ImagePrompt429Response } from './imagePrompt429Response';
+import { ImagePromptInput } from './imagePromptInput';
+import { ImagePromptResponse } from './imagePromptResponse';
+import { ImageVariations200Response } from './imageVariations200Response';
+import { ImageVariationsInput } from './imageVariationsInput';
+import { ImageVariationsResponse } from './imageVariationsResponse';
 import { InitiateChunkedUpload201Response } from './initiateChunkedUpload201Response';
 import { InitiateChunkedUploadRequest } from './initiateChunkedUploadRequest';
 import { InitiateRemoteUpload201Response } from './initiateRemoteUpload201Response';
@@ -162,6 +194,14 @@ let enumsMap: {[index: string]: any} = {
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
         "DeleteMode": DeleteMode,
         "GetRemoteUploadStatus200Response.StatusEnum": GetRemoteUploadStatus200Response.StatusEnum,
+        "ImageEditInput.AspectRatioEnum": ImageEditInput.AspectRatioEnum,
+        "ImageEditInput.QualityEnum": ImageEditInput.QualityEnum,
+        "ImageGenerateInput.TemplateEnum": ImageGenerateInput.TemplateEnum,
+        "ImageGenerateInput.AspectRatioEnum": ImageGenerateInput.AspectRatioEnum,
+        "ImageGenerateInput.QualityEnum": ImageGenerateInput.QualityEnum,
+        "ImagePromptInput.TemplateEnum": ImagePromptInput.TemplateEnum,
+        "ImageVariationsInput.AspectRatioEnum": ImageVariationsInput.AspectRatioEnum,
+        "ImageVariationsInput.QualityEnum": ImageVariationsInput.QualityEnum,
         "InitiateRemoteUpload201Response.TypeEnum": InitiateRemoteUpload201Response.TypeEnum,
         "Media.TypeEnum": Media.TypeEnum,
         "PostStatus": PostStatus,
@@ -191,7 +231,23 @@ let typeMap: {[index: string]: any} = {
     "DeleteUser400Response": DeleteUser400Response,
     "DeleteUsersBulkRequest": DeleteUsersBulkRequest,
     "DeleteWorkspacesBulkRequest": DeleteWorkspacesBulkRequest,
+    "GeneratedImageItem": GeneratedImageItem,
     "GetRemoteUploadStatus200Response": GetRemoteUploadStatus200Response,
+    "ImageAltText200Response": ImageAltText200Response,
+    "ImageAltTextInput": ImageAltTextInput,
+    "ImageAltTextResponse": ImageAltTextResponse,
+    "ImageEditInput": ImageEditInput,
+    "ImageGenerate200Response": ImageGenerate200Response,
+    "ImageGenerate429Response": ImageGenerate429Response,
+    "ImageGenerateInput": ImageGenerateInput,
+    "ImageGenerationResponse": ImageGenerationResponse,
+    "ImagePrompt200Response": ImagePrompt200Response,
+    "ImagePrompt429Response": ImagePrompt429Response,
+    "ImagePromptInput": ImagePromptInput,
+    "ImagePromptResponse": ImagePromptResponse,
+    "ImageVariations200Response": ImageVariations200Response,
+    "ImageVariationsInput": ImageVariationsInput,
+    "ImageVariationsResponse": ImageVariationsResponse,
     "InitiateChunkedUpload201Response": InitiateChunkedUpload201Response,
     "InitiateChunkedUploadRequest": InitiateChunkedUploadRequest,
     "InitiateRemoteUpload201Response": InitiateRemoteUpload201Response,
