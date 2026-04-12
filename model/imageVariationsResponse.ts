@@ -11,10 +11,10 @@
  */
 
 import { RequestFile } from './models';
-import { GeneratedImageItem } from './generatedImageItem';
+import { Media } from './media';
 
 export class ImageVariationsResponse {
-    'images': Array<GeneratedImageItem>;
+    'images': Array<Media>;
     'aspectRatio': string;
     'quality': string;
     'creditsUsed': number;
@@ -26,7 +26,7 @@ export class ImageVariationsResponse {
         {
             "name": "images",
             "baseName": "images",
-            "type": "Array<GeneratedImageItem>"
+            "type": "Array<Media>"
         },
         {
             "name": "aspectRatio",

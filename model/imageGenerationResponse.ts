@@ -11,10 +11,10 @@
  */
 
 import { RequestFile } from './models';
-import { GeneratedImageItem } from './generatedImageItem';
+import { Media } from './media';
 
 export class ImageGenerationResponse {
-    'images': Array<GeneratedImageItem>;
+    'images': Array<Media>;
     'promptUsed': string;
     'revisedPrompt'?: string;
     'aspectRatio': string;
@@ -28,7 +28,7 @@ export class ImageGenerationResponse {
         {
             "name": "images",
             "baseName": "images",
-            "type": "Array<GeneratedImageItem>"
+            "type": "Array<Media>"
         },
         {
             "name": "promptUsed",

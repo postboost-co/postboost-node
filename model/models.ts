@@ -20,7 +20,6 @@ export * from './deleteResult';
 export * from './deleteUser400Response';
 export * from './deleteUsersBulkRequest';
 export * from './deleteWorkspacesBulkRequest';
-export * from './generatedImageItem';
 export * from './getRemoteUploadStatus200Response';
 export * from './imageAltText200Response';
 export * from './imageAltTextInput';
@@ -112,7 +111,6 @@ import { DeleteResult } from './deleteResult';
 import { DeleteUser400Response } from './deleteUser400Response';
 import { DeleteUsersBulkRequest } from './deleteUsersBulkRequest';
 import { DeleteWorkspacesBulkRequest } from './deleteWorkspacesBulkRequest';
-import { GeneratedImageItem } from './generatedImageItem';
 import { GetRemoteUploadStatus200Response } from './getRemoteUploadStatus200Response';
 import { ImageAltText200Response } from './imageAltText200Response';
 import { ImageAltTextInput } from './imageAltTextInput';
@@ -231,7 +229,6 @@ let typeMap: {[index: string]: any} = {
     "DeleteUser400Response": DeleteUser400Response,
     "DeleteUsersBulkRequest": DeleteUsersBulkRequest,
     "DeleteWorkspacesBulkRequest": DeleteWorkspacesBulkRequest,
-    "GeneratedImageItem": GeneratedImageItem,
     "GetRemoteUploadStatus200Response": GetRemoteUploadStatus200Response,
     "ImageAltText200Response": ImageAltText200Response,
     "ImageAltTextInput": ImageAltTextInput,
