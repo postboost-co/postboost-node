@@ -2,8 +2,12 @@ export * from './aIApi';
 import { AIApi } from './aIApi';
 export * from './accountsApi';
 import { AccountsApi } from './accountsApi';
+export * from './analyticsApi';
+import { AnalyticsApi } from './analyticsApi';
 export * from './mediaApi';
 import { MediaApi } from './mediaApi';
+export * from './mentionsApi';
+import { MentionsApi } from './mentionsApi';
 export * from './postsApi';
 import { PostsApi } from './postsApi';
 export * from './receiptsApi';
@@ -27,4 +31,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [AIApi, AccountsApi, MediaApi, PostsApi, ReceiptsApi, SubscriptionsApi, TagsApi, UsersApi, WorkspacesApi];
+export const APIS = [AIApi, AccountsApi, AnalyticsApi, MediaApi, MentionsApi, PostsApi, ReceiptsApi, SubscriptionsApi, TagsApi, UsersApi, WorkspacesApi];

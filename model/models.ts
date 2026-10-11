@@ -1,17 +1,36 @@
 import localVarRequest from 'request';
 
+export * from './aICredits';
 export * from './account';
+export * from './accountAnalytics';
+export * from './accountAnalyticsInitialSync';
+export * from './accountSchedule';
 export * from './addGenericSubscriptionRequest';
+export * from './addPostToQueueRequest';
+export * from './analyticsPeriod';
+export * from './analyticsSummary';
+export * from './analyticsSummaryData';
+export * from './approvePostRequest';
+export * from './bestPostingTimes';
+export * from './bestPostingTimesTimesInner';
 export * from './blogToSocial200Response';
 export * from './blogToSocial429Response';
 export * from './blogToSocialCaption';
 export * from './blogToSocialInput';
 export * from './blogToSocialMedia';
 export * from './blogToSocialResponse';
+export * from './cancelSubscription422Response';
+export * from './cancelSubscription422ResponseErrors';
+export * from './cancelSubscriptionRequest';
 export * from './changeSubscriptionPlanRequest';
 export * from './checkoutSubscription200Response';
 export * from './checkoutSubscriptionRequest';
+export * from './completeChunkedUploadRequest';
+export * from './createMediaFolderRequest';
+export * from './createMention201Response';
 export * from './deleteMediaBulkRequest';
+export * from './deleteMediaBulkRequestItemsInner';
+export * from './deleteMediaFolderRequest';
 export * from './deleteMode';
 export * from './deletePostRequest';
 export * from './deletePostsBulkRequest';
@@ -43,24 +62,45 @@ export * from './initiateRemoteUpload201ResponseOneOf';
 export * from './initiateRemoteUploadRequest';
 export * from './listAccounts200Response';
 export * from './listMedia200Response';
+export * from './listMediaFolders200Response';
+export * from './listMentions200Response';
+export * from './listMyWorkspaces200Response';
 export * from './listPosts200Response';
 export * from './listReceipts200Response';
 export * from './listTags200Response';
 export * from './listUsers200Response';
 export * from './listWorkspaces200Response';
 export * from './media';
+export * from './mediaFolder';
+export * from './mediaFolderInput';
+export * from './mediaFolderRef';
+export * from './mention';
+export * from './mentionIdentity';
+export * from './mentionIdentityInput';
+export * from './mentionInput';
 export * from './paginationMeta';
 export * from './paginationMetaLinks';
 export * from './paginationMetaMeta';
 export * from './post';
+export * from './postAnalytics';
 export * from './postContent';
 export * from './postInput';
 export * from './postStatus';
 export * from './postVersion';
+export * from './postingTimeSlot';
+export * from './postingTimes';
+export * from './postingTimesBestInner';
+export * from './postingTimesDayIntervalsInnerInner';
+export * from './postingTimesDaysInner';
+export * from './publicWorkspace';
+export * from './publicWorkspacePivot';
+export * from './publishProgress';
 export * from './receipt';
 export * from './receiptInput';
 export * from './receiptUpdateInput';
+export * from './removeGenericSubscription422Response';
 export * from './removeUserFromWorkspaceRequest';
+export * from './retryPostAccountResult';
 export * from './schedulePostRequest';
 export * from './scheduleResult';
 export * from './subscription';
@@ -91,18 +131,37 @@ export interface RequestDetailedFile {
 export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 
 
+import { AICredits } from './aICredits';
 import { Account } from './account';
+import { AccountAnalytics } from './accountAnalytics';
+import { AccountAnalyticsInitialSync } from './accountAnalyticsInitialSync';
+import { AccountSchedule } from './accountSchedule';
 import { AddGenericSubscriptionRequest } from './addGenericSubscriptionRequest';
+import { AddPostToQueueRequest } from './addPostToQueueRequest';
+import { AnalyticsPeriod } from './analyticsPeriod';
+import { AnalyticsSummary } from './analyticsSummary';
+import { AnalyticsSummaryData } from './analyticsSummaryData';
+import { ApprovePostRequest } from './approvePostRequest';
+import { BestPostingTimes } from './bestPostingTimes';
+import { BestPostingTimesTimesInner } from './bestPostingTimesTimesInner';
 import { BlogToSocial200Response } from './blogToSocial200Response';
 import { BlogToSocial429Response } from './blogToSocial429Response';
 import { BlogToSocialCaption } from './blogToSocialCaption';
 import { BlogToSocialInput } from './blogToSocialInput';
 import { BlogToSocialMedia } from './blogToSocialMedia';
 import { BlogToSocialResponse } from './blogToSocialResponse';
+import { CancelSubscription422Response } from './cancelSubscription422Response';
+import { CancelSubscription422ResponseErrors } from './cancelSubscription422ResponseErrors';
+import { CancelSubscriptionRequest } from './cancelSubscriptionRequest';
 import { ChangeSubscriptionPlanRequest } from './changeSubscriptionPlanRequest';
 import { CheckoutSubscription200Response } from './checkoutSubscription200Response';
 import { CheckoutSubscriptionRequest } from './checkoutSubscriptionRequest';
+import { CompleteChunkedUploadRequest } from './completeChunkedUploadRequest';
+import { CreateMediaFolderRequest } from './createMediaFolderRequest';
+import { CreateMention201Response } from './createMention201Response';
 import { DeleteMediaBulkRequest } from './deleteMediaBulkRequest';
+import { DeleteMediaBulkRequestItemsInner } from './deleteMediaBulkRequestItemsInner';
+import { DeleteMediaFolderRequest } from './deleteMediaFolderRequest';
 import { DeleteMode } from './deleteMode';
 import { DeletePostRequest } from './deletePostRequest';
 import { DeletePostsBulkRequest } from './deletePostsBulkRequest';
@@ -134,24 +193,45 @@ import { InitiateRemoteUpload201ResponseOneOf } from './initiateRemoteUpload201R
 import { InitiateRemoteUploadRequest } from './initiateRemoteUploadRequest';
 import { ListAccounts200Response } from './listAccounts200Response';
 import { ListMedia200Response } from './listMedia200Response';
+import { ListMediaFolders200Response } from './listMediaFolders200Response';
+import { ListMentions200Response } from './listMentions200Response';
+import { ListMyWorkspaces200Response } from './listMyWorkspaces200Response';
 import { ListPosts200Response } from './listPosts200Response';
 import { ListReceipts200Response } from './listReceipts200Response';
 import { ListTags200Response } from './listTags200Response';
 import { ListUsers200Response } from './listUsers200Response';
 import { ListWorkspaces200Response } from './listWorkspaces200Response';
 import { Media } from './media';
+import { MediaFolder } from './mediaFolder';
+import { MediaFolderInput } from './mediaFolderInput';
+import { MediaFolderRef } from './mediaFolderRef';
+import { Mention } from './mention';
+import { MentionIdentity } from './mentionIdentity';
+import { MentionIdentityInput } from './mentionIdentityInput';
+import { MentionInput } from './mentionInput';
 import { PaginationMeta } from './paginationMeta';
 import { PaginationMetaLinks } from './paginationMetaLinks';
 import { PaginationMetaMeta } from './paginationMetaMeta';
 import { Post } from './post';
+import { PostAnalytics } from './postAnalytics';
 import { PostContent } from './postContent';
 import { PostInput } from './postInput';
 import { PostStatus } from './postStatus';
 import { PostVersion } from './postVersion';
+import { PostingTimeSlot } from './postingTimeSlot';
+import { PostingTimes } from './postingTimes';
+import { PostingTimesBestInner } from './postingTimesBestInner';
+import { PostingTimesDayIntervalsInnerInner } from './postingTimesDayIntervalsInnerInner';
+import { PostingTimesDaysInner } from './postingTimesDaysInner';
+import { PublicWorkspace } from './publicWorkspace';
+import { PublicWorkspacePivot } from './publicWorkspacePivot';
+import { PublishProgress } from './publishProgress';
 import { Receipt } from './receipt';
 import { ReceiptInput } from './receiptInput';
 import { ReceiptUpdateInput } from './receiptUpdateInput';
+import { RemoveGenericSubscription422Response } from './removeGenericSubscription422Response';
 import { RemoveUserFromWorkspaceRequest } from './removeUserFromWorkspaceRequest';
+import { RetryPostAccountResult } from './retryPostAccountResult';
 import { SchedulePostRequest } from './schedulePostRequest';
 import { ScheduleResult } from './scheduleResult';
 import { Subscription } from './subscription';
@@ -183,6 +263,7 @@ let primitives = [
 
 let enumsMap: {[index: string]: any} = {
         "Account.ProviderEnum": Account.ProviderEnum,
+        "Account.PublishStatusEnum": Account.PublishStatusEnum,
         "BlogToSocialInput.PlatformsEnum": BlogToSocialInput.PlatformsEnum,
         "BlogToSocialInput.ToneEnum": BlogToSocialInput.ToneEnum,
         "BlogToSocialInput.ContentLengthEnum": BlogToSocialInput.ContentLengthEnum,
@@ -203,6 +284,10 @@ let enumsMap: {[index: string]: any} = {
         "InitiateRemoteUpload201Response.TypeEnum": InitiateRemoteUpload201Response.TypeEnum,
         "Media.TypeEnum": Media.TypeEnum,
         "PostStatus": PostStatus,
+        "PostingTimeSlot.ConfidenceEnum": PostingTimeSlot.ConfidenceEnum,
+        "PostingTimesDayIntervalsInnerInner.ConfidenceEnum": PostingTimesDayIntervalsInnerInner.ConfidenceEnum,
+        "PostingTimesDaysInner.ConfidenceEnum": PostingTimesDaysInner.ConfidenceEnum,
+        "PublicWorkspacePivot.RoleEnum": PublicWorkspacePivot.RoleEnum,
         "SubscriptionStatus": SubscriptionStatus,
         "Workspace.AccessStatusEnum": Workspace.AccessStatusEnum,
         "WorkspaceInput.AccessStatusEnum": WorkspaceInput.AccessStatusEnum,
@@ -210,18 +295,37 @@ let enumsMap: {[index: string]: any} = {
 }
 
 let typeMap: {[index: string]: any} = {
+    "AICredits": AICredits,
     "Account": Account,
+    "AccountAnalytics": AccountAnalytics,
+    "AccountAnalyticsInitialSync": AccountAnalyticsInitialSync,
+    "AccountSchedule": AccountSchedule,
     "AddGenericSubscriptionRequest": AddGenericSubscriptionRequest,
+    "AddPostToQueueRequest": AddPostToQueueRequest,
+    "AnalyticsPeriod": AnalyticsPeriod,
+    "AnalyticsSummary": AnalyticsSummary,
+    "AnalyticsSummaryData": AnalyticsSummaryData,
+    "ApprovePostRequest": ApprovePostRequest,
+    "BestPostingTimes": BestPostingTimes,
+    "BestPostingTimesTimesInner": BestPostingTimesTimesInner,
     "BlogToSocial200Response": BlogToSocial200Response,
     "BlogToSocial429Response": BlogToSocial429Response,
     "BlogToSocialCaption": BlogToSocialCaption,
     "BlogToSocialInput": BlogToSocialInput,
     "BlogToSocialMedia": BlogToSocialMedia,
     "BlogToSocialResponse": BlogToSocialResponse,
+    "CancelSubscription422Response": CancelSubscription422Response,
+    "CancelSubscription422ResponseErrors": CancelSubscription422ResponseErrors,
+    "CancelSubscriptionRequest": CancelSubscriptionRequest,
     "ChangeSubscriptionPlanRequest": ChangeSubscriptionPlanRequest,
     "CheckoutSubscription200Response": CheckoutSubscription200Response,
     "CheckoutSubscriptionRequest": CheckoutSubscriptionRequest,
+    "CompleteChunkedUploadRequest": CompleteChunkedUploadRequest,
+    "CreateMediaFolderRequest": CreateMediaFolderRequest,
+    "CreateMention201Response": CreateMention201Response,
     "DeleteMediaBulkRequest": DeleteMediaBulkRequest,
+    "DeleteMediaBulkRequestItemsInner": DeleteMediaBulkRequestItemsInner,
+    "DeleteMediaFolderRequest": DeleteMediaFolderRequest,
     "DeletePostRequest": DeletePostRequest,
     "DeletePostsBulkRequest": DeletePostsBulkRequest,
     "DeleteReceiptsBulkRequest": DeleteReceiptsBulkRequest,
@@ -252,23 +356,44 @@ let typeMap: {[index: string]: any} = {
     "InitiateRemoteUploadRequest": InitiateRemoteUploadRequest,
     "ListAccounts200Response": ListAccounts200Response,
     "ListMedia200Response": ListMedia200Response,
+    "ListMediaFolders200Response": ListMediaFolders200Response,
+    "ListMentions200Response": ListMentions200Response,
+    "ListMyWorkspaces200Response": ListMyWorkspaces200Response,
     "ListPosts200Response": ListPosts200Response,
     "ListReceipts200Response": ListReceipts200Response,
     "ListTags200Response": ListTags200Response,
     "ListUsers200Response": ListUsers200Response,
     "ListWorkspaces200Response": ListWorkspaces200Response,
     "Media": Media,
+    "MediaFolder": MediaFolder,
+    "MediaFolderInput": MediaFolderInput,
+    "MediaFolderRef": MediaFolderRef,
+    "Mention": Mention,
+    "MentionIdentity": MentionIdentity,
+    "MentionIdentityInput": MentionIdentityInput,
+    "MentionInput": MentionInput,
     "PaginationMeta": PaginationMeta,
     "PaginationMetaLinks": PaginationMetaLinks,
     "PaginationMetaMeta": PaginationMetaMeta,
     "Post": Post,
+    "PostAnalytics": PostAnalytics,
     "PostContent": PostContent,
     "PostInput": PostInput,
     "PostVersion": PostVersion,
+    "PostingTimeSlot": PostingTimeSlot,
+    "PostingTimes": PostingTimes,
+    "PostingTimesBestInner": PostingTimesBestInner,
+    "PostingTimesDayIntervalsInnerInner": PostingTimesDayIntervalsInnerInner,
+    "PostingTimesDaysInner": PostingTimesDaysInner,
+    "PublicWorkspace": PublicWorkspace,
+    "PublicWorkspacePivot": PublicWorkspacePivot,
+    "PublishProgress": PublishProgress,
     "Receipt": Receipt,
     "ReceiptInput": ReceiptInput,
     "ReceiptUpdateInput": ReceiptUpdateInput,
+    "RemoveGenericSubscription422Response": RemoveGenericSubscription422Response,
     "RemoveUserFromWorkspaceRequest": RemoveUserFromWorkspaceRequest,
+    "RetryPostAccountResult": RetryPostAccountResult,
     "SchedulePostRequest": SchedulePostRequest,
     "ScheduleResult": ScheduleResult,
     "Subscription": Subscription,
