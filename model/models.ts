@@ -1,15 +1,38 @@
 import localVarRequest from 'request';
 
 export * from './aICredits';
+export * from './aIUsage';
+export * from './aIUsageText';
 export * from './account';
 export * from './accountAnalytics';
 export * from './accountAnalyticsInitialSync';
+export * from './accountConnectionHealth';
+export * from './accountErrorsInner';
+export * from './accountErrorsInnerOneOf';
+export * from './accountGroup';
+export * from './accountGroupInput';
+export * from './accountHealth';
+export * from './accountHealthDailyCap';
 export * from './accountSchedule';
+export * from './addCompetitor202Response';
+export * from './addCompetitor409Response';
 export * from './addGenericSubscriptionRequest';
 export * from './addPostToQueueRequest';
+export * from './agentPageMeta';
+export * from './agentProposal';
+export * from './agentProposalDecision';
+export * from './agentRun';
 export * from './analyticsPeriod';
 export * from './analyticsSummary';
 export * from './analyticsSummaryData';
+export * from './apiActivity';
+export * from './apiActivityOutcome';
+export * from './apiKey';
+export * from './apiKeyAbility';
+export * from './apiKeyInput';
+export * from './approveAgentProposal200Response';
+export * from './approveAgentProposal409Response';
+export * from './approveInboxReplyDraft403Response';
 export * from './approvePostRequest';
 export * from './bestPostingTimes';
 export * from './bestPostingTimesTimesInner';
@@ -19,15 +42,40 @@ export * from './blogToSocialCaption';
 export * from './blogToSocialInput';
 export * from './blogToSocialMedia';
 export * from './blogToSocialResponse';
+export * from './brandVoice';
+export * from './brandVoiceInput';
+export * from './brandVoiceMeta';
 export * from './cancelSubscription422Response';
 export * from './cancelSubscription422ResponseErrors';
 export * from './cancelSubscriptionRequest';
 export * from './changeSubscriptionPlanRequest';
+export * from './channelAccount';
 export * from './checkoutSubscription200Response';
 export * from './checkoutSubscriptionRequest';
+export * from './codedError';
+export * from './competitor';
+export * from './competitorDetail';
+export * from './competitorInput';
+export * from './competitorMedia';
+export * from './competitorSnapshot';
 export * from './completeChunkedUploadRequest';
+export * from './connectChannelInput';
+export * from './createAccountGroup201Response';
+export * from './createAgent201Response';
+export * from './createApiKey201Response';
+export * from './createApiKey201ResponseData';
+export * from './createHashtagGroup201Response';
+export * from './createInboxReplyDraft201Response';
 export * from './createMediaFolderRequest';
 export * from './createMention201Response';
+export * from './createRecyclingRule201Response';
+export * from './createReportExport201Response';
+export * from './createResellerClient201Response';
+export * from './createRssFeed201Response';
+export * from './createTemplate201Response';
+export * from './createWebhookSubscription201Response';
+export * from './createWebhookSubscription201ResponseData';
+export * from './deleteAgent200Response';
 export * from './deleteMediaBulkRequest';
 export * from './deleteMediaBulkRequestItemsInner';
 export * from './deleteMediaFolderRequest';
@@ -39,10 +87,20 @@ export * from './deleteResult';
 export * from './deleteUser400Response';
 export * from './deleteUsersBulkRequest';
 export * from './deleteWorkspacesBulkRequest';
+export * from './getAccountHealth200Response';
+export * from './getBrandVoice200Response';
+export * from './getCompetitor200Response';
+export * from './getInboxConversation200Response';
+export * from './getPostingSchedule200Response';
 export * from './getRemoteUploadStatus200Response';
+export * from './getReportBranding200Response';
+export * from './guardrailError';
+export * from './hashtagGroup';
+export * from './hashtagGroupInput';
 export * from './imageAltText200Response';
 export * from './imageAltTextInput';
 export * from './imageAltTextResponse';
+export * from './imageCreditBalance';
 export * from './imageEditInput';
 export * from './imageGenerate200Response';
 export * from './imageGenerate429Response';
@@ -55,22 +113,53 @@ export * from './imagePromptResponse';
 export * from './imageVariations200Response';
 export * from './imageVariationsInput';
 export * from './imageVariationsResponse';
+export * from './inboxAuthor';
+export * from './inboxConversation';
+export * from './inboxConversationAccount';
+export * from './inboxConversationUpdate';
+export * from './inboxMessage';
+export * from './inboxMessageAuthor';
+export * from './inboxReplyDraft';
+export * from './inboxReplyDraftApprove';
+export * from './inboxReplyDraftEdit';
+export * from './inboxReplyDraftInput';
 export * from './initiateChunkedUpload201Response';
 export * from './initiateChunkedUploadRequest';
 export * from './initiateRemoteUpload201Response';
 export * from './initiateRemoteUpload201ResponseOneOf';
 export * from './initiateRemoteUploadRequest';
+export * from './learnBrandVoiceInput';
+export * from './learnBrandVoiceResponse';
+export * from './learnBrandVoiceResponseMeta';
+export * from './listAccountGroups200Response';
 export * from './listAccounts200Response';
+export * from './listAgentProposals200Response';
+export * from './listAgentRuns200Response';
+export * from './listAgents200Response';
+export * from './listApiActivity200Response';
+export * from './listApiKeys200Response';
+export * from './listCompetitors200Response';
+export * from './listHashtagGroups200Response';
+export * from './listInboxConversations200Response';
+export * from './listInboxReplyDrafts200Response';
 export * from './listMedia200Response';
 export * from './listMediaFolders200Response';
 export * from './listMentions200Response';
 export * from './listMyWorkspaces200Response';
 export * from './listPosts200Response';
 export * from './listReceipts200Response';
+export * from './listRecyclingRules200Response';
+export * from './listRecyclingRuns200Response';
+export * from './listReportExports200Response';
+export * from './listResellerClients200Response';
+export * from './listRssFeeds200Response';
 export * from './listTags200Response';
+export * from './listTemplates200Response';
 export * from './listUsers200Response';
+export * from './listWebhookSubscriptions200Response';
 export * from './listWorkspaces200Response';
 export * from './media';
+export * from './mediaBase64Input';
 export * from './mediaFolder';
 export * from './mediaFolderInput';
 export * from './mediaFolderRef';
@@ -78,29 +167,66 @@ export * from './mention';
 export * from './mentionIdentity';
 export * from './mentionIdentityInput';
 export * from './mentionInput';
+export * from './messageOnly';
 export * from './paginationMeta';
 export * from './paginationMetaLinks';
 export * from './paginationMetaMeta';
+export * from './pollRssFeed200Response';
 export * from './post';
 export * from './postAnalytics';
 export * from './postContent';
 export * from './postInput';
+export * from './postOptionsInstagram';
+export * from './postOptionsTikTok';
+export * from './postOptionsYoutube';
 export * from './postStatus';
 export * from './postVersion';
+export * from './postVersionOptions';
+export * from './postingSchedule';
+export * from './postingScheduleDay';
+export * from './postingScheduleDayTimesInner';
+export * from './postingScheduleInput';
 export * from './postingTimeSlot';
 export * from './postingTimes';
 export * from './postingTimesBestInner';
 export * from './postingTimesDayIntervalsInnerInner';
 export * from './postingTimesDaysInner';
+export * from './preflightResult';
 export * from './publicWorkspace';
 export * from './publicWorkspacePivot';
 export * from './publishProgress';
+export * from './queueSlots';
 export * from './receipt';
 export * from './receiptInput';
 export * from './receiptUpdateInput';
+export * from './recommendedPostingTimes';
+export * from './reconnectLink';
+export * from './recyclingRule';
+export * from './recyclingRuleInput';
+export * from './recyclingRuleSettings';
+export * from './recyclingRuleUpdate';
+export * from './recyclingRun';
 export * from './removeGenericSubscription422Response';
 export * from './removeUserFromWorkspaceRequest';
+export * from './reportBranding';
+export * from './reportBrandingInput';
+export * from './reportExport';
+export * from './reportExportInput';
+export * from './repurposeContent200Response';
+export * from './repurposeInput';
+export * from './repurposeInputTheme';
+export * from './repurposeResult';
+export * from './repurposeResultMedia';
+export * from './repurposeResultSource';
+export * from './repurposeSlide';
+export * from './resellerClient';
+export * from './resellerClientInput';
+export * from './resellerClientUsage';
 export * from './retryPostAccountResult';
+export * from './rssFeed';
+export * from './rssFeedInput';
+export * from './rssFeedUpdate';
+export * from './runAgent202Response';
 export * from './schedulePostRequest';
 export * from './scheduleResult';
 export * from './subscription';
@@ -109,14 +235,28 @@ export * from './subscriptionStatus';
 export * from './subscriptionUpdateInput';
 export * from './tag';
 export * from './tagInput';
+export * from './template';
+export * from './templateContentItem';
+export * from './templateInput';
+export * from './templateInputContentInner';
 export * from './updateMediaRequest';
 export * from './uploadChunk201Response';
 export * from './user';
 export * from './userInput';
 export * from './userUpdateInput';
+export * from './webhookEventName';
+export * from './webhookEventPayload';
+export * from './webhookSubscription';
+export * from './webhookSubscriptionInput';
 export * from './workspace';
+export * from './workspaceAgent';
+export * from './workspaceAgentInput';
+export * from './workspaceAgentSettings';
+export * from './workspaceAgentUpdate';
 export * from './workspaceInput';
 export * from './workspaceUserInput';
+export * from './xUsage';
+export * from './xUsageCounter';
 
 import * as fs from 'fs';
 
@@ -132,15 +272,38 @@ export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 
 
 import { AICredits } from './aICredits';
+import { AIUsage } from './aIUsage';
+import { AIUsageText } from './aIUsageText';
 import { Account } from './account';
 import { AccountAnalytics } from './accountAnalytics';
 import { AccountAnalyticsInitialSync } from './accountAnalyticsInitialSync';
+import { AccountConnectionHealth } from './accountConnectionHealth';
+import { AccountErrorsInner } from './accountErrorsInner';
+import { AccountErrorsInnerOneOf } from './accountErrorsInnerOneOf';
+import { AccountGroup } from './accountGroup';
+import { AccountGroupInput } from './accountGroupInput';
+import { AccountHealth } from './accountHealth';
+import { AccountHealthDailyCap } from './accountHealthDailyCap';
 import { AccountSchedule } from './accountSchedule';
+import { AddCompetitor202Response } from './addCompetitor202Response';
+import { AddCompetitor409Response } from './addCompetitor409Response';
 import { AddGenericSubscriptionRequest } from './addGenericSubscriptionRequest';
 import { AddPostToQueueRequest } from './addPostToQueueRequest';
+import { AgentPageMeta } from './agentPageMeta';
+import { AgentProposal } from './agentProposal';
+import { AgentProposalDecision } from './agentProposalDecision';
+import { AgentRun } from './agentRun';
 import { AnalyticsPeriod } from './analyticsPeriod';
 import { AnalyticsSummary } from './analyticsSummary';
 import { AnalyticsSummaryData } from './analyticsSummaryData';
+import { ApiActivity } from './apiActivity';
+import { ApiActivityOutcome } from './apiActivityOutcome';
+import { ApiKey } from './apiKey';
+import { ApiKeyAbility } from './apiKeyAbility';
+import { ApiKeyInput } from './apiKeyInput';
+import { ApproveAgentProposal200Response } from './approveAgentProposal200Response';
+import { ApproveAgentProposal409Response } from './approveAgentProposal409Response';
+import { ApproveInboxReplyDraft403Response } from './approveInboxReplyDraft403Response';
 import { ApprovePostRequest } from './approvePostRequest';
 import { BestPostingTimes } from './bestPostingTimes';
 import { BestPostingTimesTimesInner } from './bestPostingTimesTimesInner';
@@ -150,15 +313,40 @@ import { BlogToSocialCaption } from './blogToSocialCaption';
 import { BlogToSocialInput } from './blogToSocialInput';
 import { BlogToSocialMedia } from './blogToSocialMedia';
 import { BlogToSocialResponse } from './blogToSocialResponse';
+import { BrandVoice } from './brandVoice';
+import { BrandVoiceInput } from './brandVoiceInput';
+import { BrandVoiceMeta } from './brandVoiceMeta';
 import { CancelSubscription422Response } from './cancelSubscription422Response';
 import { CancelSubscription422ResponseErrors } from './cancelSubscription422ResponseErrors';
 import { CancelSubscriptionRequest } from './cancelSubscriptionRequest';
 import { ChangeSubscriptionPlanRequest } from './changeSubscriptionPlanRequest';
+import { ChannelAccount } from './channelAccount';
 import { CheckoutSubscription200Response } from './checkoutSubscription200Response';
 import { CheckoutSubscriptionRequest } from './checkoutSubscriptionRequest';
+import { CodedError } from './codedError';
+import { Competitor } from './competitor';
+import { CompetitorDetail } from './competitorDetail';
+import { CompetitorInput } from './competitorInput';
+import { CompetitorMedia } from './competitorMedia';
+import { CompetitorSnapshot } from './competitorSnapshot';
 import { CompleteChunkedUploadRequest } from './completeChunkedUploadRequest';
+import { ConnectChannelInput } from './connectChannelInput';
+import { CreateAccountGroup201Response } from './createAccountGroup201Response';
+import { CreateAgent201Response } from './createAgent201Response';
+import { CreateApiKey201Response } from './createApiKey201Response';
+import { CreateApiKey201ResponseData } from './createApiKey201ResponseData';
+import { CreateHashtagGroup201Response } from './createHashtagGroup201Response';
+import { CreateInboxReplyDraft201Response } from './createInboxReplyDraft201Response';
 import { CreateMediaFolderRequest } from './createMediaFolderRequest';
 import { CreateMention201Response } from './createMention201Response';
+import { CreateRecyclingRule201Response } from './createRecyclingRule201Response';
+import { CreateReportExport201Response } from './createReportExport201Response';
+import { CreateResellerClient201Response } from './createResellerClient201Response';
+import { CreateRssFeed201Response } from './createRssFeed201Response';
+import { CreateTemplate201Response } from './createTemplate201Response';
+import { CreateWebhookSubscription201Response } from './createWebhookSubscription201Response';
+import { CreateWebhookSubscription201ResponseData } from './createWebhookSubscription201ResponseData';
+import { DeleteAgent200Response } from './deleteAgent200Response';
 import { DeleteMediaBulkRequest } from './deleteMediaBulkRequest';
 import { DeleteMediaBulkRequestItemsInner } from './deleteMediaBulkRequestItemsInner';
 import { DeleteMediaFolderRequest } from './deleteMediaFolderRequest';
@@ -170,10 +358,20 @@ import { DeleteResult } from './deleteResult';
 import { DeleteUser400Response } from './deleteUser400Response';
 import { DeleteUsersBulkRequest } from './deleteUsersBulkRequest';
 import { DeleteWorkspacesBulkRequest } from './deleteWorkspacesBulkRequest';
+import { GetAccountHealth200Response } from './getAccountHealth200Response';
+import { GetBrandVoice200Response } from './getBrandVoice200Response';
+import { GetCompetitor200Response } from './getCompetitor200Response';
+import { GetInboxConversation200Response } from './getInboxConversation200Response';
+import { GetPostingSchedule200Response } from './getPostingSchedule200Response';
 import { GetRemoteUploadStatus200Response } from './getRemoteUploadStatus200Response';
+import { GetReportBranding200Response } from './getReportBranding200Response';
+import { GuardrailError } from './guardrailError';
+import { HashtagGroup } from './hashtagGroup';
+import { HashtagGroupInput } from './hashtagGroupInput';
 import { ImageAltText200Response } from './imageAltText200Response';
 import { ImageAltTextInput } from './imageAltTextInput';
 import { ImageAltTextResponse } from './imageAltTextResponse';
+import { ImageCreditBalance } from './imageCreditBalance';
 import { ImageEditInput } from './imageEditInput';
 import { ImageGenerate200Response } from './imageGenerate200Response';
 import { ImageGenerate429Response } from './imageGenerate429Response';
@@ -186,22 +384,53 @@ import { ImagePromptResponse } from './imagePromptResponse';
 import { ImageVariations200Response } from './imageVariations200Response';
 import { ImageVariationsInput } from './imageVariationsInput';
 import { ImageVariationsResponse } from './imageVariationsResponse';
+import { InboxAuthor } from './inboxAuthor';
+import { InboxConversation } from './inboxConversation';
+import { InboxConversationAccount } from './inboxConversationAccount';
+import { InboxConversationUpdate } from './inboxConversationUpdate';
+import { InboxMessage } from './inboxMessage';
+import { InboxMessageAuthor } from './inboxMessageAuthor';
+import { InboxReplyDraft } from './inboxReplyDraft';
+import { InboxReplyDraftApprove } from './inboxReplyDraftApprove';
+import { InboxReplyDraftEdit } from './inboxReplyDraftEdit';
+import { InboxReplyDraftInput } from './inboxReplyDraftInput';
 import { InitiateChunkedUpload201Response } from './initiateChunkedUpload201Response';
 import { InitiateChunkedUploadRequest } from './initiateChunkedUploadRequest';
 import { InitiateRemoteUpload201Response } from './initiateRemoteUpload201Response';
 import { InitiateRemoteUpload201ResponseOneOf } from './initiateRemoteUpload201ResponseOneOf';
 import { InitiateRemoteUploadRequest } from './initiateRemoteUploadRequest';
+import { LearnBrandVoiceInput } from './learnBrandVoiceInput';
+import { LearnBrandVoiceResponse } from './learnBrandVoiceResponse';
+import { LearnBrandVoiceResponseMeta } from './learnBrandVoiceResponseMeta';
+import { ListAccountGroups200Response } from './listAccountGroups200Response';
 import { ListAccounts200Response } from './listAccounts200Response';
+import { ListAgentProposals200Response } from './listAgentProposals200Response';
+import { ListAgentRuns200Response } from './listAgentRuns200Response';
+import { ListAgents200Response } from './listAgents200Response';
+import { ListApiActivity200Response } from './listApiActivity200Response';
+import { ListApiKeys200Response } from './listApiKeys200Response';
+import { ListCompetitors200Response } from './listCompetitors200Response';
+import { ListHashtagGroups200Response } from './listHashtagGroups200Response';
+import { ListInboxConversations200Response } from './listInboxConversations200Response';
+import { ListInboxReplyDrafts200Response } from './listInboxReplyDrafts200Response';
 import { ListMedia200Response } from './listMedia200Response';
 import { ListMediaFolders200Response } from './listMediaFolders200Response';
 import { ListMentions200Response } from './listMentions200Response';
 import { ListMyWorkspaces200Response } from './listMyWorkspaces200Response';
 import { ListPosts200Response } from './listPosts200Response';
 import { ListReceipts200Response } from './listReceipts200Response';
+import { ListRecyclingRules200Response } from './listRecyclingRules200Response';
+import { ListRecyclingRuns200Response } from './listRecyclingRuns200Response';
+import { ListReportExports200Response } from './listReportExports200Response';
+import { ListResellerClients200Response } from './listResellerClients200Response';
+import { ListRssFeeds200Response } from './listRssFeeds200Response';
 import { ListTags200Response } from './listTags200Response';
+import { ListTemplates200Response } from './listTemplates200Response';
 import { ListUsers200Response } from './listUsers200Response';
+import { ListWebhookSubscriptions200Response } from './listWebhookSubscriptions200Response';
 import { ListWorkspaces200Response } from './listWorkspaces200Response';
 import { Media } from './media';
+import { MediaBase64Input } from './mediaBase64Input';
 import { MediaFolder } from './mediaFolder';
 import { MediaFolderInput } from './mediaFolderInput';
 import { MediaFolderRef } from './mediaFolderRef';
@@ -209,29 +438,66 @@ import { Mention } from './mention';
 import { MentionIdentity } from './mentionIdentity';
 import { MentionIdentityInput } from './mentionIdentityInput';
 import { MentionInput } from './mentionInput';
+import { MessageOnly } from './messageOnly';
 import { PaginationMeta } from './paginationMeta';
 import { PaginationMetaLinks } from './paginationMetaLinks';
 import { PaginationMetaMeta } from './paginationMetaMeta';
+import { PollRssFeed200Response } from './pollRssFeed200Response';
 import { Post } from './post';
 import { PostAnalytics } from './postAnalytics';
 import { PostContent } from './postContent';
 import { PostInput } from './postInput';
+import { PostOptionsInstagram } from './postOptionsInstagram';
+import { PostOptionsTikTok } from './postOptionsTikTok';
+import { PostOptionsYoutube } from './postOptionsYoutube';
 import { PostStatus } from './postStatus';
 import { PostVersion } from './postVersion';
+import { PostVersionOptions } from './postVersionOptions';
+import { PostingSchedule } from './postingSchedule';
+import { PostingScheduleDay } from './postingScheduleDay';
+import { PostingScheduleDayTimesInner } from './postingScheduleDayTimesInner';
+import { PostingScheduleInput } from './postingScheduleInput';
 import { PostingTimeSlot } from './postingTimeSlot';
 import { PostingTimes } from './postingTimes';
 import { PostingTimesBestInner } from './postingTimesBestInner';
 import { PostingTimesDayIntervalsInnerInner } from './postingTimesDayIntervalsInnerInner';
 import { PostingTimesDaysInner } from './postingTimesDaysInner';
+import { PreflightResult } from './preflightResult';
 import { PublicWorkspace } from './publicWorkspace';
 import { PublicWorkspacePivot } from './publicWorkspacePivot';
 import { PublishProgress } from './publishProgress';
+import { QueueSlots } from './queueSlots';
 import { Receipt } from './receipt';
 import { ReceiptInput } from './receiptInput';
 import { ReceiptUpdateInput } from './receiptUpdateInput';
+import { RecommendedPostingTimes } from './recommendedPostingTimes';
+import { ReconnectLink } from './reconnectLink';
+import { RecyclingRule } from './recyclingRule';
+import { RecyclingRuleInput } from './recyclingRuleInput';
+import { RecyclingRuleSettings } from './recyclingRuleSettings';
+import { RecyclingRuleUpdate } from './recyclingRuleUpdate';
+import { RecyclingRun } from './recyclingRun';
 import { RemoveGenericSubscription422Response } from './removeGenericSubscription422Response';
 import { RemoveUserFromWorkspaceRequest } from './removeUserFromWorkspaceRequest';
+import { ReportBranding } from './reportBranding';
+import { ReportBrandingInput } from './reportBrandingInput';
+import { ReportExport } from './reportExport';
+import { ReportExportInput } from './reportExportInput';
+import { RepurposeContent200Response } from './repurposeContent200Response';
+import { RepurposeInput } from './repurposeInput';
+import { RepurposeInputTheme } from './repurposeInputTheme';
+import { RepurposeResult } from './repurposeResult';
+import { RepurposeResultMedia } from './repurposeResultMedia';
+import { RepurposeResultSource } from './repurposeResultSource';
+import { RepurposeSlide } from './repurposeSlide';
+import { ResellerClient } from './resellerClient';
+import { ResellerClientInput } from './resellerClientInput';
+import { ResellerClientUsage } from './resellerClientUsage';
 import { RetryPostAccountResult } from './retryPostAccountResult';
+import { RssFeed } from './rssFeed';
+import { RssFeedInput } from './rssFeedInput';
+import { RssFeedUpdate } from './rssFeedUpdate';
+import { RunAgent202Response } from './runAgent202Response';
 import { SchedulePostRequest } from './schedulePostRequest';
 import { ScheduleResult } from './scheduleResult';
 import { Subscription } from './subscription';
@@ -240,14 +506,28 @@ import { SubscriptionStatus } from './subscriptionStatus';
 import { SubscriptionUpdateInput } from './subscriptionUpdateInput';
 import { Tag } from './tag';
 import { TagInput } from './tagInput';
+import { Template } from './template';
+import { TemplateContentItem } from './templateContentItem';
+import { TemplateInput } from './templateInput';
+import { TemplateInputContentInner } from './templateInputContentInner';
 import { UpdateMediaRequest } from './updateMediaRequest';
 import { UploadChunk201Response } from './uploadChunk201Response';
 import { User } from './user';
 import { UserInput } from './userInput';
 import { UserUpdateInput } from './userUpdateInput';
+import { WebhookEventName } from './webhookEventName';
+import { WebhookEventPayload } from './webhookEventPayload';
+import { WebhookSubscription } from './webhookSubscription';
+import { WebhookSubscriptionInput } from './webhookSubscriptionInput';
 import { Workspace } from './workspace';
+import { WorkspaceAgent } from './workspaceAgent';
+import { WorkspaceAgentInput } from './workspaceAgentInput';
+import { WorkspaceAgentSettings } from './workspaceAgentSettings';
+import { WorkspaceAgentUpdate } from './workspaceAgentUpdate';
 import { WorkspaceInput } from './workspaceInput';
 import { WorkspaceUserInput } from './workspaceUserInput';
+import { XUsage } from './xUsage';
+import { XUsageCounter } from './xUsageCounter';
 
 /* tslint:disable:no-unused-variable */
 let primitives = [
@@ -264,15 +544,32 @@ let primitives = [
 let enumsMap: {[index: string]: any} = {
         "Account.ProviderEnum": Account.ProviderEnum,
         "Account.PublishStatusEnum": Account.PublishStatusEnum,
+        "AccountConnectionHealth.StatusEnum": AccountConnectionHealth.StatusEnum,
+        "AccountConnectionHealth.ExpiryKindEnum": AccountConnectionHealth.ExpiryKindEnum,
+        "AddCompetitor202Response.StatusEnum": AddCompetitor202Response.StatusEnum,
+        "AgentProposal.KindEnum": AgentProposal.KindEnum,
+        "AgentProposal.SeverityEnum": AgentProposal.SeverityEnum,
+        "AgentProposal.StatusEnum": AgentProposal.StatusEnum,
+        "AgentRun.TriggerEnum": AgentRun.TriggerEnum,
+        "AgentRun.StatusEnum": AgentRun.StatusEnum,
+        "ApiActivityOutcome": ApiActivityOutcome,
+        "ApiKeyAbility": ApiKeyAbility,
+        "ApproveInboxReplyDraft403Response.CodeEnum": ApproveInboxReplyDraft403Response.CodeEnum,
         "BlogToSocialInput.PlatformsEnum": BlogToSocialInput.PlatformsEnum,
         "BlogToSocialInput.ToneEnum": BlogToSocialInput.ToneEnum,
         "BlogToSocialInput.ContentLengthEnum": BlogToSocialInput.ContentLengthEnum,
         "BlogToSocialInput.HashtagsEnum": BlogToSocialInput.HashtagsEnum,
         "BlogToSocialInput.CtaEnum": BlogToSocialInput.CtaEnum,
+        "BrandVoice.EmojiStyleEnum": BrandVoice.EmojiStyleEnum,
+        "BrandVoice.HashtagStrategyEnum": BrandVoice.HashtagStrategyEnum,
+        "BrandVoiceInput.EmojiStyleEnum": BrandVoiceInput.EmojiStyleEnum,
+        "BrandVoiceInput.HashtagStrategyEnum": BrandVoiceInput.HashtagStrategyEnum,
         "ChangeSubscriptionPlanRequest.CycleEnum": ChangeSubscriptionPlanRequest.CycleEnum,
+        "ChannelAccount.ProviderEnum": ChannelAccount.ProviderEnum,
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
         "DeleteMode": DeleteMode,
         "GetRemoteUploadStatus200Response.StatusEnum": GetRemoteUploadStatus200Response.StatusEnum,
+        "GuardrailError.CodeEnum": GuardrailError.CodeEnum,
         "ImageEditInput.AspectRatioEnum": ImageEditInput.AspectRatioEnum,
         "ImageEditInput.QualityEnum": ImageEditInput.QualityEnum,
         "ImageGenerateInput.TemplateEnum": ImageGenerateInput.TemplateEnum,
@@ -281,30 +578,92 @@ let enumsMap: {[index: string]: any} = {
         "ImagePromptInput.TemplateEnum": ImagePromptInput.TemplateEnum,
         "ImageVariationsInput.AspectRatioEnum": ImageVariationsInput.AspectRatioEnum,
         "ImageVariationsInput.QualityEnum": ImageVariationsInput.QualityEnum,
+        "InboxConversation.TypeEnum": InboxConversation.TypeEnum,
+        "InboxConversation.StatusEnum": InboxConversation.StatusEnum,
+        "InboxConversationUpdate.StatusEnum": InboxConversationUpdate.StatusEnum,
+        "InboxMessage.DirectionEnum": InboxMessage.DirectionEnum,
+        "InboxMessage.SentimentEnum": InboxMessage.SentimentEnum,
+        "InboxMessage.AiLabelEnum": InboxMessage.AiLabelEnum,
+        "InboxReplyDraft.StatusEnum": InboxReplyDraft.StatusEnum,
+        "InboxReplyDraft.SourceEnum": InboxReplyDraft.SourceEnum,
         "InitiateRemoteUpload201Response.TypeEnum": InitiateRemoteUpload201Response.TypeEnum,
         "Media.TypeEnum": Media.TypeEnum,
+        "PostOptionsInstagram.TypeEnum": PostOptionsInstagram.TypeEnum,
+        "PostOptionsTikTok.PrivacyLevelEnum": PostOptionsTikTok.PrivacyLevelEnum,
+        "PostOptionsYoutube.StatusEnum": PostOptionsYoutube.StatusEnum,
         "PostStatus": PostStatus,
         "PostingTimeSlot.ConfidenceEnum": PostingTimeSlot.ConfidenceEnum,
         "PostingTimesDayIntervalsInnerInner.ConfidenceEnum": PostingTimesDayIntervalsInnerInner.ConfidenceEnum,
         "PostingTimesDaysInner.ConfidenceEnum": PostingTimesDaysInner.ConfidenceEnum,
         "PublicWorkspacePivot.RoleEnum": PublicWorkspacePivot.RoleEnum,
+        "RecyclingRule.TypeEnum": RecyclingRule.TypeEnum,
+        "RecyclingRule.PlacementEnum": RecyclingRule.PlacementEnum,
+        "RecyclingRuleInput.PlacementEnum": RecyclingRuleInput.PlacementEnum,
+        "RecyclingRuleInput.TypeEnum": RecyclingRuleInput.TypeEnum,
+        "RecyclingRuleSettings.PlacementEnum": RecyclingRuleSettings.PlacementEnum,
+        "RecyclingRuleUpdate.PlacementEnum": RecyclingRuleUpdate.PlacementEnum,
+        "RecyclingRun.StatusEnum": RecyclingRun.StatusEnum,
+        "ReportExport.FormatEnum": ReportExport.FormatEnum,
+        "ReportExport.DatasetEnum": ReportExport.DatasetEnum,
+        "ReportExport.StatusEnum": ReportExport.StatusEnum,
+        "ReportExportInput.FormatEnum": ReportExportInput.FormatEnum,
+        "ReportExportInput.DatasetEnum": ReportExportInput.DatasetEnum,
+        "ReportExportInput.PeriodEnum": ReportExportInput.PeriodEnum,
+        "RepurposeInput.SourceTypeEnum": RepurposeInput.SourceTypeEnum,
+        "RepurposeInput.ToneEnum": RepurposeInput.ToneEnum,
+        "RepurposeInput.ContentLengthEnum": RepurposeInput.ContentLengthEnum,
+        "RepurposeInput.HashtagsEnum": RepurposeInput.HashtagsEnum,
+        "RepurposeInput.CtaEnum": RepurposeInput.CtaEnum,
+        "RepurposeResultSource.TypeEnum": RepurposeResultSource.TypeEnum,
+        "ResellerClient.StatusEnum": ResellerClient.StatusEnum,
+        "RssFeed.ModeEnum": RssFeed.ModeEnum,
+        "RssFeedInput.ModeEnum": RssFeedInput.ModeEnum,
+        "RssFeedUpdate.ModeEnum": RssFeedUpdate.ModeEnum,
         "SubscriptionStatus": SubscriptionStatus,
+        "WebhookEventName": WebhookEventName,
+        "WebhookSubscriptionInput.SourceEnum": WebhookSubscriptionInput.SourceEnum,
         "Workspace.AccessStatusEnum": Workspace.AccessStatusEnum,
+        "WorkspaceAgent.TypeEnum": WorkspaceAgent.TypeEnum,
+        "WorkspaceAgent.ScheduleEnum": WorkspaceAgent.ScheduleEnum,
+        "WorkspaceAgentInput.TypeEnum": WorkspaceAgentInput.TypeEnum,
+        "WorkspaceAgentInput.ScheduleEnum": WorkspaceAgentInput.ScheduleEnum,
+        "WorkspaceAgentUpdate.ScheduleEnum": WorkspaceAgentUpdate.ScheduleEnum,
         "WorkspaceInput.AccessStatusEnum": WorkspaceInput.AccessStatusEnum,
         "WorkspaceUserInput.RoleEnum": WorkspaceUserInput.RoleEnum,
 }
 
 let typeMap: {[index: string]: any} = {
     "AICredits": AICredits,
+    "AIUsage": AIUsage,
+    "AIUsageText": AIUsageText,
     "Account": Account,
     "AccountAnalytics": AccountAnalytics,
     "AccountAnalyticsInitialSync": AccountAnalyticsInitialSync,
+    "AccountConnectionHealth": AccountConnectionHealth,
+    "AccountErrorsInner": AccountErrorsInner,
+    "AccountErrorsInnerOneOf": AccountErrorsInnerOneOf,
+    "AccountGroup": AccountGroup,
+    "AccountGroupInput": AccountGroupInput,
+    "AccountHealth": AccountHealth,
+    "AccountHealthDailyCap": AccountHealthDailyCap,
     "AccountSchedule": AccountSchedule,
+    "AddCompetitor202Response": AddCompetitor202Response,
+    "AddCompetitor409Response": AddCompetitor409Response,
     "AddGenericSubscriptionRequest": AddGenericSubscriptionRequest,
     "AddPostToQueueRequest": AddPostToQueueRequest,
+    "AgentPageMeta": AgentPageMeta,
+    "AgentProposal": AgentProposal,
+    "AgentProposalDecision": AgentProposalDecision,
+    "AgentRun": AgentRun,
     "AnalyticsPeriod": AnalyticsPeriod,
     "AnalyticsSummary": AnalyticsSummary,
     "AnalyticsSummaryData": AnalyticsSummaryData,
+    "ApiActivity": ApiActivity,
+    "ApiKey": ApiKey,
+    "ApiKeyInput": ApiKeyInput,
+    "ApproveAgentProposal200Response": ApproveAgentProposal200Response,
+    "ApproveAgentProposal409Response": ApproveAgentProposal409Response,
+    "ApproveInboxReplyDraft403Response": ApproveInboxReplyDraft403Response,
     "ApprovePostRequest": ApprovePostRequest,
     "BestPostingTimes": BestPostingTimes,
     "BestPostingTimesTimesInner": BestPostingTimesTimesInner,
@@ -314,15 +673,40 @@ let typeMap: {[index: string]: any} = {
     "BlogToSocialInput": BlogToSocialInput,
     "BlogToSocialMedia": BlogToSocialMedia,
     "BlogToSocialResponse": BlogToSocialResponse,
+    "BrandVoice": BrandVoice,
+    "BrandVoiceInput": BrandVoiceInput,
+    "BrandVoiceMeta": BrandVoiceMeta,
     "CancelSubscription422Response": CancelSubscription422Response,
     "CancelSubscription422ResponseErrors": CancelSubscription422ResponseErrors,
     "CancelSubscriptionRequest": CancelSubscriptionRequest,
     "ChangeSubscriptionPlanRequest": ChangeSubscriptionPlanRequest,
+    "ChannelAccount": ChannelAccount,
     "CheckoutSubscription200Response": CheckoutSubscription200Response,
     "CheckoutSubscriptionRequest": CheckoutSubscriptionRequest,
+    "CodedError": CodedError,
+    "Competitor": Competitor,
+    "CompetitorDetail": CompetitorDetail,
+    "CompetitorInput": CompetitorInput,
+    "CompetitorMedia": CompetitorMedia,
+    "CompetitorSnapshot": CompetitorSnapshot,
     "CompleteChunkedUploadRequest": CompleteChunkedUploadRequest,
+    "ConnectChannelInput": ConnectChannelInput,
+    "CreateAccountGroup201Response": CreateAccountGroup201Response,
+    "CreateAgent201Response": CreateAgent201Response,
+    "CreateApiKey201Response": CreateApiKey201Response,
+    "CreateApiKey201ResponseData": CreateApiKey201ResponseData,
+    "CreateHashtagGroup201Response": CreateHashtagGroup201Response,
+    "CreateInboxReplyDraft201Response": CreateInboxReplyDraft201Response,
     "CreateMediaFolderRequest": CreateMediaFolderRequest,
     "CreateMention201Response": CreateMention201Response,
+    "CreateRecyclingRule201Response": CreateRecyclingRule201Response,
+    "CreateReportExport201Response": CreateReportExport201Response,
+    "CreateResellerClient201Response": CreateResellerClient201Response,
+    "CreateRssFeed201Response": CreateRssFeed201Response,
+    "CreateTemplate201Response": CreateTemplate201Response,
+    "CreateWebhookSubscription201Response": CreateWebhookSubscription201Response,
+    "CreateWebhookSubscription201ResponseData": CreateWebhookSubscription201ResponseData,
+    "DeleteAgent200Response": DeleteAgent200Response,
     "DeleteMediaBulkRequest": DeleteMediaBulkRequest,
     "DeleteMediaBulkRequestItemsInner": DeleteMediaBulkRequestItemsInner,
     "DeleteMediaFolderRequest": DeleteMediaFolderRequest,
@@ -333,10 +717,20 @@ let typeMap: {[index: string]: any} = {
     "DeleteUser400Response": DeleteUser400Response,
     "DeleteUsersBulkRequest": DeleteUsersBulkRequest,
     "DeleteWorkspacesBulkRequest": DeleteWorkspacesBulkRequest,
+    "GetAccountHealth200Response": GetAccountHealth200Response,
+    "GetBrandVoice200Response": GetBrandVoice200Response,
+    "GetCompetitor200Response": GetCompetitor200Response,
+    "GetInboxConversation200Response": GetInboxConversation200Response,
+    "GetPostingSchedule200Response": GetPostingSchedule200Response,
     "GetRemoteUploadStatus200Response": GetRemoteUploadStatus200Response,
+    "GetReportBranding200Response": GetReportBranding200Response,
+    "GuardrailError": GuardrailError,
+    "HashtagGroup": HashtagGroup,
+    "HashtagGroupInput": HashtagGroupInput,
     "ImageAltText200Response": ImageAltText200Response,
     "ImageAltTextInput": ImageAltTextInput,
     "ImageAltTextResponse": ImageAltTextResponse,
+    "ImageCreditBalance": ImageCreditBalance,
     "ImageEditInput": ImageEditInput,
     "ImageGenerate200Response": ImageGenerate200Response,
     "ImageGenerate429Response": ImageGenerate429Response,
@@ -349,22 +743,53 @@ let typeMap: {[index: string]: any} = {
     "ImageVariations200Response": ImageVariations200Response,
     "ImageVariationsInput": ImageVariationsInput,
     "ImageVariationsResponse": ImageVariationsResponse,
+    "InboxAuthor": InboxAuthor,
+    "InboxConversation": InboxConversation,
+    "InboxConversationAccount": InboxConversationAccount,
+    "InboxConversationUpdate": InboxConversationUpdate,
+    "InboxMessage": InboxMessage,
+    "InboxMessageAuthor": InboxMessageAuthor,
+    "InboxReplyDraft": InboxReplyDraft,
+    "InboxReplyDraftApprove": InboxReplyDraftApprove,
+    "InboxReplyDraftEdit": InboxReplyDraftEdit,
+    "InboxReplyDraftInput": InboxReplyDraftInput,
     "InitiateChunkedUpload201Response": InitiateChunkedUpload201Response,
     "InitiateChunkedUploadRequest": InitiateChunkedUploadRequest,
     "InitiateRemoteUpload201Response": InitiateRemoteUpload201Response,
     "InitiateRemoteUpload201ResponseOneOf": InitiateRemoteUpload201ResponseOneOf,
     "InitiateRemoteUploadRequest": InitiateRemoteUploadRequest,
+    "LearnBrandVoiceInput": LearnBrandVoiceInput,
+    "LearnBrandVoiceResponse": LearnBrandVoiceResponse,
+    "LearnBrandVoiceResponseMeta": LearnBrandVoiceResponseMeta,
+    "ListAccountGroups200Response": ListAccountGroups200Response,
     "ListAccounts200Response": ListAccounts200Response,
+    "ListAgentProposals200Response": ListAgentProposals200Response,
+    "ListAgentRuns200Response": ListAgentRuns200Response,
+    "ListAgents200Response": ListAgents200Response,
+    "ListApiActivity200Response": ListApiActivity200Response,
+    "ListApiKeys200Response": ListApiKeys200Response,
+    "ListCompetitors200Response": ListCompetitors200Response,
+    "ListHashtagGroups200Response": ListHashtagGroups200Response,
+    "ListInboxConversations200Response": ListInboxConversations200Response,
+    "ListInboxReplyDrafts200Response": ListInboxReplyDrafts200Response,
     "ListMedia200Response": ListMedia200Response,
     "ListMediaFolders200Response": ListMediaFolders200Response,
     "ListMentions200Response": ListMentions200Response,
     "ListMyWorkspaces200Response": ListMyWorkspaces200Response,
     "ListPosts200Response": ListPosts200Response,
     "ListReceipts200Response": ListReceipts200Response,
+    "ListRecyclingRules200Response": ListRecyclingRules200Response,
+    "ListRecyclingRuns200Response": ListRecyclingRuns200Response,
+    "ListReportExports200Response": ListReportExports200Response,
+    "ListResellerClients200Response": ListResellerClients200Response,
+    "ListRssFeeds200Response": ListRssFeeds200Response,
     "ListTags200Response": ListTags200Response,
+    "ListTemplates200Response": ListTemplates200Response,
     "ListUsers200Response": ListUsers200Response,
+    "ListWebhookSubscriptions200Response": ListWebhookSubscriptions200Response,
     "ListWorkspaces200Response": ListWorkspaces200Response,
     "Media": Media,
+    "MediaBase64Input": MediaBase64Input,
     "MediaFolder": MediaFolder,
     "MediaFolderInput": MediaFolderInput,
     "MediaFolderRef": MediaFolderRef,
@@ -372,28 +797,65 @@ let typeMap: {[index: string]: any} = {
     "MentionIdentity": MentionIdentity,
     "MentionIdentityInput": MentionIdentityInput,
     "MentionInput": MentionInput,
+    "MessageOnly": MessageOnly,
     "PaginationMeta": PaginationMeta,
     "PaginationMetaLinks": PaginationMetaLinks,
     "PaginationMetaMeta": PaginationMetaMeta,
+    "PollRssFeed200Response": PollRssFeed200Response,
     "Post": Post,
     "PostAnalytics": PostAnalytics,
     "PostContent": PostContent,
     "PostInput": PostInput,
+    "PostOptionsInstagram": PostOptionsInstagram,
+    "PostOptionsTikTok": PostOptionsTikTok,
+    "PostOptionsYoutube": PostOptionsYoutube,
     "PostVersion": PostVersion,
+    "PostVersionOptions": PostVersionOptions,
+    "PostingSchedule": PostingSchedule,
+    "PostingScheduleDay": PostingScheduleDay,
+    "PostingScheduleDayTimesInner": PostingScheduleDayTimesInner,
+    "PostingScheduleInput": PostingScheduleInput,
     "PostingTimeSlot": PostingTimeSlot,
     "PostingTimes": PostingTimes,
     "PostingTimesBestInner": PostingTimesBestInner,
     "PostingTimesDayIntervalsInnerInner": PostingTimesDayIntervalsInnerInner,
     "PostingTimesDaysInner": PostingTimesDaysInner,
+    "PreflightResult": PreflightResult,
     "PublicWorkspace": PublicWorkspace,
     "PublicWorkspacePivot": PublicWorkspacePivot,
     "PublishProgress": PublishProgress,
+    "QueueSlots": QueueSlots,
     "Receipt": Receipt,
     "ReceiptInput": ReceiptInput,
     "ReceiptUpdateInput": ReceiptUpdateInput,
+    "RecommendedPostingTimes": RecommendedPostingTimes,
+    "ReconnectLink": ReconnectLink,
+    "RecyclingRule": RecyclingRule,
+    "RecyclingRuleInput": RecyclingRuleInput,
+    "RecyclingRuleSettings": RecyclingRuleSettings,
+    "RecyclingRuleUpdate": RecyclingRuleUpdate,
+    "RecyclingRun": RecyclingRun,
     "RemoveGenericSubscription422Response": RemoveGenericSubscription422Response,
     "RemoveUserFromWorkspaceRequest": RemoveUserFromWorkspaceRequest,
+    "ReportBranding": ReportBranding,
+    "ReportBrandingInput": ReportBrandingInput,
+    "ReportExport": ReportExport,
+    "ReportExportInput": ReportExportInput,
+    "RepurposeContent200Response": RepurposeContent200Response,
+    "RepurposeInput": RepurposeInput,
+    "RepurposeInputTheme": RepurposeInputTheme,
+    "RepurposeResult": RepurposeResult,
+    "RepurposeResultMedia": RepurposeResultMedia,
+    "RepurposeResultSource": RepurposeResultSource,
+    "RepurposeSlide": RepurposeSlide,
+    "ResellerClient": ResellerClient,
+    "ResellerClientInput": ResellerClientInput,
+    "ResellerClientUsage": ResellerClientUsage,
     "RetryPostAccountResult": RetryPostAccountResult,
+    "RssFeed": RssFeed,
+    "RssFeedInput": RssFeedInput,
+    "RssFeedUpdate": RssFeedUpdate,
+    "RunAgent202Response": RunAgent202Response,
     "SchedulePostRequest": SchedulePostRequest,
     "ScheduleResult": ScheduleResult,
     "Subscription": Subscription,
@@ -401,14 +863,27 @@ let typeMap: {[index: string]: any} = {
     "SubscriptionUpdateInput": SubscriptionUpdateInput,
     "Tag": Tag,
     "TagInput": TagInput,
+    "Template": Template,
+    "TemplateContentItem": TemplateContentItem,
+    "TemplateInput": TemplateInput,
+    "TemplateInputContentInner": TemplateInputContentInner,
     "UpdateMediaRequest": UpdateMediaRequest,
     "UploadChunk201Response": UploadChunk201Response,
     "User": User,
     "UserInput": UserInput,
     "UserUpdateInput": UserUpdateInput,
+    "WebhookEventPayload": WebhookEventPayload,
+    "WebhookSubscription": WebhookSubscription,
+    "WebhookSubscriptionInput": WebhookSubscriptionInput,
     "Workspace": Workspace,
+    "WorkspaceAgent": WorkspaceAgent,
+    "WorkspaceAgentInput": WorkspaceAgentInput,
+    "WorkspaceAgentSettings": WorkspaceAgentSettings,
+    "WorkspaceAgentUpdate": WorkspaceAgentUpdate,
     "WorkspaceInput": WorkspaceInput,
     "WorkspaceUserInput": WorkspaceUserInput,
+    "XUsage": XUsage,
+    "XUsageCounter": XUsageCounter,
 }
 
 // Check if a string starts with another string without using es6 features
