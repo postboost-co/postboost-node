@@ -68,6 +68,7 @@ export * from './createHashtagGroup201Response';
 export * from './createInboxReplyDraft201Response';
 export * from './createMediaFolderRequest';
 export * from './createMention201Response';
+export * from './createPost201Response';
 export * from './createRecyclingRule201Response';
 export * from './createReportExport201Response';
 export * from './createResellerClient201Response';
@@ -183,6 +184,8 @@ export * from './postOptionsYoutube';
 export * from './postStatus';
 export * from './postVersion';
 export * from './postVersionOptions';
+export * from './postWarning';
+export * from './postWarnings';
 export * from './postingSchedule';
 export * from './postingScheduleDay';
 export * from './postingScheduleDayTimesInner';
@@ -245,6 +248,7 @@ export * from './templateContentItem';
 export * from './templateInput';
 export * from './templateInputContentInner';
 export * from './updateMediaRequest';
+export * from './updatePost200Response';
 export * from './uploadChunk201Response';
 export * from './user';
 export * from './userInput';
@@ -344,6 +348,7 @@ import { CreateHashtagGroup201Response } from './createHashtagGroup201Response';
 import { CreateInboxReplyDraft201Response } from './createInboxReplyDraft201Response';
 import { CreateMediaFolderRequest } from './createMediaFolderRequest';
 import { CreateMention201Response } from './createMention201Response';
+import { CreatePost201Response } from './createPost201Response';
 import { CreateRecyclingRule201Response } from './createRecyclingRule201Response';
 import { CreateReportExport201Response } from './createReportExport201Response';
 import { CreateResellerClient201Response } from './createResellerClient201Response';
@@ -459,6 +464,8 @@ import { PostOptionsYoutube } from './postOptionsYoutube';
 import { PostStatus } from './postStatus';
 import { PostVersion } from './postVersion';
 import { PostVersionOptions } from './postVersionOptions';
+import { PostWarning } from './postWarning';
+import { PostWarnings } from './postWarnings';
 import { PostingSchedule } from './postingSchedule';
 import { PostingScheduleDay } from './postingScheduleDay';
 import { PostingScheduleDayTimesInner } from './postingScheduleDayTimesInner';
@@ -521,6 +528,7 @@ import { TemplateContentItem } from './templateContentItem';
 import { TemplateInput } from './templateInput';
 import { TemplateInputContentInner } from './templateInputContentInner';
 import { UpdateMediaRequest } from './updateMediaRequest';
+import { UpdatePost200Response } from './updatePost200Response';
 import { UploadChunk201Response } from './uploadChunk201Response';
 import { User } from './user';
 import { UserInput } from './userInput';
@@ -602,6 +610,7 @@ let enumsMap: {[index: string]: any} = {
         "PostOptionsTikTok.PrivacyLevelEnum": PostOptionsTikTok.PrivacyLevelEnum,
         "PostOptionsYoutube.StatusEnum": PostOptionsYoutube.StatusEnum,
         "PostStatus": PostStatus,
+        "PostWarning.CodeEnum": PostWarning.CodeEnum,
         "PostingTimeSlot.ConfidenceEnum": PostingTimeSlot.ConfidenceEnum,
         "PostingTimesDayIntervalsInnerInner.ConfidenceEnum": PostingTimesDayIntervalsInnerInner.ConfidenceEnum,
         "PostingTimesDaysInner.ConfidenceEnum": PostingTimesDaysInner.ConfidenceEnum,
@@ -711,6 +720,7 @@ let typeMap: {[index: string]: any} = {
     "CreateInboxReplyDraft201Response": CreateInboxReplyDraft201Response,
     "CreateMediaFolderRequest": CreateMediaFolderRequest,
     "CreateMention201Response": CreateMention201Response,
+    "CreatePost201Response": CreatePost201Response,
     "CreateRecyclingRule201Response": CreateRecyclingRule201Response,
     "CreateReportExport201Response": CreateReportExport201Response,
     "CreateResellerClient201Response": CreateResellerClient201Response,
@@ -824,6 +834,8 @@ let typeMap: {[index: string]: any} = {
     "PostOptionsYoutube": PostOptionsYoutube,
     "PostVersion": PostVersion,
     "PostVersionOptions": PostVersionOptions,
+    "PostWarning": PostWarning,
+    "PostWarnings": PostWarnings,
     "PostingSchedule": PostingSchedule,
     "PostingScheduleDay": PostingScheduleDay,
     "PostingScheduleDayTimesInner": PostingScheduleDayTimesInner,
@@ -885,6 +897,7 @@ let typeMap: {[index: string]: any} = {
     "TemplateInput": TemplateInput,
     "TemplateInputContentInner": TemplateInputContentInner,
     "UpdateMediaRequest": UpdateMediaRequest,
+    "UpdatePost200Response": UpdatePost200Response,
     "UploadChunk201Response": UploadChunk201Response,
     "User": User,
     "UserInput": UserInput,
