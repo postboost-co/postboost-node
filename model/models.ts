@@ -88,6 +88,24 @@ export * from './deleteResult';
 export * from './deleteUser400Response';
 export * from './deleteUsersBulkRequest';
 export * from './deleteWorkspacesBulkRequest';
+export * from './freeToolBuildUtmUrlRequest';
+export * from './freeToolBuildUtmUrlResponse';
+export * from './freeToolCalculateEngagementRateRequest';
+export * from './freeToolCalculateEngagementRateResponse';
+export * from './freeToolCountCharactersRequest';
+export * from './freeToolCountCharactersResponse';
+export * from './freeToolCountCharactersResponseNetworksInner';
+export * from './freeToolError';
+export * from './freeToolFormatLinkedInPostRequest';
+export * from './freeToolFormatLinkedInPostResponse';
+export * from './freeToolGenerateFancyTextRequest';
+export * from './freeToolGenerateFancyTextResponse';
+export * from './freeToolGenerateFancyTextResponseStylesInner';
+export * from './freeToolList';
+export * from './freeToolListItem';
+export * from './freeToolSplitThreadRequest';
+export * from './freeToolSplitThreadResponse';
+export * from './freeToolSplitThreadResponsePostsInner';
 export * from './getAccountHealth200Response';
 export * from './getBrandVoice200Response';
 export * from './getCompetitor200Response';
@@ -368,6 +386,24 @@ import { DeleteResult } from './deleteResult';
 import { DeleteUser400Response } from './deleteUser400Response';
 import { DeleteUsersBulkRequest } from './deleteUsersBulkRequest';
 import { DeleteWorkspacesBulkRequest } from './deleteWorkspacesBulkRequest';
+import { FreeToolBuildUtmUrlRequest } from './freeToolBuildUtmUrlRequest';
+import { FreeToolBuildUtmUrlResponse } from './freeToolBuildUtmUrlResponse';
+import { FreeToolCalculateEngagementRateRequest } from './freeToolCalculateEngagementRateRequest';
+import { FreeToolCalculateEngagementRateResponse } from './freeToolCalculateEngagementRateResponse';
+import { FreeToolCountCharactersRequest } from './freeToolCountCharactersRequest';
+import { FreeToolCountCharactersResponse } from './freeToolCountCharactersResponse';
+import { FreeToolCountCharactersResponseNetworksInner } from './freeToolCountCharactersResponseNetworksInner';
+import { FreeToolError } from './freeToolError';
+import { FreeToolFormatLinkedInPostRequest } from './freeToolFormatLinkedInPostRequest';
+import { FreeToolFormatLinkedInPostResponse } from './freeToolFormatLinkedInPostResponse';
+import { FreeToolGenerateFancyTextRequest } from './freeToolGenerateFancyTextRequest';
+import { FreeToolGenerateFancyTextResponse } from './freeToolGenerateFancyTextResponse';
+import { FreeToolGenerateFancyTextResponseStylesInner } from './freeToolGenerateFancyTextResponseStylesInner';
+import { FreeToolList } from './freeToolList';
+import { FreeToolListItem } from './freeToolListItem';
+import { FreeToolSplitThreadRequest } from './freeToolSplitThreadRequest';
+import { FreeToolSplitThreadResponse } from './freeToolSplitThreadResponse';
+import { FreeToolSplitThreadResponsePostsInner } from './freeToolSplitThreadResponsePostsInner';
 import { GetAccountHealth200Response } from './getAccountHealth200Response';
 import { GetBrandVoice200Response } from './getBrandVoice200Response';
 import { GetCompetitor200Response } from './getCompetitor200Response';
@@ -586,6 +622,13 @@ let enumsMap: {[index: string]: any} = {
         "ChannelAccount.ProviderEnum": ChannelAccount.ProviderEnum,
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
         "DeleteMode": DeleteMode,
+        "FreeToolCalculateEngagementRateRequest.MethodEnum": FreeToolCalculateEngagementRateRequest.MethodEnum,
+        "FreeToolCountCharactersRequest.NetworkEnum": FreeToolCountCharactersRequest.NetworkEnum,
+        "FreeToolFormatLinkedInPostRequest.StyleEnum": FreeToolFormatLinkedInPostRequest.StyleEnum,
+        "FreeToolFormatLinkedInPostRequest.ListEnum": FreeToolFormatLinkedInPostRequest.ListEnum,
+        "FreeToolGenerateFancyTextRequest.StyleEnum": FreeToolGenerateFancyTextRequest.StyleEnum,
+        "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
+        "FreeToolSplitThreadRequest.NetworkEnum": FreeToolSplitThreadRequest.NetworkEnum,
         "GetRemoteUploadStatus200Response.StatusEnum": GetRemoteUploadStatus200Response.StatusEnum,
         "GuardrailError.CodeEnum": GuardrailError.CodeEnum,
         "ImageEditInput.AspectRatioEnum": ImageEditInput.AspectRatioEnum,
@@ -739,6 +782,24 @@ let typeMap: {[index: string]: any} = {
     "DeleteUser400Response": DeleteUser400Response,
     "DeleteUsersBulkRequest": DeleteUsersBulkRequest,
     "DeleteWorkspacesBulkRequest": DeleteWorkspacesBulkRequest,
+    "FreeToolBuildUtmUrlRequest": FreeToolBuildUtmUrlRequest,
+    "FreeToolBuildUtmUrlResponse": FreeToolBuildUtmUrlResponse,
+    "FreeToolCalculateEngagementRateRequest": FreeToolCalculateEngagementRateRequest,
+    "FreeToolCalculateEngagementRateResponse": FreeToolCalculateEngagementRateResponse,
+    "FreeToolCountCharactersRequest": FreeToolCountCharactersRequest,
+    "FreeToolCountCharactersResponse": FreeToolCountCharactersResponse,
+    "FreeToolCountCharactersResponseNetworksInner": FreeToolCountCharactersResponseNetworksInner,
+    "FreeToolError": FreeToolError,
+    "FreeToolFormatLinkedInPostRequest": FreeToolFormatLinkedInPostRequest,
+    "FreeToolFormatLinkedInPostResponse": FreeToolFormatLinkedInPostResponse,
+    "FreeToolGenerateFancyTextRequest": FreeToolGenerateFancyTextRequest,
+    "FreeToolGenerateFancyTextResponse": FreeToolGenerateFancyTextResponse,
+    "FreeToolGenerateFancyTextResponseStylesInner": FreeToolGenerateFancyTextResponseStylesInner,
+    "FreeToolList": FreeToolList,
+    "FreeToolListItem": FreeToolListItem,
+    "FreeToolSplitThreadRequest": FreeToolSplitThreadRequest,
+    "FreeToolSplitThreadResponse": FreeToolSplitThreadResponse,
+    "FreeToolSplitThreadResponsePostsInner": FreeToolSplitThreadResponsePostsInner,
     "GetAccountHealth200Response": GetAccountHealth200Response,
     "GetBrandVoice200Response": GetBrandVoice200Response,
     "GetCompetitor200Response": GetCompetitor200Response,

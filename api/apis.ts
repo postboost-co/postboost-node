@@ -12,6 +12,8 @@ export * from './analyticsApi';
 import { AnalyticsApi } from './analyticsApi';
 export * from './competitorsApi';
 import { CompetitorsApi } from './competitorsApi';
+export * from './freeToolsApi';
+import { FreeToolsApi } from './freeToolsApi';
 export * from './hashtagGroupsApi';
 import { HashtagGroupsApi } from './hashtagGroupsApi';
 export * from './inboxApi';
@@ -49,4 +51,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [AIApi, AccountGroupsApi, AccountsApi, ActivityApi, AgentsApi, AnalyticsApi, CompetitorsApi, HashtagGroupsApi, InboxApi, MediaApi, MentionsApi, PostingScheduleApi, PostsApi, ReceiptsApi, SubscriptionsApi, TagsApi, TemplatesApi, UsersApi, WebhooksApi, WorkspacesApi];
+export const APIS = [AIApi, AccountGroupsApi, AccountsApi, ActivityApi, AgentsApi, AnalyticsApi, CompetitorsApi, FreeToolsApi, HashtagGroupsApi, InboxApi, MediaApi, MentionsApi, PostingScheduleApi, PostsApi, ReceiptsApi, SubscriptionsApi, TagsApi, TemplatesApi, UsersApi, WebhooksApi, WorkspacesApi];
