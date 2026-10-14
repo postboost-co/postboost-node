@@ -94,6 +94,7 @@ export * from './getInboxConversation200Response';
 export * from './getPostingSchedule200Response';
 export * from './getRemoteUploadStatus200Response';
 export * from './getReportBranding200Response';
+export * from './getRepurposeRun200Response';
 export * from './guardrailError';
 export * from './hashtagGroup';
 export * from './hashtagGroupInput';
@@ -213,11 +214,15 @@ export * from './reportBrandingInput';
 export * from './reportExport';
 export * from './reportExportInput';
 export * from './repurposeContent200Response';
+export * from './repurposeContent202Response';
+export * from './repurposeContent500Response';
 export * from './repurposeInput';
 export * from './repurposeInputTheme';
 export * from './repurposeResult';
 export * from './repurposeResultMedia';
 export * from './repurposeResultSource';
+export * from './repurposeRun';
+export * from './repurposeRunAccepted';
 export * from './repurposeSlide';
 export * from './resellerClient';
 export * from './resellerClientInput';
@@ -365,6 +370,7 @@ import { GetInboxConversation200Response } from './getInboxConversation200Respon
 import { GetPostingSchedule200Response } from './getPostingSchedule200Response';
 import { GetRemoteUploadStatus200Response } from './getRemoteUploadStatus200Response';
 import { GetReportBranding200Response } from './getReportBranding200Response';
+import { GetRepurposeRun200Response } from './getRepurposeRun200Response';
 import { GuardrailError } from './guardrailError';
 import { HashtagGroup } from './hashtagGroup';
 import { HashtagGroupInput } from './hashtagGroupInput';
@@ -484,11 +490,15 @@ import { ReportBrandingInput } from './reportBrandingInput';
 import { ReportExport } from './reportExport';
 import { ReportExportInput } from './reportExportInput';
 import { RepurposeContent200Response } from './repurposeContent200Response';
+import { RepurposeContent202Response } from './repurposeContent202Response';
+import { RepurposeContent500Response } from './repurposeContent500Response';
 import { RepurposeInput } from './repurposeInput';
 import { RepurposeInputTheme } from './repurposeInputTheme';
 import { RepurposeResult } from './repurposeResult';
 import { RepurposeResultMedia } from './repurposeResultMedia';
 import { RepurposeResultSource } from './repurposeResultSource';
+import { RepurposeRun } from './repurposeRun';
+import { RepurposeRunAccepted } from './repurposeRunAccepted';
 import { RepurposeSlide } from './repurposeSlide';
 import { ResellerClient } from './resellerClient';
 import { ResellerClientInput } from './resellerClientInput';
@@ -615,6 +625,8 @@ let enumsMap: {[index: string]: any} = {
         "RepurposeInput.HashtagsEnum": RepurposeInput.HashtagsEnum,
         "RepurposeInput.CtaEnum": RepurposeInput.CtaEnum,
         "RepurposeResultSource.TypeEnum": RepurposeResultSource.TypeEnum,
+        "RepurposeRun.StatusEnum": RepurposeRun.StatusEnum,
+        "RepurposeRunAccepted.StatusEnum": RepurposeRunAccepted.StatusEnum,
         "ResellerClient.StatusEnum": ResellerClient.StatusEnum,
         "RssFeed.ModeEnum": RssFeed.ModeEnum,
         "RssFeedInput.ModeEnum": RssFeedInput.ModeEnum,
@@ -724,6 +736,7 @@ let typeMap: {[index: string]: any} = {
     "GetPostingSchedule200Response": GetPostingSchedule200Response,
     "GetRemoteUploadStatus200Response": GetRemoteUploadStatus200Response,
     "GetReportBranding200Response": GetReportBranding200Response,
+    "GetRepurposeRun200Response": GetRepurposeRun200Response,
     "GuardrailError": GuardrailError,
     "HashtagGroup": HashtagGroup,
     "HashtagGroupInput": HashtagGroupInput,
@@ -842,11 +855,15 @@ let typeMap: {[index: string]: any} = {
     "ReportExport": ReportExport,
     "ReportExportInput": ReportExportInput,
     "RepurposeContent200Response": RepurposeContent200Response,
+    "RepurposeContent202Response": RepurposeContent202Response,
+    "RepurposeContent500Response": RepurposeContent500Response,
     "RepurposeInput": RepurposeInput,
     "RepurposeInputTheme": RepurposeInputTheme,
     "RepurposeResult": RepurposeResult,
     "RepurposeResultMedia": RepurposeResultMedia,
     "RepurposeResultSource": RepurposeResultSource,
+    "RepurposeRun": RepurposeRun,
+    "RepurposeRunAccepted": RepurposeRunAccepted,
     "RepurposeSlide": RepurposeSlide,
     "ResellerClient": ResellerClient,
     "ResellerClientInput": ResellerClientInput,
