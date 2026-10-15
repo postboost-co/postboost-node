@@ -109,9 +109,13 @@ export * from './freeToolCountCharactersResponseNetworksInner';
 export * from './freeToolError';
 export * from './freeToolFormatLinkedInPostRequest';
 export * from './freeToolFormatLinkedInPostResponse';
+export * from './freeToolGenerateCaptionRequest';
+export * from './freeToolGenerateCaptionResponse';
 export * from './freeToolGenerateFancyTextRequest';
 export * from './freeToolGenerateFancyTextResponse';
 export * from './freeToolGenerateFancyTextResponseStylesInner';
+export * from './freeToolGenerateHashtagsRequest';
+export * from './freeToolGenerateHashtagsResponse';
 export * from './freeToolList';
 export * from './freeToolListItem';
 export * from './freeToolSplitThreadRequest';
@@ -418,9 +422,13 @@ import { FreeToolCountCharactersResponseNetworksInner } from './freeToolCountCha
 import { FreeToolError } from './freeToolError';
 import { FreeToolFormatLinkedInPostRequest } from './freeToolFormatLinkedInPostRequest';
 import { FreeToolFormatLinkedInPostResponse } from './freeToolFormatLinkedInPostResponse';
+import { FreeToolGenerateCaptionRequest } from './freeToolGenerateCaptionRequest';
+import { FreeToolGenerateCaptionResponse } from './freeToolGenerateCaptionResponse';
 import { FreeToolGenerateFancyTextRequest } from './freeToolGenerateFancyTextRequest';
 import { FreeToolGenerateFancyTextResponse } from './freeToolGenerateFancyTextResponse';
 import { FreeToolGenerateFancyTextResponseStylesInner } from './freeToolGenerateFancyTextResponseStylesInner';
+import { FreeToolGenerateHashtagsRequest } from './freeToolGenerateHashtagsRequest';
+import { FreeToolGenerateHashtagsResponse } from './freeToolGenerateHashtagsResponse';
 import { FreeToolList } from './freeToolList';
 import { FreeToolListItem } from './freeToolListItem';
 import { FreeToolSplitThreadRequest } from './freeToolSplitThreadRequest';
@@ -653,7 +661,11 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolCountCharactersRequest.NetworkEnum": FreeToolCountCharactersRequest.NetworkEnum,
         "FreeToolFormatLinkedInPostRequest.StyleEnum": FreeToolFormatLinkedInPostRequest.StyleEnum,
         "FreeToolFormatLinkedInPostRequest.ListEnum": FreeToolFormatLinkedInPostRequest.ListEnum,
+        "FreeToolGenerateCaptionRequest.ToneEnum": FreeToolGenerateCaptionRequest.ToneEnum,
+        "FreeToolGenerateCaptionRequest.LengthEnum": FreeToolGenerateCaptionRequest.LengthEnum,
+        "FreeToolGenerateCaptionRequest.NetworkEnum": FreeToolGenerateCaptionRequest.NetworkEnum,
         "FreeToolGenerateFancyTextRequest.StyleEnum": FreeToolGenerateFancyTextRequest.StyleEnum,
+        "FreeToolGenerateHashtagsRequest.NetworkEnum": FreeToolGenerateHashtagsRequest.NetworkEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
         "FreeToolSplitThreadRequest.NetworkEnum": FreeToolSplitThreadRequest.NetworkEnum,
         "GetRemoteUploadStatus200Response.StatusEnum": GetRemoteUploadStatus200Response.StatusEnum,
@@ -830,9 +842,13 @@ let typeMap: {[index: string]: any} = {
     "FreeToolError": FreeToolError,
     "FreeToolFormatLinkedInPostRequest": FreeToolFormatLinkedInPostRequest,
     "FreeToolFormatLinkedInPostResponse": FreeToolFormatLinkedInPostResponse,
+    "FreeToolGenerateCaptionRequest": FreeToolGenerateCaptionRequest,
+    "FreeToolGenerateCaptionResponse": FreeToolGenerateCaptionResponse,
     "FreeToolGenerateFancyTextRequest": FreeToolGenerateFancyTextRequest,
     "FreeToolGenerateFancyTextResponse": FreeToolGenerateFancyTextResponse,
     "FreeToolGenerateFancyTextResponseStylesInner": FreeToolGenerateFancyTextResponseStylesInner,
+    "FreeToolGenerateHashtagsRequest": FreeToolGenerateHashtagsRequest,
+    "FreeToolGenerateHashtagsResponse": FreeToolGenerateHashtagsResponse,
     "FreeToolList": FreeToolList,
     "FreeToolListItem": FreeToolListItem,
     "FreeToolSplitThreadRequest": FreeToolSplitThreadRequest,
