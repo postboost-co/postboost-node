@@ -94,6 +94,10 @@ export * from './freeToolBuildUtmUrlRequest';
 export * from './freeToolBuildUtmUrlResponse';
 export * from './freeToolCalculateEngagementRateRequest';
 export * from './freeToolCalculateEngagementRateResponse';
+export * from './freeToolCleanTextRequest';
+export * from './freeToolCleanTextResponse';
+export * from './freeToolCleanTextResponseChangesInner';
+export * from './freeToolCleanTextResponseFlagsInner';
 export * from './freeToolCountCharactersRequest';
 export * from './freeToolCountCharactersResponse';
 export * from './freeToolCountCharactersResponseNetworksInner';
@@ -394,6 +398,10 @@ import { FreeToolBuildUtmUrlRequest } from './freeToolBuildUtmUrlRequest';
 import { FreeToolBuildUtmUrlResponse } from './freeToolBuildUtmUrlResponse';
 import { FreeToolCalculateEngagementRateRequest } from './freeToolCalculateEngagementRateRequest';
 import { FreeToolCalculateEngagementRateResponse } from './freeToolCalculateEngagementRateResponse';
+import { FreeToolCleanTextRequest } from './freeToolCleanTextRequest';
+import { FreeToolCleanTextResponse } from './freeToolCleanTextResponse';
+import { FreeToolCleanTextResponseChangesInner } from './freeToolCleanTextResponseChangesInner';
+import { FreeToolCleanTextResponseFlagsInner } from './freeToolCleanTextResponseFlagsInner';
 import { FreeToolCountCharactersRequest } from './freeToolCountCharactersRequest';
 import { FreeToolCountCharactersResponse } from './freeToolCountCharactersResponse';
 import { FreeToolCountCharactersResponseNetworksInner } from './freeToolCountCharactersResponseNetworksInner';
@@ -628,6 +636,8 @@ let enumsMap: {[index: string]: any} = {
         "CreateConnectLinkRequest.ProviderEnum": CreateConnectLinkRequest.ProviderEnum,
         "DeleteMode": DeleteMode,
         "FreeToolCalculateEngagementRateRequest.MethodEnum": FreeToolCalculateEngagementRateRequest.MethodEnum,
+        "FreeToolCleanTextRequest.DashesEnum": FreeToolCleanTextRequest.DashesEnum,
+        "FreeToolCleanTextResponseChangesInner.TypeEnum": FreeToolCleanTextResponseChangesInner.TypeEnum,
         "FreeToolCountCharactersRequest.NetworkEnum": FreeToolCountCharactersRequest.NetworkEnum,
         "FreeToolFormatLinkedInPostRequest.StyleEnum": FreeToolFormatLinkedInPostRequest.StyleEnum,
         "FreeToolFormatLinkedInPostRequest.ListEnum": FreeToolFormatLinkedInPostRequest.ListEnum,
@@ -793,6 +803,10 @@ let typeMap: {[index: string]: any} = {
     "FreeToolBuildUtmUrlResponse": FreeToolBuildUtmUrlResponse,
     "FreeToolCalculateEngagementRateRequest": FreeToolCalculateEngagementRateRequest,
     "FreeToolCalculateEngagementRateResponse": FreeToolCalculateEngagementRateResponse,
+    "FreeToolCleanTextRequest": FreeToolCleanTextRequest,
+    "FreeToolCleanTextResponse": FreeToolCleanTextResponse,
+    "FreeToolCleanTextResponseChangesInner": FreeToolCleanTextResponseChangesInner,
+    "FreeToolCleanTextResponseFlagsInner": FreeToolCleanTextResponseFlagsInner,
     "FreeToolCountCharactersRequest": FreeToolCountCharactersRequest,
     "FreeToolCountCharactersResponse": FreeToolCountCharactersResponse,
     "FreeToolCountCharactersResponseNetworksInner": FreeToolCountCharactersResponseNetworksInner,
