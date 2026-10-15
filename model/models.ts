@@ -92,6 +92,11 @@ export * from './deleteUsersBulkRequest';
 export * from './deleteWorkspacesBulkRequest';
 export * from './freeToolBuildUtmUrlRequest';
 export * from './freeToolBuildUtmUrlResponse';
+export * from './freeToolCalculateCropRequest';
+export * from './freeToolCalculateCropResponse';
+export * from './freeToolCalculateCropResponseCrop';
+export * from './freeToolCalculateCropResponseImage';
+export * from './freeToolCalculateCropResponseOutput';
 export * from './freeToolCalculateEngagementRateRequest';
 export * from './freeToolCalculateEngagementRateResponse';
 export * from './freeToolCheckPostRequest';
@@ -116,6 +121,11 @@ export * from './freeToolGenerateFancyTextResponse';
 export * from './freeToolGenerateFancyTextResponseStylesInner';
 export * from './freeToolGenerateHashtagsRequest';
 export * from './freeToolGenerateHashtagsResponse';
+export * from './freeToolGetBestTimesToPostResponse';
+export * from './freeToolGetBestTimesToPostResponseNetworksInner';
+export * from './freeToolGetImageSizesResponse';
+export * from './freeToolGetImageSizesResponseSizesInner';
+export * from './freeToolGetImageSizesResponseSourcesInner';
 export * from './freeToolList';
 export * from './freeToolListItem';
 export * from './freeToolSplitThreadRequest';
@@ -405,6 +415,11 @@ import { DeleteUsersBulkRequest } from './deleteUsersBulkRequest';
 import { DeleteWorkspacesBulkRequest } from './deleteWorkspacesBulkRequest';
 import { FreeToolBuildUtmUrlRequest } from './freeToolBuildUtmUrlRequest';
 import { FreeToolBuildUtmUrlResponse } from './freeToolBuildUtmUrlResponse';
+import { FreeToolCalculateCropRequest } from './freeToolCalculateCropRequest';
+import { FreeToolCalculateCropResponse } from './freeToolCalculateCropResponse';
+import { FreeToolCalculateCropResponseCrop } from './freeToolCalculateCropResponseCrop';
+import { FreeToolCalculateCropResponseImage } from './freeToolCalculateCropResponseImage';
+import { FreeToolCalculateCropResponseOutput } from './freeToolCalculateCropResponseOutput';
 import { FreeToolCalculateEngagementRateRequest } from './freeToolCalculateEngagementRateRequest';
 import { FreeToolCalculateEngagementRateResponse } from './freeToolCalculateEngagementRateResponse';
 import { FreeToolCheckPostRequest } from './freeToolCheckPostRequest';
@@ -429,6 +444,11 @@ import { FreeToolGenerateFancyTextResponse } from './freeToolGenerateFancyTextRe
 import { FreeToolGenerateFancyTextResponseStylesInner } from './freeToolGenerateFancyTextResponseStylesInner';
 import { FreeToolGenerateHashtagsRequest } from './freeToolGenerateHashtagsRequest';
 import { FreeToolGenerateHashtagsResponse } from './freeToolGenerateHashtagsResponse';
+import { FreeToolGetBestTimesToPostResponse } from './freeToolGetBestTimesToPostResponse';
+import { FreeToolGetBestTimesToPostResponseNetworksInner } from './freeToolGetBestTimesToPostResponseNetworksInner';
+import { FreeToolGetImageSizesResponse } from './freeToolGetImageSizesResponse';
+import { FreeToolGetImageSizesResponseSizesInner } from './freeToolGetImageSizesResponseSizesInner';
+import { FreeToolGetImageSizesResponseSourcesInner } from './freeToolGetImageSizesResponseSourcesInner';
 import { FreeToolList } from './freeToolList';
 import { FreeToolListItem } from './freeToolListItem';
 import { FreeToolSplitThreadRequest } from './freeToolSplitThreadRequest';
@@ -653,6 +673,7 @@ let enumsMap: {[index: string]: any} = {
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
         "CreateConnectLinkRequest.ProviderEnum": CreateConnectLinkRequest.ProviderEnum,
         "DeleteMode": DeleteMode,
+        "FreeToolCalculateCropRequest.FitEnum": FreeToolCalculateCropRequest.FitEnum,
         "FreeToolCalculateEngagementRateRequest.MethodEnum": FreeToolCalculateEngagementRateRequest.MethodEnum,
         "FreeToolCheckPostRequest.NetworksEnum": FreeToolCheckPostRequest.NetworksEnum,
         "FreeToolCheckPostRequestMedia.TypeEnum": FreeToolCheckPostRequestMedia.TypeEnum,
@@ -826,6 +847,11 @@ let typeMap: {[index: string]: any} = {
     "DeleteWorkspacesBulkRequest": DeleteWorkspacesBulkRequest,
     "FreeToolBuildUtmUrlRequest": FreeToolBuildUtmUrlRequest,
     "FreeToolBuildUtmUrlResponse": FreeToolBuildUtmUrlResponse,
+    "FreeToolCalculateCropRequest": FreeToolCalculateCropRequest,
+    "FreeToolCalculateCropResponse": FreeToolCalculateCropResponse,
+    "FreeToolCalculateCropResponseCrop": FreeToolCalculateCropResponseCrop,
+    "FreeToolCalculateCropResponseImage": FreeToolCalculateCropResponseImage,
+    "FreeToolCalculateCropResponseOutput": FreeToolCalculateCropResponseOutput,
     "FreeToolCalculateEngagementRateRequest": FreeToolCalculateEngagementRateRequest,
     "FreeToolCalculateEngagementRateResponse": FreeToolCalculateEngagementRateResponse,
     "FreeToolCheckPostRequest": FreeToolCheckPostRequest,
@@ -850,6 +876,11 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGenerateFancyTextResponseStylesInner": FreeToolGenerateFancyTextResponseStylesInner,
     "FreeToolGenerateHashtagsRequest": FreeToolGenerateHashtagsRequest,
     "FreeToolGenerateHashtagsResponse": FreeToolGenerateHashtagsResponse,
+    "FreeToolGetBestTimesToPostResponse": FreeToolGetBestTimesToPostResponse,
+    "FreeToolGetBestTimesToPostResponseNetworksInner": FreeToolGetBestTimesToPostResponseNetworksInner,
+    "FreeToolGetImageSizesResponse": FreeToolGetImageSizesResponse,
+    "FreeToolGetImageSizesResponseSizesInner": FreeToolGetImageSizesResponseSizesInner,
+    "FreeToolGetImageSizesResponseSourcesInner": FreeToolGetImageSizesResponseSourcesInner,
     "FreeToolList": FreeToolList,
     "FreeToolListItem": FreeToolListItem,
     "FreeToolSplitThreadRequest": FreeToolSplitThreadRequest,
