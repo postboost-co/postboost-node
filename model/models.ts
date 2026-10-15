@@ -7,6 +7,7 @@ export * from './account';
 export * from './accountAnalytics';
 export * from './accountAnalyticsInitialSync';
 export * from './accountConnectionHealth';
+export * from './accountConnectionHealthReconnectReason';
 export * from './accountErrorsInner';
 export * from './accountErrorsInnerOneOf';
 export * from './accountGroup';
@@ -330,6 +331,7 @@ import { Account } from './account';
 import { AccountAnalytics } from './accountAnalytics';
 import { AccountAnalyticsInitialSync } from './accountAnalyticsInitialSync';
 import { AccountConnectionHealth } from './accountConnectionHealth';
+import { AccountConnectionHealthReconnectReason } from './accountConnectionHealthReconnectReason';
 import { AccountErrorsInner } from './accountErrorsInner';
 import { AccountErrorsInnerOneOf } from './accountErrorsInnerOneOf';
 import { AccountGroup } from './accountGroup';
@@ -765,6 +767,7 @@ let typeMap: {[index: string]: any} = {
     "AccountAnalytics": AccountAnalytics,
     "AccountAnalyticsInitialSync": AccountAnalyticsInitialSync,
     "AccountConnectionHealth": AccountConnectionHealth,
+    "AccountConnectionHealthReconnectReason": AccountConnectionHealthReconnectReason,
     "AccountErrorsInner": AccountErrorsInner,
     "AccountErrorsInnerOneOf": AccountErrorsInnerOneOf,
     "AccountGroup": AccountGroup,
