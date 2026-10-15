@@ -60,10 +60,12 @@ export * from './competitorMedia';
 export * from './competitorSnapshot';
 export * from './completeChunkedUploadRequest';
 export * from './connectChannelInput';
+export * from './connectLink';
 export * from './createAccountGroup201Response';
 export * from './createAgent201Response';
 export * from './createApiKey201Response';
 export * from './createApiKey201ResponseData';
+export * from './createConnectLinkRequest';
 export * from './createHashtagGroup201Response';
 export * from './createInboxReplyDraft201Response';
 export * from './createMediaFolderRequest';
@@ -358,10 +360,12 @@ import { CompetitorMedia } from './competitorMedia';
 import { CompetitorSnapshot } from './competitorSnapshot';
 import { CompleteChunkedUploadRequest } from './completeChunkedUploadRequest';
 import { ConnectChannelInput } from './connectChannelInput';
+import { ConnectLink } from './connectLink';
 import { CreateAccountGroup201Response } from './createAccountGroup201Response';
 import { CreateAgent201Response } from './createAgent201Response';
 import { CreateApiKey201Response } from './createApiKey201Response';
 import { CreateApiKey201ResponseData } from './createApiKey201ResponseData';
+import { CreateConnectLinkRequest } from './createConnectLinkRequest';
 import { CreateHashtagGroup201Response } from './createHashtagGroup201Response';
 import { CreateInboxReplyDraft201Response } from './createInboxReplyDraft201Response';
 import { CreateMediaFolderRequest } from './createMediaFolderRequest';
@@ -621,6 +625,7 @@ let enumsMap: {[index: string]: any} = {
         "ChangeSubscriptionPlanRequest.CycleEnum": ChangeSubscriptionPlanRequest.CycleEnum,
         "ChannelAccount.ProviderEnum": ChannelAccount.ProviderEnum,
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
+        "CreateConnectLinkRequest.ProviderEnum": CreateConnectLinkRequest.ProviderEnum,
         "DeleteMode": DeleteMode,
         "FreeToolCalculateEngagementRateRequest.MethodEnum": FreeToolCalculateEngagementRateRequest.MethodEnum,
         "FreeToolCountCharactersRequest.NetworkEnum": FreeToolCountCharactersRequest.NetworkEnum,
@@ -755,10 +760,12 @@ let typeMap: {[index: string]: any} = {
     "CompetitorSnapshot": CompetitorSnapshot,
     "CompleteChunkedUploadRequest": CompleteChunkedUploadRequest,
     "ConnectChannelInput": ConnectChannelInput,
+    "ConnectLink": ConnectLink,
     "CreateAccountGroup201Response": CreateAccountGroup201Response,
     "CreateAgent201Response": CreateAgent201Response,
     "CreateApiKey201Response": CreateApiKey201Response,
     "CreateApiKey201ResponseData": CreateApiKey201ResponseData,
+    "CreateConnectLinkRequest": CreateConnectLinkRequest,
     "CreateHashtagGroup201Response": CreateHashtagGroup201Response,
     "CreateInboxReplyDraft201Response": CreateInboxReplyDraft201Response,
     "CreateMediaFolderRequest": CreateMediaFolderRequest,
