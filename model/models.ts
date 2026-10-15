@@ -665,6 +665,7 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGenerateCaptionRequest.LengthEnum": FreeToolGenerateCaptionRequest.LengthEnum,
         "FreeToolGenerateCaptionRequest.NetworkEnum": FreeToolGenerateCaptionRequest.NetworkEnum,
         "FreeToolGenerateFancyTextRequest.StyleEnum": FreeToolGenerateFancyTextRequest.StyleEnum,
+        "FreeToolGenerateHashtagsRequest.NicheEnum": FreeToolGenerateHashtagsRequest.NicheEnum,
         "FreeToolGenerateHashtagsRequest.NetworkEnum": FreeToolGenerateHashtagsRequest.NetworkEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
         "FreeToolSplitThreadRequest.NetworkEnum": FreeToolSplitThreadRequest.NetworkEnum,
