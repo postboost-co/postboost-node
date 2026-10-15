@@ -94,6 +94,11 @@ export * from './freeToolBuildUtmUrlRequest';
 export * from './freeToolBuildUtmUrlResponse';
 export * from './freeToolCalculateEngagementRateRequest';
 export * from './freeToolCalculateEngagementRateResponse';
+export * from './freeToolCheckPostRequest';
+export * from './freeToolCheckPostRequestMedia';
+export * from './freeToolCheckPostResponse';
+export * from './freeToolCheckPostResponseNetworksInner';
+export * from './freeToolCheckPostResponseNetworksInnerErrorsInner';
 export * from './freeToolCleanTextRequest';
 export * from './freeToolCleanTextResponse';
 export * from './freeToolCleanTextResponseChangesInner';
@@ -398,6 +403,11 @@ import { FreeToolBuildUtmUrlRequest } from './freeToolBuildUtmUrlRequest';
 import { FreeToolBuildUtmUrlResponse } from './freeToolBuildUtmUrlResponse';
 import { FreeToolCalculateEngagementRateRequest } from './freeToolCalculateEngagementRateRequest';
 import { FreeToolCalculateEngagementRateResponse } from './freeToolCalculateEngagementRateResponse';
+import { FreeToolCheckPostRequest } from './freeToolCheckPostRequest';
+import { FreeToolCheckPostRequestMedia } from './freeToolCheckPostRequestMedia';
+import { FreeToolCheckPostResponse } from './freeToolCheckPostResponse';
+import { FreeToolCheckPostResponseNetworksInner } from './freeToolCheckPostResponseNetworksInner';
+import { FreeToolCheckPostResponseNetworksInnerErrorsInner } from './freeToolCheckPostResponseNetworksInnerErrorsInner';
 import { FreeToolCleanTextRequest } from './freeToolCleanTextRequest';
 import { FreeToolCleanTextResponse } from './freeToolCleanTextResponse';
 import { FreeToolCleanTextResponseChangesInner } from './freeToolCleanTextResponseChangesInner';
@@ -636,6 +646,8 @@ let enumsMap: {[index: string]: any} = {
         "CreateConnectLinkRequest.ProviderEnum": CreateConnectLinkRequest.ProviderEnum,
         "DeleteMode": DeleteMode,
         "FreeToolCalculateEngagementRateRequest.MethodEnum": FreeToolCalculateEngagementRateRequest.MethodEnum,
+        "FreeToolCheckPostRequest.NetworksEnum": FreeToolCheckPostRequest.NetworksEnum,
+        "FreeToolCheckPostRequestMedia.TypeEnum": FreeToolCheckPostRequestMedia.TypeEnum,
         "FreeToolCleanTextRequest.DashesEnum": FreeToolCleanTextRequest.DashesEnum,
         "FreeToolCleanTextResponseChangesInner.TypeEnum": FreeToolCleanTextResponseChangesInner.TypeEnum,
         "FreeToolCountCharactersRequest.NetworkEnum": FreeToolCountCharactersRequest.NetworkEnum,
@@ -803,6 +815,11 @@ let typeMap: {[index: string]: any} = {
     "FreeToolBuildUtmUrlResponse": FreeToolBuildUtmUrlResponse,
     "FreeToolCalculateEngagementRateRequest": FreeToolCalculateEngagementRateRequest,
     "FreeToolCalculateEngagementRateResponse": FreeToolCalculateEngagementRateResponse,
+    "FreeToolCheckPostRequest": FreeToolCheckPostRequest,
+    "FreeToolCheckPostRequestMedia": FreeToolCheckPostRequestMedia,
+    "FreeToolCheckPostResponse": FreeToolCheckPostResponse,
+    "FreeToolCheckPostResponseNetworksInner": FreeToolCheckPostResponseNetworksInner,
+    "FreeToolCheckPostResponseNetworksInnerErrorsInner": FreeToolCheckPostResponseNetworksInnerErrorsInner,
     "FreeToolCleanTextRequest": FreeToolCleanTextRequest,
     "FreeToolCleanTextResponse": FreeToolCleanTextResponse,
     "FreeToolCleanTextResponseChangesInner": FreeToolCleanTextResponseChangesInner,
