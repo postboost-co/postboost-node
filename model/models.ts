@@ -115,6 +115,9 @@ export * from './freeToolCheckPostRequestMedia';
 export * from './freeToolCheckPostResponse';
 export * from './freeToolCheckPostResponseNetworksInner';
 export * from './freeToolCheckPostResponseNetworksInnerErrorsInner';
+export * from './freeToolCheckYoutubeThumbnailRequest';
+export * from './freeToolCheckYoutubeThumbnailResponse';
+export * from './freeToolCheckYoutubeThumbnailResponseChecksInner';
 export * from './freeToolCleanTextRequest';
 export * from './freeToolCleanTextResponse';
 export * from './freeToolCleanTextResponseChangesInner';
@@ -145,6 +148,9 @@ export * from './freeToolGetHookTemplatesResponseHooksInner';
 export * from './freeToolGetImageSizesResponse';
 export * from './freeToolGetImageSizesResponseSizesInner';
 export * from './freeToolGetImageSizesResponseSourcesInner';
+export * from './freeToolGetVideoSpecsResponse';
+export * from './freeToolGetVideoSpecsResponseSpecsInner';
+export * from './freeToolGetVideoSpecsResponseSpecsInnerLimits';
 export * from './freeToolList';
 export * from './freeToolListItem';
 export * from './freeToolPreviewPostRequest';
@@ -461,6 +467,9 @@ import { FreeToolCheckPostRequestMedia } from './freeToolCheckPostRequestMedia';
 import { FreeToolCheckPostResponse } from './freeToolCheckPostResponse';
 import { FreeToolCheckPostResponseNetworksInner } from './freeToolCheckPostResponseNetworksInner';
 import { FreeToolCheckPostResponseNetworksInnerErrorsInner } from './freeToolCheckPostResponseNetworksInnerErrorsInner';
+import { FreeToolCheckYoutubeThumbnailRequest } from './freeToolCheckYoutubeThumbnailRequest';
+import { FreeToolCheckYoutubeThumbnailResponse } from './freeToolCheckYoutubeThumbnailResponse';
+import { FreeToolCheckYoutubeThumbnailResponseChecksInner } from './freeToolCheckYoutubeThumbnailResponseChecksInner';
 import { FreeToolCleanTextRequest } from './freeToolCleanTextRequest';
 import { FreeToolCleanTextResponse } from './freeToolCleanTextResponse';
 import { FreeToolCleanTextResponseChangesInner } from './freeToolCleanTextResponseChangesInner';
@@ -491,6 +500,9 @@ import { FreeToolGetHookTemplatesResponseHooksInner } from './freeToolGetHookTem
 import { FreeToolGetImageSizesResponse } from './freeToolGetImageSizesResponse';
 import { FreeToolGetImageSizesResponseSizesInner } from './freeToolGetImageSizesResponseSizesInner';
 import { FreeToolGetImageSizesResponseSourcesInner } from './freeToolGetImageSizesResponseSourcesInner';
+import { FreeToolGetVideoSpecsResponse } from './freeToolGetVideoSpecsResponse';
+import { FreeToolGetVideoSpecsResponseSpecsInner } from './freeToolGetVideoSpecsResponseSpecsInner';
+import { FreeToolGetVideoSpecsResponseSpecsInnerLimits } from './freeToolGetVideoSpecsResponseSpecsInnerLimits';
 import { FreeToolList } from './freeToolList';
 import { FreeToolListItem } from './freeToolListItem';
 import { FreeToolPreviewPostRequest } from './freeToolPreviewPostRequest';
@@ -725,6 +737,8 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolCheckLinkPreviewResponseImage.SourceEnum": FreeToolCheckLinkPreviewResponseImage.SourceEnum,
         "FreeToolCheckPostRequest.NetworksEnum": FreeToolCheckPostRequest.NetworksEnum,
         "FreeToolCheckPostRequestMedia.TypeEnum": FreeToolCheckPostRequestMedia.TypeEnum,
+        "FreeToolCheckYoutubeThumbnailResponseChecksInner.KeyEnum": FreeToolCheckYoutubeThumbnailResponseChecksInner.KeyEnum,
+        "FreeToolCheckYoutubeThumbnailResponseChecksInner.StatusEnum": FreeToolCheckYoutubeThumbnailResponseChecksInner.StatusEnum,
         "FreeToolCleanTextRequest.DashesEnum": FreeToolCleanTextRequest.DashesEnum,
         "FreeToolCleanTextResponseChangesInner.TypeEnum": FreeToolCleanTextResponseChangesInner.TypeEnum,
         "FreeToolCountCharactersRequest.NetworkEnum": FreeToolCountCharactersRequest.NetworkEnum,
@@ -927,6 +941,9 @@ let typeMap: {[index: string]: any} = {
     "FreeToolCheckPostResponse": FreeToolCheckPostResponse,
     "FreeToolCheckPostResponseNetworksInner": FreeToolCheckPostResponseNetworksInner,
     "FreeToolCheckPostResponseNetworksInnerErrorsInner": FreeToolCheckPostResponseNetworksInnerErrorsInner,
+    "FreeToolCheckYoutubeThumbnailRequest": FreeToolCheckYoutubeThumbnailRequest,
+    "FreeToolCheckYoutubeThumbnailResponse": FreeToolCheckYoutubeThumbnailResponse,
+    "FreeToolCheckYoutubeThumbnailResponseChecksInner": FreeToolCheckYoutubeThumbnailResponseChecksInner,
     "FreeToolCleanTextRequest": FreeToolCleanTextRequest,
     "FreeToolCleanTextResponse": FreeToolCleanTextResponse,
     "FreeToolCleanTextResponseChangesInner": FreeToolCleanTextResponseChangesInner,
@@ -957,6 +974,9 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGetImageSizesResponse": FreeToolGetImageSizesResponse,
     "FreeToolGetImageSizesResponseSizesInner": FreeToolGetImageSizesResponseSizesInner,
     "FreeToolGetImageSizesResponseSourcesInner": FreeToolGetImageSizesResponseSourcesInner,
+    "FreeToolGetVideoSpecsResponse": FreeToolGetVideoSpecsResponse,
+    "FreeToolGetVideoSpecsResponseSpecsInner": FreeToolGetVideoSpecsResponseSpecsInner,
+    "FreeToolGetVideoSpecsResponseSpecsInnerLimits": FreeToolGetVideoSpecsResponseSpecsInnerLimits,
     "FreeToolList": FreeToolList,
     "FreeToolListItem": FreeToolListItem,
     "FreeToolPreviewPostRequest": FreeToolPreviewPostRequest,
