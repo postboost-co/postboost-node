@@ -126,6 +126,9 @@ export * from './freeToolGenerateFancyTextResponse';
 export * from './freeToolGenerateFancyTextResponseStylesInner';
 export * from './freeToolGenerateHashtagsRequest';
 export * from './freeToolGenerateHashtagsResponse';
+export * from './freeToolGenerateQrCodeRequest';
+export * from './freeToolGenerateQrCodeRequestUtm';
+export * from './freeToolGenerateQrCodeResponse';
 export * from './freeToolGetBestTimesToPostResponse';
 export * from './freeToolGetBestTimesToPostResponseNetworksInner';
 export * from './freeToolGetImageSizesResponse';
@@ -457,6 +460,9 @@ import { FreeToolGenerateFancyTextResponse } from './freeToolGenerateFancyTextRe
 import { FreeToolGenerateFancyTextResponseStylesInner } from './freeToolGenerateFancyTextResponseStylesInner';
 import { FreeToolGenerateHashtagsRequest } from './freeToolGenerateHashtagsRequest';
 import { FreeToolGenerateHashtagsResponse } from './freeToolGenerateHashtagsResponse';
+import { FreeToolGenerateQrCodeRequest } from './freeToolGenerateQrCodeRequest';
+import { FreeToolGenerateQrCodeRequestUtm } from './freeToolGenerateQrCodeRequestUtm';
+import { FreeToolGenerateQrCodeResponse } from './freeToolGenerateQrCodeResponse';
 import { FreeToolGetBestTimesToPostResponse } from './freeToolGetBestTimesToPostResponse';
 import { FreeToolGetBestTimesToPostResponseNetworksInner } from './freeToolGetBestTimesToPostResponseNetworksInner';
 import { FreeToolGetImageSizesResponse } from './freeToolGetImageSizesResponse';
@@ -706,6 +712,7 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGenerateFancyTextRequest.StyleEnum": FreeToolGenerateFancyTextRequest.StyleEnum,
         "FreeToolGenerateHashtagsRequest.NicheEnum": FreeToolGenerateHashtagsRequest.NicheEnum,
         "FreeToolGenerateHashtagsRequest.NetworkEnum": FreeToolGenerateHashtagsRequest.NetworkEnum,
+        "FreeToolGenerateQrCodeRequest.ErrorCorrectionEnum": FreeToolGenerateQrCodeRequest.ErrorCorrectionEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
         "FreeToolPreviewPostRequest.InstagramRatioEnum": FreeToolPreviewPostRequest.InstagramRatioEnum,
         "FreeToolPreviewPostResponseNetworksInner.KeyEnum": FreeToolPreviewPostResponseNetworksInner.KeyEnum,
@@ -901,6 +908,9 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGenerateFancyTextResponseStylesInner": FreeToolGenerateFancyTextResponseStylesInner,
     "FreeToolGenerateHashtagsRequest": FreeToolGenerateHashtagsRequest,
     "FreeToolGenerateHashtagsResponse": FreeToolGenerateHashtagsResponse,
+    "FreeToolGenerateQrCodeRequest": FreeToolGenerateQrCodeRequest,
+    "FreeToolGenerateQrCodeRequestUtm": FreeToolGenerateQrCodeRequestUtm,
+    "FreeToolGenerateQrCodeResponse": FreeToolGenerateQrCodeResponse,
     "FreeToolGetBestTimesToPostResponse": FreeToolGetBestTimesToPostResponse,
     "FreeToolGetBestTimesToPostResponseNetworksInner": FreeToolGetBestTimesToPostResponseNetworksInner,
     "FreeToolGetImageSizesResponse": FreeToolGetImageSizesResponse,
