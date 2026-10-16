@@ -126,6 +126,8 @@ export * from './freeToolCountCharactersRequest';
 export * from './freeToolCountCharactersResponse';
 export * from './freeToolCountCharactersResponseNetworksInner';
 export * from './freeToolError';
+export * from './freeToolFormatInstagramCaptionRequest';
+export * from './freeToolFormatInstagramCaptionResponse';
 export * from './freeToolFormatLinkedInPostRequest';
 export * from './freeToolFormatLinkedInPostResponse';
 export * from './freeToolGenerateCaptionRequest';
@@ -483,6 +485,8 @@ import { FreeToolCountCharactersRequest } from './freeToolCountCharactersRequest
 import { FreeToolCountCharactersResponse } from './freeToolCountCharactersResponse';
 import { FreeToolCountCharactersResponseNetworksInner } from './freeToolCountCharactersResponseNetworksInner';
 import { FreeToolError } from './freeToolError';
+import { FreeToolFormatInstagramCaptionRequest } from './freeToolFormatInstagramCaptionRequest';
+import { FreeToolFormatInstagramCaptionResponse } from './freeToolFormatInstagramCaptionResponse';
 import { FreeToolFormatLinkedInPostRequest } from './freeToolFormatLinkedInPostRequest';
 import { FreeToolFormatLinkedInPostResponse } from './freeToolFormatLinkedInPostResponse';
 import { FreeToolGenerateCaptionRequest } from './freeToolGenerateCaptionRequest';
@@ -752,6 +756,7 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolCleanTextRequest.DashesEnum": FreeToolCleanTextRequest.DashesEnum,
         "FreeToolCleanTextResponseChangesInner.TypeEnum": FreeToolCleanTextResponseChangesInner.TypeEnum,
         "FreeToolCountCharactersRequest.NetworkEnum": FreeToolCountCharactersRequest.NetworkEnum,
+        "FreeToolFormatInstagramCaptionRequest.SpacerEnum": FreeToolFormatInstagramCaptionRequest.SpacerEnum,
         "FreeToolFormatLinkedInPostRequest.StyleEnum": FreeToolFormatLinkedInPostRequest.StyleEnum,
         "FreeToolFormatLinkedInPostRequest.ListEnum": FreeToolFormatLinkedInPostRequest.ListEnum,
         "FreeToolGenerateCaptionRequest.ToneEnum": FreeToolGenerateCaptionRequest.ToneEnum,
@@ -968,6 +973,8 @@ let typeMap: {[index: string]: any} = {
     "FreeToolCountCharactersResponse": FreeToolCountCharactersResponse,
     "FreeToolCountCharactersResponseNetworksInner": FreeToolCountCharactersResponseNetworksInner,
     "FreeToolError": FreeToolError,
+    "FreeToolFormatInstagramCaptionRequest": FreeToolFormatInstagramCaptionRequest,
+    "FreeToolFormatInstagramCaptionResponse": FreeToolFormatInstagramCaptionResponse,
     "FreeToolFormatLinkedInPostRequest": FreeToolFormatLinkedInPostRequest,
     "FreeToolFormatLinkedInPostResponse": FreeToolFormatLinkedInPostResponse,
     "FreeToolGenerateCaptionRequest": FreeToolGenerateCaptionRequest,
