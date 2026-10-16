@@ -1,6 +1,6 @@
 {
   "name": "postboost",
-  "version": "1.33.0",
+  "version": "1.34.0",
   "description": "NodeJS client for postboost",
   "repository": {
     "type": "git",
