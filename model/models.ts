@@ -104,6 +104,10 @@ export * from './freeToolCalculateCropResponseImage';
 export * from './freeToolCalculateCropResponseOutput';
 export * from './freeToolCalculateEngagementRateRequest';
 export * from './freeToolCalculateEngagementRateResponse';
+export * from './freeToolCalculateSocialRoiRequest';
+export * from './freeToolCalculateSocialRoiRequestCosts';
+export * from './freeToolCalculateSocialRoiResponse';
+export * from './freeToolCalculateSocialRoiResponseCostBreakdownInner';
 export * from './freeToolCheckLinkPreviewRequest';
 export * from './freeToolCheckLinkPreviewResponse';
 export * from './freeToolCheckLinkPreviewResponseImage';
@@ -468,6 +472,10 @@ import { FreeToolCalculateCropResponseImage } from './freeToolCalculateCropRespo
 import { FreeToolCalculateCropResponseOutput } from './freeToolCalculateCropResponseOutput';
 import { FreeToolCalculateEngagementRateRequest } from './freeToolCalculateEngagementRateRequest';
 import { FreeToolCalculateEngagementRateResponse } from './freeToolCalculateEngagementRateResponse';
+import { FreeToolCalculateSocialRoiRequest } from './freeToolCalculateSocialRoiRequest';
+import { FreeToolCalculateSocialRoiRequestCosts } from './freeToolCalculateSocialRoiRequestCosts';
+import { FreeToolCalculateSocialRoiResponse } from './freeToolCalculateSocialRoiResponse';
+import { FreeToolCalculateSocialRoiResponseCostBreakdownInner } from './freeToolCalculateSocialRoiResponseCostBreakdownInner';
 import { FreeToolCheckLinkPreviewRequest } from './freeToolCheckLinkPreviewRequest';
 import { FreeToolCheckLinkPreviewResponse } from './freeToolCheckLinkPreviewResponse';
 import { FreeToolCheckLinkPreviewResponseImage } from './freeToolCheckLinkPreviewResponseImage';
@@ -758,6 +766,7 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolCalculateAspectRatioResponseRounding.SideEnum": FreeToolCalculateAspectRatioResponseRounding.SideEnum,
         "FreeToolCalculateCropRequest.FitEnum": FreeToolCalculateCropRequest.FitEnum,
         "FreeToolCalculateEngagementRateRequest.MethodEnum": FreeToolCalculateEngagementRateRequest.MethodEnum,
+        "FreeToolCalculateSocialRoiResponseCostBreakdownInner.KeyEnum": FreeToolCalculateSocialRoiResponseCostBreakdownInner.KeyEnum,
         "FreeToolCheckLinkPreviewResponseImage.SourceEnum": FreeToolCheckLinkPreviewResponseImage.SourceEnum,
         "FreeToolCheckPostRequest.NetworksEnum": FreeToolCheckPostRequest.NetworksEnum,
         "FreeToolCheckPostRequestMedia.TypeEnum": FreeToolCheckPostRequestMedia.TypeEnum,
@@ -961,6 +970,10 @@ let typeMap: {[index: string]: any} = {
     "FreeToolCalculateCropResponseOutput": FreeToolCalculateCropResponseOutput,
     "FreeToolCalculateEngagementRateRequest": FreeToolCalculateEngagementRateRequest,
     "FreeToolCalculateEngagementRateResponse": FreeToolCalculateEngagementRateResponse,
+    "FreeToolCalculateSocialRoiRequest": FreeToolCalculateSocialRoiRequest,
+    "FreeToolCalculateSocialRoiRequestCosts": FreeToolCalculateSocialRoiRequestCosts,
+    "FreeToolCalculateSocialRoiResponse": FreeToolCalculateSocialRoiResponse,
+    "FreeToolCalculateSocialRoiResponseCostBreakdownInner": FreeToolCalculateSocialRoiResponseCostBreakdownInner,
     "FreeToolCheckLinkPreviewRequest": FreeToolCheckLinkPreviewRequest,
     "FreeToolCheckLinkPreviewResponse": FreeToolCheckLinkPreviewResponse,
     "FreeToolCheckLinkPreviewResponseImage": FreeToolCheckLinkPreviewResponseImage,
