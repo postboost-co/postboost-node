@@ -160,6 +160,11 @@ export * from './freeToolGetVideoSpecsResponseSpecsInner';
 export * from './freeToolGetVideoSpecsResponseSpecsInnerLimits';
 export * from './freeToolList';
 export * from './freeToolListItem';
+export * from './freeToolPlanContentCalendarRequest';
+export * from './freeToolPlanContentCalendarRequestPostsPerWeek';
+export * from './freeToolPlanContentCalendarRequestTimes';
+export * from './freeToolPlanContentCalendarResponse';
+export * from './freeToolPlanContentCalendarResponseSlotsInner';
 export * from './freeToolPreviewPostRequest';
 export * from './freeToolPreviewPostResponse';
 export * from './freeToolPreviewPostResponseNetworksInner';
@@ -519,6 +524,11 @@ import { FreeToolGetVideoSpecsResponseSpecsInner } from './freeToolGetVideoSpecs
 import { FreeToolGetVideoSpecsResponseSpecsInnerLimits } from './freeToolGetVideoSpecsResponseSpecsInnerLimits';
 import { FreeToolList } from './freeToolList';
 import { FreeToolListItem } from './freeToolListItem';
+import { FreeToolPlanContentCalendarRequest } from './freeToolPlanContentCalendarRequest';
+import { FreeToolPlanContentCalendarRequestPostsPerWeek } from './freeToolPlanContentCalendarRequestPostsPerWeek';
+import { FreeToolPlanContentCalendarRequestTimes } from './freeToolPlanContentCalendarRequestTimes';
+import { FreeToolPlanContentCalendarResponse } from './freeToolPlanContentCalendarResponse';
+import { FreeToolPlanContentCalendarResponseSlotsInner } from './freeToolPlanContentCalendarResponseSlotsInner';
 import { FreeToolPreviewPostRequest } from './freeToolPreviewPostRequest';
 import { FreeToolPreviewPostResponse } from './freeToolPreviewPostResponse';
 import { FreeToolPreviewPostResponseNetworksInner } from './freeToolPreviewPostResponseNetworksInner';
@@ -1007,6 +1017,11 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGetVideoSpecsResponseSpecsInnerLimits": FreeToolGetVideoSpecsResponseSpecsInnerLimits,
     "FreeToolList": FreeToolList,
     "FreeToolListItem": FreeToolListItem,
+    "FreeToolPlanContentCalendarRequest": FreeToolPlanContentCalendarRequest,
+    "FreeToolPlanContentCalendarRequestPostsPerWeek": FreeToolPlanContentCalendarRequestPostsPerWeek,
+    "FreeToolPlanContentCalendarRequestTimes": FreeToolPlanContentCalendarRequestTimes,
+    "FreeToolPlanContentCalendarResponse": FreeToolPlanContentCalendarResponse,
+    "FreeToolPlanContentCalendarResponseSlotsInner": FreeToolPlanContentCalendarResponseSlotsInner,
     "FreeToolPreviewPostRequest": FreeToolPreviewPostRequest,
     "FreeToolPreviewPostResponse": FreeToolPreviewPostResponse,
     "FreeToolPreviewPostResponseNetworksInner": FreeToolPreviewPostResponseNetworksInner,
