@@ -313,6 +313,7 @@ export * from './uploadChunk201Response';
 export * from './user';
 export * from './userInput';
 export * from './userUpdateInput';
+export * from './webhookEnvelope';
 export * from './webhookEventName';
 export * from './webhookEventPayload';
 export * from './webhookSubscription';
@@ -653,6 +654,7 @@ import { UploadChunk201Response } from './uploadChunk201Response';
 import { User } from './user';
 import { UserInput } from './userInput';
 import { UserUpdateInput } from './userUpdateInput';
+import { WebhookEnvelope } from './webhookEnvelope';
 import { WebhookEventName } from './webhookEventName';
 import { WebhookEventPayload } from './webhookEventPayload';
 import { WebhookSubscription } from './webhookSubscription';
@@ -680,7 +682,6 @@ let primitives = [
                  ];
 
 let enumsMap: {[index: string]: any} = {
-        "Account.ProviderEnum": Account.ProviderEnum,
         "Account.PublishStatusEnum": Account.PublishStatusEnum,
         "AccountConnectionHealth.StatusEnum": AccountConnectionHealth.StatusEnum,
         "AccountConnectionHealth.ExpiryKindEnum": AccountConnectionHealth.ExpiryKindEnum,
@@ -785,6 +786,7 @@ let enumsMap: {[index: string]: any} = {
         "RssFeedInput.ModeEnum": RssFeedInput.ModeEnum,
         "RssFeedUpdate.ModeEnum": RssFeedUpdate.ModeEnum,
         "SubscriptionStatus": SubscriptionStatus,
+        "WebhookEnvelope.EventEnum": WebhookEnvelope.EventEnum,
         "WebhookEventName": WebhookEventName,
         "WebhookSubscriptionInput.SourceEnum": WebhookSubscriptionInput.SourceEnum,
         "Workspace.AccessStatusEnum": Workspace.AccessStatusEnum,
@@ -1106,6 +1108,7 @@ let typeMap: {[index: string]: any} = {
     "User": User,
     "UserInput": UserInput,
     "UserUpdateInput": UserUpdateInput,
+    "WebhookEnvelope": WebhookEnvelope,
     "WebhookEventPayload": WebhookEventPayload,
     "WebhookSubscription": WebhookSubscription,
     "WebhookSubscriptionInput": WebhookSubscriptionInput,
