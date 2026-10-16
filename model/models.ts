@@ -129,6 +129,9 @@ export * from './freeToolGetImageSizesResponseSizesInner';
 export * from './freeToolGetImageSizesResponseSourcesInner';
 export * from './freeToolList';
 export * from './freeToolListItem';
+export * from './freeToolPreviewPostRequest';
+export * from './freeToolPreviewPostResponse';
+export * from './freeToolPreviewPostResponseNetworksInner';
 export * from './freeToolSplitThreadRequest';
 export * from './freeToolSplitThreadResponse';
 export * from './freeToolSplitThreadResponsePostsInner';
@@ -453,6 +456,9 @@ import { FreeToolGetImageSizesResponseSizesInner } from './freeToolGetImageSizes
 import { FreeToolGetImageSizesResponseSourcesInner } from './freeToolGetImageSizesResponseSourcesInner';
 import { FreeToolList } from './freeToolList';
 import { FreeToolListItem } from './freeToolListItem';
+import { FreeToolPreviewPostRequest } from './freeToolPreviewPostRequest';
+import { FreeToolPreviewPostResponse } from './freeToolPreviewPostResponse';
+import { FreeToolPreviewPostResponseNetworksInner } from './freeToolPreviewPostResponseNetworksInner';
 import { FreeToolSplitThreadRequest } from './freeToolSplitThreadRequest';
 import { FreeToolSplitThreadResponse } from './freeToolSplitThreadResponse';
 import { FreeToolSplitThreadResponsePostsInner } from './freeToolSplitThreadResponsePostsInner';
@@ -691,6 +697,8 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGenerateHashtagsRequest.NicheEnum": FreeToolGenerateHashtagsRequest.NicheEnum,
         "FreeToolGenerateHashtagsRequest.NetworkEnum": FreeToolGenerateHashtagsRequest.NetworkEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
+        "FreeToolPreviewPostRequest.InstagramRatioEnum": FreeToolPreviewPostRequest.InstagramRatioEnum,
+        "FreeToolPreviewPostResponseNetworksInner.KeyEnum": FreeToolPreviewPostResponseNetworksInner.KeyEnum,
         "FreeToolSplitThreadRequest.NetworkEnum": FreeToolSplitThreadRequest.NetworkEnum,
         "GetRemoteUploadStatus200Response.StatusEnum": GetRemoteUploadStatus200Response.StatusEnum,
         "GuardrailError.CodeEnum": GuardrailError.CodeEnum,
@@ -886,6 +894,9 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGetImageSizesResponseSourcesInner": FreeToolGetImageSizesResponseSourcesInner,
     "FreeToolList": FreeToolList,
     "FreeToolListItem": FreeToolListItem,
+    "FreeToolPreviewPostRequest": FreeToolPreviewPostRequest,
+    "FreeToolPreviewPostResponse": FreeToolPreviewPostResponse,
+    "FreeToolPreviewPostResponseNetworksInner": FreeToolPreviewPostResponseNetworksInner,
     "FreeToolSplitThreadRequest": FreeToolSplitThreadRequest,
     "FreeToolSplitThreadResponse": FreeToolSplitThreadResponse,
     "FreeToolSplitThreadResponsePostsInner": FreeToolSplitThreadResponsePostsInner,
