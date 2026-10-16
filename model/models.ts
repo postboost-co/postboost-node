@@ -104,6 +104,12 @@ export * from './freeToolCalculateCropResponseImage';
 export * from './freeToolCalculateCropResponseOutput';
 export * from './freeToolCalculateEngagementRateRequest';
 export * from './freeToolCalculateEngagementRateResponse';
+export * from './freeToolCheckLinkPreviewRequest';
+export * from './freeToolCheckLinkPreviewResponse';
+export * from './freeToolCheckLinkPreviewResponseImage';
+export * from './freeToolCheckLinkPreviewResponsePreviewsValue';
+export * from './freeToolCheckLinkPreviewResponseRedirectsInner';
+export * from './freeToolCheckLinkPreviewResponseTags';
 export * from './freeToolCheckPostRequest';
 export * from './freeToolCheckPostRequestMedia';
 export * from './freeToolCheckPostResponse';
@@ -438,6 +444,12 @@ import { FreeToolCalculateCropResponseImage } from './freeToolCalculateCropRespo
 import { FreeToolCalculateCropResponseOutput } from './freeToolCalculateCropResponseOutput';
 import { FreeToolCalculateEngagementRateRequest } from './freeToolCalculateEngagementRateRequest';
 import { FreeToolCalculateEngagementRateResponse } from './freeToolCalculateEngagementRateResponse';
+import { FreeToolCheckLinkPreviewRequest } from './freeToolCheckLinkPreviewRequest';
+import { FreeToolCheckLinkPreviewResponse } from './freeToolCheckLinkPreviewResponse';
+import { FreeToolCheckLinkPreviewResponseImage } from './freeToolCheckLinkPreviewResponseImage';
+import { FreeToolCheckLinkPreviewResponsePreviewsValue } from './freeToolCheckLinkPreviewResponsePreviewsValue';
+import { FreeToolCheckLinkPreviewResponseRedirectsInner } from './freeToolCheckLinkPreviewResponseRedirectsInner';
+import { FreeToolCheckLinkPreviewResponseTags } from './freeToolCheckLinkPreviewResponseTags';
 import { FreeToolCheckPostRequest } from './freeToolCheckPostRequest';
 import { FreeToolCheckPostRequestMedia } from './freeToolCheckPostRequestMedia';
 import { FreeToolCheckPostResponse } from './freeToolCheckPostResponse';
@@ -699,6 +711,7 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolCalculateAspectRatioResponseRounding.SideEnum": FreeToolCalculateAspectRatioResponseRounding.SideEnum,
         "FreeToolCalculateCropRequest.FitEnum": FreeToolCalculateCropRequest.FitEnum,
         "FreeToolCalculateEngagementRateRequest.MethodEnum": FreeToolCalculateEngagementRateRequest.MethodEnum,
+        "FreeToolCheckLinkPreviewResponseImage.SourceEnum": FreeToolCheckLinkPreviewResponseImage.SourceEnum,
         "FreeToolCheckPostRequest.NetworksEnum": FreeToolCheckPostRequest.NetworksEnum,
         "FreeToolCheckPostRequestMedia.TypeEnum": FreeToolCheckPostRequestMedia.TypeEnum,
         "FreeToolCleanTextRequest.DashesEnum": FreeToolCleanTextRequest.DashesEnum,
@@ -886,6 +899,12 @@ let typeMap: {[index: string]: any} = {
     "FreeToolCalculateCropResponseOutput": FreeToolCalculateCropResponseOutput,
     "FreeToolCalculateEngagementRateRequest": FreeToolCalculateEngagementRateRequest,
     "FreeToolCalculateEngagementRateResponse": FreeToolCalculateEngagementRateResponse,
+    "FreeToolCheckLinkPreviewRequest": FreeToolCheckLinkPreviewRequest,
+    "FreeToolCheckLinkPreviewResponse": FreeToolCheckLinkPreviewResponse,
+    "FreeToolCheckLinkPreviewResponseImage": FreeToolCheckLinkPreviewResponseImage,
+    "FreeToolCheckLinkPreviewResponsePreviewsValue": FreeToolCheckLinkPreviewResponsePreviewsValue,
+    "FreeToolCheckLinkPreviewResponseRedirectsInner": FreeToolCheckLinkPreviewResponseRedirectsInner,
+    "FreeToolCheckLinkPreviewResponseTags": FreeToolCheckLinkPreviewResponseTags,
     "FreeToolCheckPostRequest": FreeToolCheckPostRequest,
     "FreeToolCheckPostRequestMedia": FreeToolCheckPostRequestMedia,
     "FreeToolCheckPostResponse": FreeToolCheckPostResponse,
