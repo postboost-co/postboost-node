@@ -141,6 +141,11 @@ export * from './freeToolGenerateHooksResponseHooksInner';
 export * from './freeToolGenerateQrCodeRequest';
 export * from './freeToolGenerateQrCodeRequestUtm';
 export * from './freeToolGenerateQrCodeResponse';
+export * from './freeToolGenerateSocialPostsFromBlogRequest';
+export * from './freeToolGenerateSocialPostsFromBlogResponse';
+export * from './freeToolGenerateSocialPostsFromBlogResponsePostsInner';
+export * from './freeToolGenerateSocialPostsFromBlogResponseSource';
+export * from './freeToolGenerateSocialPostsFromBlogResponseWarningsInner';
 export * from './freeToolGetBestTimesToPostResponse';
 export * from './freeToolGetBestTimesToPostResponseNetworksInner';
 export * from './freeToolGetHookTemplatesResponse';
@@ -493,6 +498,11 @@ import { FreeToolGenerateHooksResponseHooksInner } from './freeToolGenerateHooks
 import { FreeToolGenerateQrCodeRequest } from './freeToolGenerateQrCodeRequest';
 import { FreeToolGenerateQrCodeRequestUtm } from './freeToolGenerateQrCodeRequestUtm';
 import { FreeToolGenerateQrCodeResponse } from './freeToolGenerateQrCodeResponse';
+import { FreeToolGenerateSocialPostsFromBlogRequest } from './freeToolGenerateSocialPostsFromBlogRequest';
+import { FreeToolGenerateSocialPostsFromBlogResponse } from './freeToolGenerateSocialPostsFromBlogResponse';
+import { FreeToolGenerateSocialPostsFromBlogResponsePostsInner } from './freeToolGenerateSocialPostsFromBlogResponsePostsInner';
+import { FreeToolGenerateSocialPostsFromBlogResponseSource } from './freeToolGenerateSocialPostsFromBlogResponseSource';
+import { FreeToolGenerateSocialPostsFromBlogResponseWarningsInner } from './freeToolGenerateSocialPostsFromBlogResponseWarningsInner';
 import { FreeToolGetBestTimesToPostResponse } from './freeToolGetBestTimesToPostResponse';
 import { FreeToolGetBestTimesToPostResponseNetworksInner } from './freeToolGetBestTimesToPostResponseNetworksInner';
 import { FreeToolGetHookTemplatesResponse } from './freeToolGetHookTemplatesResponse';
@@ -754,6 +764,12 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGenerateHooksRequest.NetworkEnum": FreeToolGenerateHooksRequest.NetworkEnum,
         "FreeToolGenerateHooksResponseHooksInner.CategoryEnum": FreeToolGenerateHooksResponseHooksInner.CategoryEnum,
         "FreeToolGenerateQrCodeRequest.ErrorCorrectionEnum": FreeToolGenerateQrCodeRequest.ErrorCorrectionEnum,
+        "FreeToolGenerateSocialPostsFromBlogRequest.PlatformsEnum": FreeToolGenerateSocialPostsFromBlogRequest.PlatformsEnum,
+        "FreeToolGenerateSocialPostsFromBlogRequest.ToneEnum": FreeToolGenerateSocialPostsFromBlogRequest.ToneEnum,
+        "FreeToolGenerateSocialPostsFromBlogRequest.LengthEnum": FreeToolGenerateSocialPostsFromBlogRequest.LengthEnum,
+        "FreeToolGenerateSocialPostsFromBlogRequest.HashtagsEnum": FreeToolGenerateSocialPostsFromBlogRequest.HashtagsEnum,
+        "FreeToolGenerateSocialPostsFromBlogRequest.CtaEnum": FreeToolGenerateSocialPostsFromBlogRequest.CtaEnum,
+        "FreeToolGenerateSocialPostsFromBlogResponsePostsInner.PlatformEnum": FreeToolGenerateSocialPostsFromBlogResponsePostsInner.PlatformEnum,
         "FreeToolGetHookTemplatesResponseHooksInner.CategoryEnum": FreeToolGetHookTemplatesResponseHooksInner.CategoryEnum,
         "FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum": FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
@@ -967,6 +983,11 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGenerateQrCodeRequest": FreeToolGenerateQrCodeRequest,
     "FreeToolGenerateQrCodeRequestUtm": FreeToolGenerateQrCodeRequestUtm,
     "FreeToolGenerateQrCodeResponse": FreeToolGenerateQrCodeResponse,
+    "FreeToolGenerateSocialPostsFromBlogRequest": FreeToolGenerateSocialPostsFromBlogRequest,
+    "FreeToolGenerateSocialPostsFromBlogResponse": FreeToolGenerateSocialPostsFromBlogResponse,
+    "FreeToolGenerateSocialPostsFromBlogResponsePostsInner": FreeToolGenerateSocialPostsFromBlogResponsePostsInner,
+    "FreeToolGenerateSocialPostsFromBlogResponseSource": FreeToolGenerateSocialPostsFromBlogResponseSource,
+    "FreeToolGenerateSocialPostsFromBlogResponseWarningsInner": FreeToolGenerateSocialPostsFromBlogResponseWarningsInner,
     "FreeToolGetBestTimesToPostResponse": FreeToolGetBestTimesToPostResponse,
     "FreeToolGetBestTimesToPostResponseNetworksInner": FreeToolGetBestTimesToPostResponseNetworksInner,
     "FreeToolGetHookTemplatesResponse": FreeToolGetHookTemplatesResponse,
