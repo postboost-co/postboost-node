@@ -93,6 +93,10 @@ export * from './deleteUsersBulkRequest';
 export * from './deleteWorkspacesBulkRequest';
 export * from './freeToolBuildUtmUrlRequest';
 export * from './freeToolBuildUtmUrlResponse';
+export * from './freeToolCalculateAspectRatioRequest';
+export * from './freeToolCalculateAspectRatioResponse';
+export * from './freeToolCalculateAspectRatioResponseMatchesInner';
+export * from './freeToolCalculateAspectRatioResponseRounding';
 export * from './freeToolCalculateCropRequest';
 export * from './freeToolCalculateCropResponse';
 export * from './freeToolCalculateCropResponseCrop';
@@ -420,6 +424,10 @@ import { DeleteUsersBulkRequest } from './deleteUsersBulkRequest';
 import { DeleteWorkspacesBulkRequest } from './deleteWorkspacesBulkRequest';
 import { FreeToolBuildUtmUrlRequest } from './freeToolBuildUtmUrlRequest';
 import { FreeToolBuildUtmUrlResponse } from './freeToolBuildUtmUrlResponse';
+import { FreeToolCalculateAspectRatioRequest } from './freeToolCalculateAspectRatioRequest';
+import { FreeToolCalculateAspectRatioResponse } from './freeToolCalculateAspectRatioResponse';
+import { FreeToolCalculateAspectRatioResponseMatchesInner } from './freeToolCalculateAspectRatioResponseMatchesInner';
+import { FreeToolCalculateAspectRatioResponseRounding } from './freeToolCalculateAspectRatioResponseRounding';
 import { FreeToolCalculateCropRequest } from './freeToolCalculateCropRequest';
 import { FreeToolCalculateCropResponse } from './freeToolCalculateCropResponse';
 import { FreeToolCalculateCropResponseCrop } from './freeToolCalculateCropResponseCrop';
@@ -681,6 +689,8 @@ let enumsMap: {[index: string]: any} = {
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
         "CreateConnectLinkRequest.ProviderEnum": CreateConnectLinkRequest.ProviderEnum,
         "DeleteMode": DeleteMode,
+        "FreeToolCalculateAspectRatioResponse.OrientationEnum": FreeToolCalculateAspectRatioResponse.OrientationEnum,
+        "FreeToolCalculateAspectRatioResponseRounding.SideEnum": FreeToolCalculateAspectRatioResponseRounding.SideEnum,
         "FreeToolCalculateCropRequest.FitEnum": FreeToolCalculateCropRequest.FitEnum,
         "FreeToolCalculateEngagementRateRequest.MethodEnum": FreeToolCalculateEngagementRateRequest.MethodEnum,
         "FreeToolCheckPostRequest.NetworksEnum": FreeToolCheckPostRequest.NetworksEnum,
@@ -858,6 +868,10 @@ let typeMap: {[index: string]: any} = {
     "DeleteWorkspacesBulkRequest": DeleteWorkspacesBulkRequest,
     "FreeToolBuildUtmUrlRequest": FreeToolBuildUtmUrlRequest,
     "FreeToolBuildUtmUrlResponse": FreeToolBuildUtmUrlResponse,
+    "FreeToolCalculateAspectRatioRequest": FreeToolCalculateAspectRatioRequest,
+    "FreeToolCalculateAspectRatioResponse": FreeToolCalculateAspectRatioResponse,
+    "FreeToolCalculateAspectRatioResponseMatchesInner": FreeToolCalculateAspectRatioResponseMatchesInner,
+    "FreeToolCalculateAspectRatioResponseRounding": FreeToolCalculateAspectRatioResponseRounding,
     "FreeToolCalculateCropRequest": FreeToolCalculateCropRequest,
     "FreeToolCalculateCropResponse": FreeToolCalculateCropResponse,
     "FreeToolCalculateCropResponseCrop": FreeToolCalculateCropResponseCrop,
