@@ -132,11 +132,16 @@ export * from './freeToolGenerateFancyTextResponse';
 export * from './freeToolGenerateFancyTextResponseStylesInner';
 export * from './freeToolGenerateHashtagsRequest';
 export * from './freeToolGenerateHashtagsResponse';
+export * from './freeToolGenerateHooksRequest';
+export * from './freeToolGenerateHooksResponse';
+export * from './freeToolGenerateHooksResponseHooksInner';
 export * from './freeToolGenerateQrCodeRequest';
 export * from './freeToolGenerateQrCodeRequestUtm';
 export * from './freeToolGenerateQrCodeResponse';
 export * from './freeToolGetBestTimesToPostResponse';
 export * from './freeToolGetBestTimesToPostResponseNetworksInner';
+export * from './freeToolGetHookTemplatesResponse';
+export * from './freeToolGetHookTemplatesResponseHooksInner';
 export * from './freeToolGetImageSizesResponse';
 export * from './freeToolGetImageSizesResponseSizesInner';
 export * from './freeToolGetImageSizesResponseSourcesInner';
@@ -473,11 +478,16 @@ import { FreeToolGenerateFancyTextResponse } from './freeToolGenerateFancyTextRe
 import { FreeToolGenerateFancyTextResponseStylesInner } from './freeToolGenerateFancyTextResponseStylesInner';
 import { FreeToolGenerateHashtagsRequest } from './freeToolGenerateHashtagsRequest';
 import { FreeToolGenerateHashtagsResponse } from './freeToolGenerateHashtagsResponse';
+import { FreeToolGenerateHooksRequest } from './freeToolGenerateHooksRequest';
+import { FreeToolGenerateHooksResponse } from './freeToolGenerateHooksResponse';
+import { FreeToolGenerateHooksResponseHooksInner } from './freeToolGenerateHooksResponseHooksInner';
 import { FreeToolGenerateQrCodeRequest } from './freeToolGenerateQrCodeRequest';
 import { FreeToolGenerateQrCodeRequestUtm } from './freeToolGenerateQrCodeRequestUtm';
 import { FreeToolGenerateQrCodeResponse } from './freeToolGenerateQrCodeResponse';
 import { FreeToolGetBestTimesToPostResponse } from './freeToolGetBestTimesToPostResponse';
 import { FreeToolGetBestTimesToPostResponseNetworksInner } from './freeToolGetBestTimesToPostResponseNetworksInner';
+import { FreeToolGetHookTemplatesResponse } from './freeToolGetHookTemplatesResponse';
+import { FreeToolGetHookTemplatesResponseHooksInner } from './freeToolGetHookTemplatesResponseHooksInner';
 import { FreeToolGetImageSizesResponse } from './freeToolGetImageSizesResponse';
 import { FreeToolGetImageSizesResponseSizesInner } from './freeToolGetImageSizesResponseSizesInner';
 import { FreeToolGetImageSizesResponseSourcesInner } from './freeToolGetImageSizesResponseSourcesInner';
@@ -726,7 +736,12 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGenerateFancyTextRequest.StyleEnum": FreeToolGenerateFancyTextRequest.StyleEnum,
         "FreeToolGenerateHashtagsRequest.NicheEnum": FreeToolGenerateHashtagsRequest.NicheEnum,
         "FreeToolGenerateHashtagsRequest.NetworkEnum": FreeToolGenerateHashtagsRequest.NetworkEnum,
+        "FreeToolGenerateHooksRequest.ToneEnum": FreeToolGenerateHooksRequest.ToneEnum,
+        "FreeToolGenerateHooksRequest.NetworkEnum": FreeToolGenerateHooksRequest.NetworkEnum,
+        "FreeToolGenerateHooksResponseHooksInner.CategoryEnum": FreeToolGenerateHooksResponseHooksInner.CategoryEnum,
         "FreeToolGenerateQrCodeRequest.ErrorCorrectionEnum": FreeToolGenerateQrCodeRequest.ErrorCorrectionEnum,
+        "FreeToolGetHookTemplatesResponseHooksInner.CategoryEnum": FreeToolGetHookTemplatesResponseHooksInner.CategoryEnum,
+        "FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum": FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
         "FreeToolPreviewPostRequest.InstagramRatioEnum": FreeToolPreviewPostRequest.InstagramRatioEnum,
         "FreeToolPreviewPostResponseNetworksInner.KeyEnum": FreeToolPreviewPostResponseNetworksInner.KeyEnum,
@@ -929,11 +944,16 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGenerateFancyTextResponseStylesInner": FreeToolGenerateFancyTextResponseStylesInner,
     "FreeToolGenerateHashtagsRequest": FreeToolGenerateHashtagsRequest,
     "FreeToolGenerateHashtagsResponse": FreeToolGenerateHashtagsResponse,
+    "FreeToolGenerateHooksRequest": FreeToolGenerateHooksRequest,
+    "FreeToolGenerateHooksResponse": FreeToolGenerateHooksResponse,
+    "FreeToolGenerateHooksResponseHooksInner": FreeToolGenerateHooksResponseHooksInner,
     "FreeToolGenerateQrCodeRequest": FreeToolGenerateQrCodeRequest,
     "FreeToolGenerateQrCodeRequestUtm": FreeToolGenerateQrCodeRequestUtm,
     "FreeToolGenerateQrCodeResponse": FreeToolGenerateQrCodeResponse,
     "FreeToolGetBestTimesToPostResponse": FreeToolGetBestTimesToPostResponse,
     "FreeToolGetBestTimesToPostResponseNetworksInner": FreeToolGetBestTimesToPostResponseNetworksInner,
+    "FreeToolGetHookTemplatesResponse": FreeToolGetHookTemplatesResponse,
+    "FreeToolGetHookTemplatesResponseHooksInner": FreeToolGetHookTemplatesResponseHooksInner,
     "FreeToolGetImageSizesResponse": FreeToolGetImageSizesResponse,
     "FreeToolGetImageSizesResponseSizesInner": FreeToolGetImageSizesResponseSizesInner,
     "FreeToolGetImageSizesResponseSourcesInner": FreeToolGetImageSizesResponseSourcesInner,
