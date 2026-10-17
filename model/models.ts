@@ -97,6 +97,10 @@ export * from './freeToolCalculateAspectRatioRequest';
 export * from './freeToolCalculateAspectRatioResponse';
 export * from './freeToolCalculateAspectRatioResponseMatchesInner';
 export * from './freeToolCalculateAspectRatioResponseRounding';
+export * from './freeToolCalculateCarouselSlicesRequest';
+export * from './freeToolCalculateCarouselSlicesResponse';
+export * from './freeToolCalculateCarouselSlicesResponseOutput';
+export * from './freeToolCalculateCarouselSlicesResponseSlidesInner';
 export * from './freeToolCalculateCropRequest';
 export * from './freeToolCalculateCropResponse';
 export * from './freeToolCalculateCropResponseCrop';
@@ -104,6 +108,10 @@ export * from './freeToolCalculateCropResponseImage';
 export * from './freeToolCalculateCropResponseOutput';
 export * from './freeToolCalculateEngagementRateRequest';
 export * from './freeToolCalculateEngagementRateResponse';
+export * from './freeToolCalculateInfluencerRateRequest';
+export * from './freeToolCalculateInfluencerRateResponse';
+export * from './freeToolCalculateInfluencerRateResponseGuideSource';
+export * from './freeToolCalculateInfluencerRateResponseMultipliersInner';
 export * from './freeToolCalculateSocialRoiRequest';
 export * from './freeToolCalculateSocialRoiRequestCosts';
 export * from './freeToolCalculateSocialRoiResponse';
@@ -165,6 +173,11 @@ export * from './freeToolGetHookTemplatesResponseHooksInner';
 export * from './freeToolGetImageSizesResponse';
 export * from './freeToolGetImageSizesResponseSizesInner';
 export * from './freeToolGetImageSizesResponseSourcesInner';
+export * from './freeToolGetSafeZonesRequest';
+export * from './freeToolGetSafeZonesResponse';
+export * from './freeToolGetSafeZonesResponseSafeArea';
+export * from './freeToolGetSafeZonesResponseSource';
+export * from './freeToolGetSafeZonesResponseUnsafeAreasInner';
 export * from './freeToolGetVideoSpecsResponse';
 export * from './freeToolGetVideoSpecsResponseSpecsInner';
 export * from './freeToolGetVideoSpecsResponseSpecsInnerLimits';
@@ -175,6 +188,12 @@ export * from './freeToolPlanContentCalendarRequestPostsPerWeek';
 export * from './freeToolPlanContentCalendarRequestTimes';
 export * from './freeToolPlanContentCalendarResponse';
 export * from './freeToolPlanContentCalendarResponseSlotsInner';
+export * from './freeToolPlanPostingFrequencyRequest';
+export * from './freeToolPlanPostingFrequencyResponse';
+export * from './freeToolPlanPostingFrequencyResponseNetworksInner';
+export * from './freeToolPlanPostingFrequencyResponseNetworksInnerRecommendedPerWeek';
+export * from './freeToolPlanPostingFrequencyResponseNetworksInnerSourcesInner';
+export * from './freeToolPlanPostingFrequencyResponseSlotsInner';
 export * from './freeToolPreviewPostRequest';
 export * from './freeToolPreviewPostResponse';
 export * from './freeToolPreviewPostResponseNetworksInner';
@@ -474,6 +493,10 @@ import { FreeToolCalculateAspectRatioRequest } from './freeToolCalculateAspectRa
 import { FreeToolCalculateAspectRatioResponse } from './freeToolCalculateAspectRatioResponse';
 import { FreeToolCalculateAspectRatioResponseMatchesInner } from './freeToolCalculateAspectRatioResponseMatchesInner';
 import { FreeToolCalculateAspectRatioResponseRounding } from './freeToolCalculateAspectRatioResponseRounding';
+import { FreeToolCalculateCarouselSlicesRequest } from './freeToolCalculateCarouselSlicesRequest';
+import { FreeToolCalculateCarouselSlicesResponse } from './freeToolCalculateCarouselSlicesResponse';
+import { FreeToolCalculateCarouselSlicesResponseOutput } from './freeToolCalculateCarouselSlicesResponseOutput';
+import { FreeToolCalculateCarouselSlicesResponseSlidesInner } from './freeToolCalculateCarouselSlicesResponseSlidesInner';
 import { FreeToolCalculateCropRequest } from './freeToolCalculateCropRequest';
 import { FreeToolCalculateCropResponse } from './freeToolCalculateCropResponse';
 import { FreeToolCalculateCropResponseCrop } from './freeToolCalculateCropResponseCrop';
@@ -481,6 +504,10 @@ import { FreeToolCalculateCropResponseImage } from './freeToolCalculateCropRespo
 import { FreeToolCalculateCropResponseOutput } from './freeToolCalculateCropResponseOutput';
 import { FreeToolCalculateEngagementRateRequest } from './freeToolCalculateEngagementRateRequest';
 import { FreeToolCalculateEngagementRateResponse } from './freeToolCalculateEngagementRateResponse';
+import { FreeToolCalculateInfluencerRateRequest } from './freeToolCalculateInfluencerRateRequest';
+import { FreeToolCalculateInfluencerRateResponse } from './freeToolCalculateInfluencerRateResponse';
+import { FreeToolCalculateInfluencerRateResponseGuideSource } from './freeToolCalculateInfluencerRateResponseGuideSource';
+import { FreeToolCalculateInfluencerRateResponseMultipliersInner } from './freeToolCalculateInfluencerRateResponseMultipliersInner';
 import { FreeToolCalculateSocialRoiRequest } from './freeToolCalculateSocialRoiRequest';
 import { FreeToolCalculateSocialRoiRequestCosts } from './freeToolCalculateSocialRoiRequestCosts';
 import { FreeToolCalculateSocialRoiResponse } from './freeToolCalculateSocialRoiResponse';
@@ -542,6 +569,11 @@ import { FreeToolGetHookTemplatesResponseHooksInner } from './freeToolGetHookTem
 import { FreeToolGetImageSizesResponse } from './freeToolGetImageSizesResponse';
 import { FreeToolGetImageSizesResponseSizesInner } from './freeToolGetImageSizesResponseSizesInner';
 import { FreeToolGetImageSizesResponseSourcesInner } from './freeToolGetImageSizesResponseSourcesInner';
+import { FreeToolGetSafeZonesRequest } from './freeToolGetSafeZonesRequest';
+import { FreeToolGetSafeZonesResponse } from './freeToolGetSafeZonesResponse';
+import { FreeToolGetSafeZonesResponseSafeArea } from './freeToolGetSafeZonesResponseSafeArea';
+import { FreeToolGetSafeZonesResponseSource } from './freeToolGetSafeZonesResponseSource';
+import { FreeToolGetSafeZonesResponseUnsafeAreasInner } from './freeToolGetSafeZonesResponseUnsafeAreasInner';
 import { FreeToolGetVideoSpecsResponse } from './freeToolGetVideoSpecsResponse';
 import { FreeToolGetVideoSpecsResponseSpecsInner } from './freeToolGetVideoSpecsResponseSpecsInner';
 import { FreeToolGetVideoSpecsResponseSpecsInnerLimits } from './freeToolGetVideoSpecsResponseSpecsInnerLimits';
@@ -552,6 +584,12 @@ import { FreeToolPlanContentCalendarRequestPostsPerWeek } from './freeToolPlanCo
 import { FreeToolPlanContentCalendarRequestTimes } from './freeToolPlanContentCalendarRequestTimes';
 import { FreeToolPlanContentCalendarResponse } from './freeToolPlanContentCalendarResponse';
 import { FreeToolPlanContentCalendarResponseSlotsInner } from './freeToolPlanContentCalendarResponseSlotsInner';
+import { FreeToolPlanPostingFrequencyRequest } from './freeToolPlanPostingFrequencyRequest';
+import { FreeToolPlanPostingFrequencyResponse } from './freeToolPlanPostingFrequencyResponse';
+import { FreeToolPlanPostingFrequencyResponseNetworksInner } from './freeToolPlanPostingFrequencyResponseNetworksInner';
+import { FreeToolPlanPostingFrequencyResponseNetworksInnerRecommendedPerWeek } from './freeToolPlanPostingFrequencyResponseNetworksInnerRecommendedPerWeek';
+import { FreeToolPlanPostingFrequencyResponseNetworksInnerSourcesInner } from './freeToolPlanPostingFrequencyResponseNetworksInnerSourcesInner';
+import { FreeToolPlanPostingFrequencyResponseSlotsInner } from './freeToolPlanPostingFrequencyResponseSlotsInner';
 import { FreeToolPreviewPostRequest } from './freeToolPreviewPostRequest';
 import { FreeToolPreviewPostResponse } from './freeToolPreviewPostResponse';
 import { FreeToolPreviewPostResponseNetworksInner } from './freeToolPreviewPostResponseNetworksInner';
@@ -782,8 +820,15 @@ let enumsMap: {[index: string]: any} = {
         "DeleteMode": DeleteMode,
         "FreeToolCalculateAspectRatioResponse.OrientationEnum": FreeToolCalculateAspectRatioResponse.OrientationEnum,
         "FreeToolCalculateAspectRatioResponseRounding.SideEnum": FreeToolCalculateAspectRatioResponseRounding.SideEnum,
+        "FreeToolCalculateCarouselSlicesRequest.RatioEnum": FreeToolCalculateCarouselSlicesRequest.RatioEnum,
         "FreeToolCalculateCropRequest.FitEnum": FreeToolCalculateCropRequest.FitEnum,
         "FreeToolCalculateEngagementRateRequest.MethodEnum": FreeToolCalculateEngagementRateRequest.MethodEnum,
+        "FreeToolCalculateInfluencerRateRequest.NetworkEnum": FreeToolCalculateInfluencerRateRequest.NetworkEnum,
+        "FreeToolCalculateInfluencerRateRequest.DeliverableEnum": FreeToolCalculateInfluencerRateRequest.DeliverableEnum,
+        "FreeToolCalculateInfluencerRateResponse.TierEnum": FreeToolCalculateInfluencerRateResponse.TierEnum,
+        "FreeToolCalculateInfluencerRateResponse.DeliverableEnum": FreeToolCalculateInfluencerRateResponse.DeliverableEnum,
+        "FreeToolCalculateInfluencerRateResponse.CurrencyEnum": FreeToolCalculateInfluencerRateResponse.CurrencyEnum,
+        "FreeToolCalculateInfluencerRateResponseMultipliersInner.NameEnum": FreeToolCalculateInfluencerRateResponseMultipliersInner.NameEnum,
         "FreeToolCalculateSocialRoiResponseCostBreakdownInner.KeyEnum": FreeToolCalculateSocialRoiResponseCostBreakdownInner.KeyEnum,
         "FreeToolCalculateXApiCostResponseLineItemsInner.KeyEnum": FreeToolCalculateXApiCostResponseLineItemsInner.KeyEnum,
         "FreeToolCheckLinkPreviewResponseImage.SourceEnum": FreeToolCheckLinkPreviewResponseImage.SourceEnum,
@@ -815,7 +860,15 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGenerateSocialPostsFromBlogResponsePostsInner.PlatformEnum": FreeToolGenerateSocialPostsFromBlogResponsePostsInner.PlatformEnum,
         "FreeToolGetHookTemplatesResponseHooksInner.CategoryEnum": FreeToolGetHookTemplatesResponseHooksInner.CategoryEnum,
         "FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum": FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum,
+        "FreeToolGetSafeZonesRequest.PlatformEnum": FreeToolGetSafeZonesRequest.PlatformEnum,
+        "FreeToolGetSafeZonesResponseUnsafeAreasInner.NameEnum": FreeToolGetSafeZonesResponseUnsafeAreasInner.NameEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
+        "FreeToolPlanPostingFrequencyRequest.NetworksEnum": FreeToolPlanPostingFrequencyRequest.NetworksEnum,
+        "FreeToolPlanPostingFrequencyResponseNetworksInner.NetworkEnum": FreeToolPlanPostingFrequencyResponseNetworksInner.NetworkEnum,
+        "FreeToolPlanPostingFrequencyResponseNetworksInner.FitEnum": FreeToolPlanPostingFrequencyResponseNetworksInner.FitEnum,
+        "FreeToolPlanPostingFrequencyResponseNetworksInner.SourceTypeEnum": FreeToolPlanPostingFrequencyResponseNetworksInner.SourceTypeEnum,
+        "FreeToolPlanPostingFrequencyResponseSlotsInner.WeekdayEnum": FreeToolPlanPostingFrequencyResponseSlotsInner.WeekdayEnum,
+        "FreeToolPlanPostingFrequencyResponseSlotsInner.NetworkEnum": FreeToolPlanPostingFrequencyResponseSlotsInner.NetworkEnum,
         "FreeToolPreviewPostRequest.InstagramRatioEnum": FreeToolPreviewPostRequest.InstagramRatioEnum,
         "FreeToolPreviewPostResponseNetworksInner.KeyEnum": FreeToolPreviewPostResponseNetworksInner.KeyEnum,
         "FreeToolSearchEmojiRequest.CategoryEnum": FreeToolSearchEmojiRequest.CategoryEnum,
@@ -983,6 +1036,10 @@ let typeMap: {[index: string]: any} = {
     "FreeToolCalculateAspectRatioResponse": FreeToolCalculateAspectRatioResponse,
     "FreeToolCalculateAspectRatioResponseMatchesInner": FreeToolCalculateAspectRatioResponseMatchesInner,
     "FreeToolCalculateAspectRatioResponseRounding": FreeToolCalculateAspectRatioResponseRounding,
+    "FreeToolCalculateCarouselSlicesRequest": FreeToolCalculateCarouselSlicesRequest,
+    "FreeToolCalculateCarouselSlicesResponse": FreeToolCalculateCarouselSlicesResponse,
+    "FreeToolCalculateCarouselSlicesResponseOutput": FreeToolCalculateCarouselSlicesResponseOutput,
+    "FreeToolCalculateCarouselSlicesResponseSlidesInner": FreeToolCalculateCarouselSlicesResponseSlidesInner,
     "FreeToolCalculateCropRequest": FreeToolCalculateCropRequest,
     "FreeToolCalculateCropResponse": FreeToolCalculateCropResponse,
     "FreeToolCalculateCropResponseCrop": FreeToolCalculateCropResponseCrop,
@@ -990,6 +1047,10 @@ let typeMap: {[index: string]: any} = {
     "FreeToolCalculateCropResponseOutput": FreeToolCalculateCropResponseOutput,
     "FreeToolCalculateEngagementRateRequest": FreeToolCalculateEngagementRateRequest,
     "FreeToolCalculateEngagementRateResponse": FreeToolCalculateEngagementRateResponse,
+    "FreeToolCalculateInfluencerRateRequest": FreeToolCalculateInfluencerRateRequest,
+    "FreeToolCalculateInfluencerRateResponse": FreeToolCalculateInfluencerRateResponse,
+    "FreeToolCalculateInfluencerRateResponseGuideSource": FreeToolCalculateInfluencerRateResponseGuideSource,
+    "FreeToolCalculateInfluencerRateResponseMultipliersInner": FreeToolCalculateInfluencerRateResponseMultipliersInner,
     "FreeToolCalculateSocialRoiRequest": FreeToolCalculateSocialRoiRequest,
     "FreeToolCalculateSocialRoiRequestCosts": FreeToolCalculateSocialRoiRequestCosts,
     "FreeToolCalculateSocialRoiResponse": FreeToolCalculateSocialRoiResponse,
@@ -1051,6 +1112,11 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGetImageSizesResponse": FreeToolGetImageSizesResponse,
     "FreeToolGetImageSizesResponseSizesInner": FreeToolGetImageSizesResponseSizesInner,
     "FreeToolGetImageSizesResponseSourcesInner": FreeToolGetImageSizesResponseSourcesInner,
+    "FreeToolGetSafeZonesRequest": FreeToolGetSafeZonesRequest,
+    "FreeToolGetSafeZonesResponse": FreeToolGetSafeZonesResponse,
+    "FreeToolGetSafeZonesResponseSafeArea": FreeToolGetSafeZonesResponseSafeArea,
+    "FreeToolGetSafeZonesResponseSource": FreeToolGetSafeZonesResponseSource,
+    "FreeToolGetSafeZonesResponseUnsafeAreasInner": FreeToolGetSafeZonesResponseUnsafeAreasInner,
     "FreeToolGetVideoSpecsResponse": FreeToolGetVideoSpecsResponse,
     "FreeToolGetVideoSpecsResponseSpecsInner": FreeToolGetVideoSpecsResponseSpecsInner,
     "FreeToolGetVideoSpecsResponseSpecsInnerLimits": FreeToolGetVideoSpecsResponseSpecsInnerLimits,
@@ -1061,6 +1127,12 @@ let typeMap: {[index: string]: any} = {
     "FreeToolPlanContentCalendarRequestTimes": FreeToolPlanContentCalendarRequestTimes,
     "FreeToolPlanContentCalendarResponse": FreeToolPlanContentCalendarResponse,
     "FreeToolPlanContentCalendarResponseSlotsInner": FreeToolPlanContentCalendarResponseSlotsInner,
+    "FreeToolPlanPostingFrequencyRequest": FreeToolPlanPostingFrequencyRequest,
+    "FreeToolPlanPostingFrequencyResponse": FreeToolPlanPostingFrequencyResponse,
+    "FreeToolPlanPostingFrequencyResponseNetworksInner": FreeToolPlanPostingFrequencyResponseNetworksInner,
+    "FreeToolPlanPostingFrequencyResponseNetworksInnerRecommendedPerWeek": FreeToolPlanPostingFrequencyResponseNetworksInnerRecommendedPerWeek,
+    "FreeToolPlanPostingFrequencyResponseNetworksInnerSourcesInner": FreeToolPlanPostingFrequencyResponseNetworksInnerSourcesInner,
+    "FreeToolPlanPostingFrequencyResponseSlotsInner": FreeToolPlanPostingFrequencyResponseSlotsInner,
     "FreeToolPreviewPostRequest": FreeToolPreviewPostRequest,
     "FreeToolPreviewPostResponse": FreeToolPreviewPostResponse,
     "FreeToolPreviewPostResponseNetworksInner": FreeToolPreviewPostResponseNetworksInner,
