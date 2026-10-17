@@ -182,6 +182,9 @@ export * from './freeToolGetVideoSpecsResponse';
 export * from './freeToolGetVideoSpecsResponseSpecsInner';
 export * from './freeToolGetVideoSpecsResponseSpecsInnerLimits';
 export * from './freeToolList';
+export * from './freeToolListAwarenessDaysResponse';
+export * from './freeToolListAwarenessDaysResponseCovers';
+export * from './freeToolListAwarenessDaysResponseEntriesInner';
 export * from './freeToolListItem';
 export * from './freeToolPlanContentCalendarRequest';
 export * from './freeToolPlanContentCalendarRequestPostsPerWeek';
@@ -197,6 +200,12 @@ export * from './freeToolPlanPostingFrequencyResponseSlotsInner';
 export * from './freeToolPreviewPostRequest';
 export * from './freeToolPreviewPostResponse';
 export * from './freeToolPreviewPostResponseNetworksInner';
+export * from './freeToolScoreSocialAuditRequest';
+export * from './freeToolScoreSocialAuditRequestInstagram';
+export * from './freeToolScoreSocialAuditResponse';
+export * from './freeToolScoreSocialAuditResponseNetworksInner';
+export * from './freeToolScoreSocialAuditResponseNetworksInnerItemsInner';
+export * from './freeToolScoreSocialAuditResponseTopFixesInner';
 export * from './freeToolSearchEmojiRequest';
 export * from './freeToolSearchEmojiResponse';
 export * from './freeToolSearchEmojiResponseResultsInner';
@@ -578,6 +587,9 @@ import { FreeToolGetVideoSpecsResponse } from './freeToolGetVideoSpecsResponse';
 import { FreeToolGetVideoSpecsResponseSpecsInner } from './freeToolGetVideoSpecsResponseSpecsInner';
 import { FreeToolGetVideoSpecsResponseSpecsInnerLimits } from './freeToolGetVideoSpecsResponseSpecsInnerLimits';
 import { FreeToolList } from './freeToolList';
+import { FreeToolListAwarenessDaysResponse } from './freeToolListAwarenessDaysResponse';
+import { FreeToolListAwarenessDaysResponseCovers } from './freeToolListAwarenessDaysResponseCovers';
+import { FreeToolListAwarenessDaysResponseEntriesInner } from './freeToolListAwarenessDaysResponseEntriesInner';
 import { FreeToolListItem } from './freeToolListItem';
 import { FreeToolPlanContentCalendarRequest } from './freeToolPlanContentCalendarRequest';
 import { FreeToolPlanContentCalendarRequestPostsPerWeek } from './freeToolPlanContentCalendarRequestPostsPerWeek';
@@ -593,6 +605,12 @@ import { FreeToolPlanPostingFrequencyResponseSlotsInner } from './freeToolPlanPo
 import { FreeToolPreviewPostRequest } from './freeToolPreviewPostRequest';
 import { FreeToolPreviewPostResponse } from './freeToolPreviewPostResponse';
 import { FreeToolPreviewPostResponseNetworksInner } from './freeToolPreviewPostResponseNetworksInner';
+import { FreeToolScoreSocialAuditRequest } from './freeToolScoreSocialAuditRequest';
+import { FreeToolScoreSocialAuditRequestInstagram } from './freeToolScoreSocialAuditRequestInstagram';
+import { FreeToolScoreSocialAuditResponse } from './freeToolScoreSocialAuditResponse';
+import { FreeToolScoreSocialAuditResponseNetworksInner } from './freeToolScoreSocialAuditResponseNetworksInner';
+import { FreeToolScoreSocialAuditResponseNetworksInnerItemsInner } from './freeToolScoreSocialAuditResponseNetworksInnerItemsInner';
+import { FreeToolScoreSocialAuditResponseTopFixesInner } from './freeToolScoreSocialAuditResponseTopFixesInner';
 import { FreeToolSearchEmojiRequest } from './freeToolSearchEmojiRequest';
 import { FreeToolSearchEmojiResponse } from './freeToolSearchEmojiResponse';
 import { FreeToolSearchEmojiResponseResultsInner } from './freeToolSearchEmojiResponseResultsInner';
@@ -862,6 +880,7 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum": FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum,
         "FreeToolGetSafeZonesRequest.PlatformEnum": FreeToolGetSafeZonesRequest.PlatformEnum,
         "FreeToolGetSafeZonesResponseUnsafeAreasInner.NameEnum": FreeToolGetSafeZonesResponseUnsafeAreasInner.NameEnum,
+        "FreeToolListAwarenessDaysResponseEntriesInner.TypeEnum": FreeToolListAwarenessDaysResponseEntriesInner.TypeEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
         "FreeToolPlanPostingFrequencyRequest.NetworksEnum": FreeToolPlanPostingFrequencyRequest.NetworksEnum,
         "FreeToolPlanPostingFrequencyResponseNetworksInner.NetworkEnum": FreeToolPlanPostingFrequencyResponseNetworksInner.NetworkEnum,
@@ -871,6 +890,18 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolPlanPostingFrequencyResponseSlotsInner.NetworkEnum": FreeToolPlanPostingFrequencyResponseSlotsInner.NetworkEnum,
         "FreeToolPreviewPostRequest.InstagramRatioEnum": FreeToolPreviewPostRequest.InstagramRatioEnum,
         "FreeToolPreviewPostResponseNetworksInner.KeyEnum": FreeToolPreviewPostResponseNetworksInner.KeyEnum,
+        "FreeToolScoreSocialAuditRequestInstagram.ProfileEnum": FreeToolScoreSocialAuditRequestInstagram.ProfileEnum,
+        "FreeToolScoreSocialAuditRequestInstagram.BioEnum": FreeToolScoreSocialAuditRequestInstagram.BioEnum,
+        "FreeToolScoreSocialAuditRequestInstagram.LinkTrackingEnum": FreeToolScoreSocialAuditRequestInstagram.LinkTrackingEnum,
+        "FreeToolScoreSocialAuditRequestInstagram.FrequencyEnum": FreeToolScoreSocialAuditRequestInstagram.FrequencyEnum,
+        "FreeToolScoreSocialAuditRequestInstagram.RepliesEnum": FreeToolScoreSocialAuditRequestInstagram.RepliesEnum,
+        "FreeToolScoreSocialAuditRequestInstagram.NativeFormatsEnum": FreeToolScoreSocialAuditRequestInstagram.NativeFormatsEnum,
+        "FreeToolScoreSocialAuditRequestInstagram.PinnedEnum": FreeToolScoreSocialAuditRequestInstagram.PinnedEnum,
+        "FreeToolScoreSocialAuditRequestInstagram.EngagementRateEnum": FreeToolScoreSocialAuditRequestInstagram.EngagementRateEnum,
+        "FreeToolScoreSocialAuditResponseNetworksInner.NetworkEnum": FreeToolScoreSocialAuditResponseNetworksInner.NetworkEnum,
+        "FreeToolScoreSocialAuditResponseNetworksInnerItemsInner.KeyEnum": FreeToolScoreSocialAuditResponseNetworksInnerItemsInner.KeyEnum,
+        "FreeToolScoreSocialAuditResponseNetworksInnerItemsInner.AnswerEnum": FreeToolScoreSocialAuditResponseNetworksInnerItemsInner.AnswerEnum,
+        "FreeToolScoreSocialAuditResponseTopFixesInner.KeyEnum": FreeToolScoreSocialAuditResponseTopFixesInner.KeyEnum,
         "FreeToolSearchEmojiRequest.CategoryEnum": FreeToolSearchEmojiRequest.CategoryEnum,
         "FreeToolSplitThreadRequest.NetworkEnum": FreeToolSplitThreadRequest.NetworkEnum,
         "GetRemoteUploadStatus200Response.StatusEnum": GetRemoteUploadStatus200Response.StatusEnum,
@@ -1121,6 +1152,9 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGetVideoSpecsResponseSpecsInner": FreeToolGetVideoSpecsResponseSpecsInner,
     "FreeToolGetVideoSpecsResponseSpecsInnerLimits": FreeToolGetVideoSpecsResponseSpecsInnerLimits,
     "FreeToolList": FreeToolList,
+    "FreeToolListAwarenessDaysResponse": FreeToolListAwarenessDaysResponse,
+    "FreeToolListAwarenessDaysResponseCovers": FreeToolListAwarenessDaysResponseCovers,
+    "FreeToolListAwarenessDaysResponseEntriesInner": FreeToolListAwarenessDaysResponseEntriesInner,
     "FreeToolListItem": FreeToolListItem,
     "FreeToolPlanContentCalendarRequest": FreeToolPlanContentCalendarRequest,
     "FreeToolPlanContentCalendarRequestPostsPerWeek": FreeToolPlanContentCalendarRequestPostsPerWeek,
@@ -1136,6 +1170,12 @@ let typeMap: {[index: string]: any} = {
     "FreeToolPreviewPostRequest": FreeToolPreviewPostRequest,
     "FreeToolPreviewPostResponse": FreeToolPreviewPostResponse,
     "FreeToolPreviewPostResponseNetworksInner": FreeToolPreviewPostResponseNetworksInner,
+    "FreeToolScoreSocialAuditRequest": FreeToolScoreSocialAuditRequest,
+    "FreeToolScoreSocialAuditRequestInstagram": FreeToolScoreSocialAuditRequestInstagram,
+    "FreeToolScoreSocialAuditResponse": FreeToolScoreSocialAuditResponse,
+    "FreeToolScoreSocialAuditResponseNetworksInner": FreeToolScoreSocialAuditResponseNetworksInner,
+    "FreeToolScoreSocialAuditResponseNetworksInnerItemsInner": FreeToolScoreSocialAuditResponseNetworksInnerItemsInner,
+    "FreeToolScoreSocialAuditResponseTopFixesInner": FreeToolScoreSocialAuditResponseTopFixesInner,
     "FreeToolSearchEmojiRequest": FreeToolSearchEmojiRequest,
     "FreeToolSearchEmojiResponse": FreeToolSearchEmojiResponse,
     "FreeToolSearchEmojiResponseResultsInner": FreeToolSearchEmojiResponseResultsInner,
