@@ -91,6 +91,10 @@ export * from './deleteResult';
 export * from './deleteUser400Response';
 export * from './deleteUsersBulkRequest';
 export * from './deleteWorkspacesBulkRequest';
+export * from './freeToolBuildHashtagGroupsRequest';
+export * from './freeToolBuildHashtagGroupsResponse';
+export * from './freeToolBuildHashtagGroupsResponseGroupsInner';
+export * from './freeToolBuildHashtagGroupsResponseRemovedInner';
 export * from './freeToolBuildUtmUrlRequest';
 export * from './freeToolBuildUtmUrlResponse';
 export * from './freeToolCalculateAspectRatioRequest';
@@ -112,6 +116,10 @@ export * from './freeToolCalculateInfluencerRateRequest';
 export * from './freeToolCalculateInfluencerRateResponse';
 export * from './freeToolCalculateInfluencerRateResponseGuideSource';
 export * from './freeToolCalculateInfluencerRateResponseMultipliersInner';
+export * from './freeToolCalculateSmmPricingRequest';
+export * from './freeToolCalculateSmmPricingResponse';
+export * from './freeToolCalculateSmmPricingResponseLineItemsInner';
+export * from './freeToolCalculateSmmPricingResponseRange';
 export * from './freeToolCalculateSocialRoiRequest';
 export * from './freeToolCalculateSocialRoiRequestCosts';
 export * from './freeToolCalculateSocialRoiResponse';
@@ -144,10 +152,19 @@ export * from './freeToolCountCharactersRequest';
 export * from './freeToolCountCharactersResponse';
 export * from './freeToolCountCharactersResponseNetworksInner';
 export * from './freeToolError';
+export * from './freeToolFindAutomationRecipesResponse';
+export * from './freeToolFindAutomationRecipesResponseRecipesInner';
+export * from './freeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner';
+export * from './freeToolFindAutomationRecipesResponseRecipesInnerNative';
+export * from './freeToolFindAutomationRecipesResponseRecipesInnerSteps';
 export * from './freeToolFormatInstagramCaptionRequest';
 export * from './freeToolFormatInstagramCaptionResponse';
 export * from './freeToolFormatLinkedInPostRequest';
 export * from './freeToolFormatLinkedInPostResponse';
+export * from './freeToolGenerateAltTextRequest';
+export * from './freeToolGenerateAltTextResponse';
+export * from './freeToolGenerateBioRequest';
+export * from './freeToolGenerateBioResponse';
 export * from './freeToolGenerateCaptionRequest';
 export * from './freeToolGenerateCaptionResponse';
 export * from './freeToolGenerateFancyTextRequest';
@@ -158,6 +175,8 @@ export * from './freeToolGenerateHashtagsResponse';
 export * from './freeToolGenerateHooksRequest';
 export * from './freeToolGenerateHooksResponse';
 export * from './freeToolGenerateHooksResponseHooksInner';
+export * from './freeToolGenerateLinkedInHeadlineRequest';
+export * from './freeToolGenerateLinkedInHeadlineResponse';
 export * from './freeToolGenerateQrCodeRequest';
 export * from './freeToolGenerateQrCodeRequestUtm';
 export * from './freeToolGenerateQrCodeResponse';
@@ -166,8 +185,18 @@ export * from './freeToolGenerateSocialPostsFromBlogResponse';
 export * from './freeToolGenerateSocialPostsFromBlogResponsePostsInner';
 export * from './freeToolGenerateSocialPostsFromBlogResponseSource';
 export * from './freeToolGenerateSocialPostsFromBlogResponseWarningsInner';
+export * from './freeToolGenerateUsernamesRequest';
+export * from './freeToolGenerateUsernamesResponse';
+export * from './freeToolGenerateUsernamesResponseRules';
+export * from './freeToolGenerateUsernamesResponseUsernamesInner';
+export * from './freeToolGenerateYoutubeDescriptionRequest';
+export * from './freeToolGenerateYoutubeDescriptionResponse';
+export * from './freeToolGenerateYoutubeTitlesRequest';
+export * from './freeToolGenerateYoutubeTitlesResponse';
 export * from './freeToolGetBestTimesToPostResponse';
 export * from './freeToolGetBestTimesToPostResponseNetworksInner';
+export * from './freeToolGetGlossaryResponse';
+export * from './freeToolGetGlossaryResponseTermsInner';
 export * from './freeToolGetHookTemplatesResponse';
 export * from './freeToolGetHookTemplatesResponseHooksInner';
 export * from './freeToolGetImageSizesResponse';
@@ -186,6 +215,9 @@ export * from './freeToolListAwarenessDaysResponse';
 export * from './freeToolListAwarenessDaysResponseCovers';
 export * from './freeToolListAwarenessDaysResponseEntriesInner';
 export * from './freeToolListItem';
+export * from './freeToolPickSocialMediaToolRequest';
+export * from './freeToolPickSocialMediaToolResponse';
+export * from './freeToolPickSocialMediaToolResponseResultsInner';
 export * from './freeToolPlanContentCalendarRequest';
 export * from './freeToolPlanContentCalendarRequestPostsPerWeek';
 export * from './freeToolPlanContentCalendarRequestTimes';
@@ -212,12 +244,23 @@ export * from './freeToolSearchEmojiResponseResultsInner';
 export * from './freeToolSplitThreadRequest';
 export * from './freeToolSplitThreadResponse';
 export * from './freeToolSplitThreadResponsePostsInner';
+export * from './freeToolSummarizeReportRequest';
+export * from './freeToolSummarizeReportRequestRowsInner';
+export * from './freeToolSummarizeReportResponse';
+export * from './freeToolSummarizeReportResponseDateRange';
+export * from './freeToolSummarizeReportResponseNetworksInner';
+export * from './freeToolSummarizeReportResponseTopPostsInner';
+export * from './freeToolSummarizeReportResponseWeekdaysInner';
+export * from './freeToolVerifyWebhookSignatureRequest';
+export * from './freeToolVerifyWebhookSignatureResponse';
+export * from './generateAltTextRequest';
 export * from './getAccountHealth200Response';
 export * from './getBrandVoice200Response';
 export * from './getCompetitor200Response';
 export * from './getInboxConversation200Response';
 export * from './getPostingSchedule200Response';
 export * from './getRemoteUploadStatus200Response';
+export * from './getRemoteUploadStatus404Response';
 export * from './getReportBranding200Response';
 export * from './getRepurposeRun200Response';
 export * from './guardrailError';
@@ -251,8 +294,7 @@ export * from './inboxReplyDraftEdit';
 export * from './inboxReplyDraftInput';
 export * from './initiateChunkedUpload201Response';
 export * from './initiateChunkedUploadRequest';
-export * from './initiateRemoteUpload201Response';
-export * from './initiateRemoteUpload201ResponseOneOf';
+export * from './initiateRemoteUpload200Response';
 export * from './initiateRemoteUploadRequest';
 export * from './learnBrandVoiceInput';
 export * from './learnBrandVoiceResponse';
@@ -374,6 +416,9 @@ export * from './templateInputContentInner';
 export * from './updateMediaRequest';
 export * from './updatePost200Response';
 export * from './uploadChunk201Response';
+export * from './uploadChunkRequest';
+export * from './uploadMediaRequest';
+export * from './uploadReportBrandingLogoRequest';
 export * from './user';
 export * from './userInput';
 export * from './userUpdateInput';
@@ -496,6 +541,10 @@ import { DeleteResult } from './deleteResult';
 import { DeleteUser400Response } from './deleteUser400Response';
 import { DeleteUsersBulkRequest } from './deleteUsersBulkRequest';
 import { DeleteWorkspacesBulkRequest } from './deleteWorkspacesBulkRequest';
+import { FreeToolBuildHashtagGroupsRequest } from './freeToolBuildHashtagGroupsRequest';
+import { FreeToolBuildHashtagGroupsResponse } from './freeToolBuildHashtagGroupsResponse';
+import { FreeToolBuildHashtagGroupsResponseGroupsInner } from './freeToolBuildHashtagGroupsResponseGroupsInner';
+import { FreeToolBuildHashtagGroupsResponseRemovedInner } from './freeToolBuildHashtagGroupsResponseRemovedInner';
 import { FreeToolBuildUtmUrlRequest } from './freeToolBuildUtmUrlRequest';
 import { FreeToolBuildUtmUrlResponse } from './freeToolBuildUtmUrlResponse';
 import { FreeToolCalculateAspectRatioRequest } from './freeToolCalculateAspectRatioRequest';
@@ -517,6 +566,10 @@ import { FreeToolCalculateInfluencerRateRequest } from './freeToolCalculateInflu
 import { FreeToolCalculateInfluencerRateResponse } from './freeToolCalculateInfluencerRateResponse';
 import { FreeToolCalculateInfluencerRateResponseGuideSource } from './freeToolCalculateInfluencerRateResponseGuideSource';
 import { FreeToolCalculateInfluencerRateResponseMultipliersInner } from './freeToolCalculateInfluencerRateResponseMultipliersInner';
+import { FreeToolCalculateSmmPricingRequest } from './freeToolCalculateSmmPricingRequest';
+import { FreeToolCalculateSmmPricingResponse } from './freeToolCalculateSmmPricingResponse';
+import { FreeToolCalculateSmmPricingResponseLineItemsInner } from './freeToolCalculateSmmPricingResponseLineItemsInner';
+import { FreeToolCalculateSmmPricingResponseRange } from './freeToolCalculateSmmPricingResponseRange';
 import { FreeToolCalculateSocialRoiRequest } from './freeToolCalculateSocialRoiRequest';
 import { FreeToolCalculateSocialRoiRequestCosts } from './freeToolCalculateSocialRoiRequestCosts';
 import { FreeToolCalculateSocialRoiResponse } from './freeToolCalculateSocialRoiResponse';
@@ -549,10 +602,19 @@ import { FreeToolCountCharactersRequest } from './freeToolCountCharactersRequest
 import { FreeToolCountCharactersResponse } from './freeToolCountCharactersResponse';
 import { FreeToolCountCharactersResponseNetworksInner } from './freeToolCountCharactersResponseNetworksInner';
 import { FreeToolError } from './freeToolError';
+import { FreeToolFindAutomationRecipesResponse } from './freeToolFindAutomationRecipesResponse';
+import { FreeToolFindAutomationRecipesResponseRecipesInner } from './freeToolFindAutomationRecipesResponseRecipesInner';
+import { FreeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner } from './freeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner';
+import { FreeToolFindAutomationRecipesResponseRecipesInnerNative } from './freeToolFindAutomationRecipesResponseRecipesInnerNative';
+import { FreeToolFindAutomationRecipesResponseRecipesInnerSteps } from './freeToolFindAutomationRecipesResponseRecipesInnerSteps';
 import { FreeToolFormatInstagramCaptionRequest } from './freeToolFormatInstagramCaptionRequest';
 import { FreeToolFormatInstagramCaptionResponse } from './freeToolFormatInstagramCaptionResponse';
 import { FreeToolFormatLinkedInPostRequest } from './freeToolFormatLinkedInPostRequest';
 import { FreeToolFormatLinkedInPostResponse } from './freeToolFormatLinkedInPostResponse';
+import { FreeToolGenerateAltTextRequest } from './freeToolGenerateAltTextRequest';
+import { FreeToolGenerateAltTextResponse } from './freeToolGenerateAltTextResponse';
+import { FreeToolGenerateBioRequest } from './freeToolGenerateBioRequest';
+import { FreeToolGenerateBioResponse } from './freeToolGenerateBioResponse';
 import { FreeToolGenerateCaptionRequest } from './freeToolGenerateCaptionRequest';
 import { FreeToolGenerateCaptionResponse } from './freeToolGenerateCaptionResponse';
 import { FreeToolGenerateFancyTextRequest } from './freeToolGenerateFancyTextRequest';
@@ -563,6 +625,8 @@ import { FreeToolGenerateHashtagsResponse } from './freeToolGenerateHashtagsResp
 import { FreeToolGenerateHooksRequest } from './freeToolGenerateHooksRequest';
 import { FreeToolGenerateHooksResponse } from './freeToolGenerateHooksResponse';
 import { FreeToolGenerateHooksResponseHooksInner } from './freeToolGenerateHooksResponseHooksInner';
+import { FreeToolGenerateLinkedInHeadlineRequest } from './freeToolGenerateLinkedInHeadlineRequest';
+import { FreeToolGenerateLinkedInHeadlineResponse } from './freeToolGenerateLinkedInHeadlineResponse';
 import { FreeToolGenerateQrCodeRequest } from './freeToolGenerateQrCodeRequest';
 import { FreeToolGenerateQrCodeRequestUtm } from './freeToolGenerateQrCodeRequestUtm';
 import { FreeToolGenerateQrCodeResponse } from './freeToolGenerateQrCodeResponse';
@@ -571,8 +635,18 @@ import { FreeToolGenerateSocialPostsFromBlogResponse } from './freeToolGenerateS
 import { FreeToolGenerateSocialPostsFromBlogResponsePostsInner } from './freeToolGenerateSocialPostsFromBlogResponsePostsInner';
 import { FreeToolGenerateSocialPostsFromBlogResponseSource } from './freeToolGenerateSocialPostsFromBlogResponseSource';
 import { FreeToolGenerateSocialPostsFromBlogResponseWarningsInner } from './freeToolGenerateSocialPostsFromBlogResponseWarningsInner';
+import { FreeToolGenerateUsernamesRequest } from './freeToolGenerateUsernamesRequest';
+import { FreeToolGenerateUsernamesResponse } from './freeToolGenerateUsernamesResponse';
+import { FreeToolGenerateUsernamesResponseRules } from './freeToolGenerateUsernamesResponseRules';
+import { FreeToolGenerateUsernamesResponseUsernamesInner } from './freeToolGenerateUsernamesResponseUsernamesInner';
+import { FreeToolGenerateYoutubeDescriptionRequest } from './freeToolGenerateYoutubeDescriptionRequest';
+import { FreeToolGenerateYoutubeDescriptionResponse } from './freeToolGenerateYoutubeDescriptionResponse';
+import { FreeToolGenerateYoutubeTitlesRequest } from './freeToolGenerateYoutubeTitlesRequest';
+import { FreeToolGenerateYoutubeTitlesResponse } from './freeToolGenerateYoutubeTitlesResponse';
 import { FreeToolGetBestTimesToPostResponse } from './freeToolGetBestTimesToPostResponse';
 import { FreeToolGetBestTimesToPostResponseNetworksInner } from './freeToolGetBestTimesToPostResponseNetworksInner';
+import { FreeToolGetGlossaryResponse } from './freeToolGetGlossaryResponse';
+import { FreeToolGetGlossaryResponseTermsInner } from './freeToolGetGlossaryResponseTermsInner';
 import { FreeToolGetHookTemplatesResponse } from './freeToolGetHookTemplatesResponse';
 import { FreeToolGetHookTemplatesResponseHooksInner } from './freeToolGetHookTemplatesResponseHooksInner';
 import { FreeToolGetImageSizesResponse } from './freeToolGetImageSizesResponse';
@@ -591,6 +665,9 @@ import { FreeToolListAwarenessDaysResponse } from './freeToolListAwarenessDaysRe
 import { FreeToolListAwarenessDaysResponseCovers } from './freeToolListAwarenessDaysResponseCovers';
 import { FreeToolListAwarenessDaysResponseEntriesInner } from './freeToolListAwarenessDaysResponseEntriesInner';
 import { FreeToolListItem } from './freeToolListItem';
+import { FreeToolPickSocialMediaToolRequest } from './freeToolPickSocialMediaToolRequest';
+import { FreeToolPickSocialMediaToolResponse } from './freeToolPickSocialMediaToolResponse';
+import { FreeToolPickSocialMediaToolResponseResultsInner } from './freeToolPickSocialMediaToolResponseResultsInner';
 import { FreeToolPlanContentCalendarRequest } from './freeToolPlanContentCalendarRequest';
 import { FreeToolPlanContentCalendarRequestPostsPerWeek } from './freeToolPlanContentCalendarRequestPostsPerWeek';
 import { FreeToolPlanContentCalendarRequestTimes } from './freeToolPlanContentCalendarRequestTimes';
@@ -617,12 +694,23 @@ import { FreeToolSearchEmojiResponseResultsInner } from './freeToolSearchEmojiRe
 import { FreeToolSplitThreadRequest } from './freeToolSplitThreadRequest';
 import { FreeToolSplitThreadResponse } from './freeToolSplitThreadResponse';
 import { FreeToolSplitThreadResponsePostsInner } from './freeToolSplitThreadResponsePostsInner';
+import { FreeToolSummarizeReportRequest } from './freeToolSummarizeReportRequest';
+import { FreeToolSummarizeReportRequestRowsInner } from './freeToolSummarizeReportRequestRowsInner';
+import { FreeToolSummarizeReportResponse } from './freeToolSummarizeReportResponse';
+import { FreeToolSummarizeReportResponseDateRange } from './freeToolSummarizeReportResponseDateRange';
+import { FreeToolSummarizeReportResponseNetworksInner } from './freeToolSummarizeReportResponseNetworksInner';
+import { FreeToolSummarizeReportResponseTopPostsInner } from './freeToolSummarizeReportResponseTopPostsInner';
+import { FreeToolSummarizeReportResponseWeekdaysInner } from './freeToolSummarizeReportResponseWeekdaysInner';
+import { FreeToolVerifyWebhookSignatureRequest } from './freeToolVerifyWebhookSignatureRequest';
+import { FreeToolVerifyWebhookSignatureResponse } from './freeToolVerifyWebhookSignatureResponse';
+import { GenerateAltTextRequest } from './generateAltTextRequest';
 import { GetAccountHealth200Response } from './getAccountHealth200Response';
 import { GetBrandVoice200Response } from './getBrandVoice200Response';
 import { GetCompetitor200Response } from './getCompetitor200Response';
 import { GetInboxConversation200Response } from './getInboxConversation200Response';
 import { GetPostingSchedule200Response } from './getPostingSchedule200Response';
 import { GetRemoteUploadStatus200Response } from './getRemoteUploadStatus200Response';
+import { GetRemoteUploadStatus404Response } from './getRemoteUploadStatus404Response';
 import { GetReportBranding200Response } from './getReportBranding200Response';
 import { GetRepurposeRun200Response } from './getRepurposeRun200Response';
 import { GuardrailError } from './guardrailError';
@@ -656,8 +744,7 @@ import { InboxReplyDraftEdit } from './inboxReplyDraftEdit';
 import { InboxReplyDraftInput } from './inboxReplyDraftInput';
 import { InitiateChunkedUpload201Response } from './initiateChunkedUpload201Response';
 import { InitiateChunkedUploadRequest } from './initiateChunkedUploadRequest';
-import { InitiateRemoteUpload201Response } from './initiateRemoteUpload201Response';
-import { InitiateRemoteUpload201ResponseOneOf } from './initiateRemoteUpload201ResponseOneOf';
+import { InitiateRemoteUpload200Response } from './initiateRemoteUpload200Response';
 import { InitiateRemoteUploadRequest } from './initiateRemoteUploadRequest';
 import { LearnBrandVoiceInput } from './learnBrandVoiceInput';
 import { LearnBrandVoiceResponse } from './learnBrandVoiceResponse';
@@ -779,6 +866,9 @@ import { TemplateInputContentInner } from './templateInputContentInner';
 import { UpdateMediaRequest } from './updateMediaRequest';
 import { UpdatePost200Response } from './updatePost200Response';
 import { UploadChunk201Response } from './uploadChunk201Response';
+import { UploadChunkRequest } from './uploadChunkRequest';
+import { UploadMediaRequest } from './uploadMediaRequest';
+import { UploadReportBrandingLogoRequest } from './uploadReportBrandingLogoRequest';
 import { User } from './user';
 import { UserInput } from './userInput';
 import { UserUpdateInput } from './userUpdateInput';
@@ -836,6 +926,10 @@ let enumsMap: {[index: string]: any} = {
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
         "CreateConnectLinkRequest.ProviderEnum": CreateConnectLinkRequest.ProviderEnum,
         "DeleteMode": DeleteMode,
+        "FreeToolBuildHashtagGroupsRequest.NetworkEnum": FreeToolBuildHashtagGroupsRequest.NetworkEnum,
+        "FreeToolBuildHashtagGroupsRequest.CaseEnum": FreeToolBuildHashtagGroupsRequest.CaseEnum,
+        "FreeToolBuildHashtagGroupsRequest.FormatEnum": FreeToolBuildHashtagGroupsRequest.FormatEnum,
+        "FreeToolBuildHashtagGroupsResponseRemovedInner.ReasonEnum": FreeToolBuildHashtagGroupsResponseRemovedInner.ReasonEnum,
         "FreeToolCalculateAspectRatioResponse.OrientationEnum": FreeToolCalculateAspectRatioResponse.OrientationEnum,
         "FreeToolCalculateAspectRatioResponseRounding.SideEnum": FreeToolCalculateAspectRatioResponseRounding.SideEnum,
         "FreeToolCalculateCarouselSlicesRequest.RatioEnum": FreeToolCalculateCarouselSlicesRequest.RatioEnum,
@@ -847,6 +941,11 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolCalculateInfluencerRateResponse.DeliverableEnum": FreeToolCalculateInfluencerRateResponse.DeliverableEnum,
         "FreeToolCalculateInfluencerRateResponse.CurrencyEnum": FreeToolCalculateInfluencerRateResponse.CurrencyEnum,
         "FreeToolCalculateInfluencerRateResponseMultipliersInner.NameEnum": FreeToolCalculateInfluencerRateResponseMultipliersInner.NameEnum,
+        "FreeToolCalculateSmmPricingRequest.ContentTypeEnum": FreeToolCalculateSmmPricingRequest.ContentTypeEnum,
+        "FreeToolCalculateSmmPricingRequest.CurrencyEnum": FreeToolCalculateSmmPricingRequest.CurrencyEnum,
+        "FreeToolCalculateSmmPricingRequest.PricingModelEnum": FreeToolCalculateSmmPricingRequest.PricingModelEnum,
+        "FreeToolCalculateSmmPricingResponse.PricingModelEnum": FreeToolCalculateSmmPricingResponse.PricingModelEnum,
+        "FreeToolCalculateSmmPricingResponseLineItemsInner.KeyEnum": FreeToolCalculateSmmPricingResponseLineItemsInner.KeyEnum,
         "FreeToolCalculateSocialRoiResponseCostBreakdownInner.KeyEnum": FreeToolCalculateSocialRoiResponseCostBreakdownInner.KeyEnum,
         "FreeToolCalculateXApiCostResponseLineItemsInner.KeyEnum": FreeToolCalculateXApiCostResponseLineItemsInner.KeyEnum,
         "FreeToolCheckLinkPreviewResponseImage.SourceEnum": FreeToolCheckLinkPreviewResponseImage.SourceEnum,
@@ -857,18 +956,24 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolCleanTextRequest.DashesEnum": FreeToolCleanTextRequest.DashesEnum,
         "FreeToolCleanTextResponseChangesInner.TypeEnum": FreeToolCleanTextResponseChangesInner.TypeEnum,
         "FreeToolCountCharactersRequest.NetworkEnum": FreeToolCountCharactersRequest.NetworkEnum,
+        "FreeToolFindAutomationRecipesResponseRecipesInner.TriggerEnum": FreeToolFindAutomationRecipesResponseRecipesInner.TriggerEnum,
         "FreeToolFormatInstagramCaptionRequest.SpacerEnum": FreeToolFormatInstagramCaptionRequest.SpacerEnum,
         "FreeToolFormatLinkedInPostRequest.StyleEnum": FreeToolFormatLinkedInPostRequest.StyleEnum,
         "FreeToolFormatLinkedInPostRequest.ListEnum": FreeToolFormatLinkedInPostRequest.ListEnum,
+        "FreeToolGenerateAltTextRequest.LengthEnum": FreeToolGenerateAltTextRequest.LengthEnum,
+        "FreeToolGenerateBioRequest.ToneEnum": FreeToolGenerateBioRequest.ToneEnum,
+        "FreeToolGenerateBioRequest.NetworkEnum": FreeToolGenerateBioRequest.NetworkEnum,
         "FreeToolGenerateCaptionRequest.ToneEnum": FreeToolGenerateCaptionRequest.ToneEnum,
         "FreeToolGenerateCaptionRequest.LengthEnum": FreeToolGenerateCaptionRequest.LengthEnum,
         "FreeToolGenerateCaptionRequest.NetworkEnum": FreeToolGenerateCaptionRequest.NetworkEnum,
+        "FreeToolGenerateCaptionRequest.FormatEnum": FreeToolGenerateCaptionRequest.FormatEnum,
         "FreeToolGenerateFancyTextRequest.StyleEnum": FreeToolGenerateFancyTextRequest.StyleEnum,
         "FreeToolGenerateHashtagsRequest.NicheEnum": FreeToolGenerateHashtagsRequest.NicheEnum,
         "FreeToolGenerateHashtagsRequest.NetworkEnum": FreeToolGenerateHashtagsRequest.NetworkEnum,
         "FreeToolGenerateHooksRequest.ToneEnum": FreeToolGenerateHooksRequest.ToneEnum,
         "FreeToolGenerateHooksRequest.NetworkEnum": FreeToolGenerateHooksRequest.NetworkEnum,
         "FreeToolGenerateHooksResponseHooksInner.CategoryEnum": FreeToolGenerateHooksResponseHooksInner.CategoryEnum,
+        "FreeToolGenerateLinkedInHeadlineRequest.ToneEnum": FreeToolGenerateLinkedInHeadlineRequest.ToneEnum,
         "FreeToolGenerateQrCodeRequest.ErrorCorrectionEnum": FreeToolGenerateQrCodeRequest.ErrorCorrectionEnum,
         "FreeToolGenerateSocialPostsFromBlogRequest.PlatformsEnum": FreeToolGenerateSocialPostsFromBlogRequest.PlatformsEnum,
         "FreeToolGenerateSocialPostsFromBlogRequest.ToneEnum": FreeToolGenerateSocialPostsFromBlogRequest.ToneEnum,
@@ -876,12 +981,25 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGenerateSocialPostsFromBlogRequest.HashtagsEnum": FreeToolGenerateSocialPostsFromBlogRequest.HashtagsEnum,
         "FreeToolGenerateSocialPostsFromBlogRequest.CtaEnum": FreeToolGenerateSocialPostsFromBlogRequest.CtaEnum,
         "FreeToolGenerateSocialPostsFromBlogResponsePostsInner.PlatformEnum": FreeToolGenerateSocialPostsFromBlogResponsePostsInner.PlatformEnum,
+        "FreeToolGenerateUsernamesRequest.NetworkEnum": FreeToolGenerateUsernamesRequest.NetworkEnum,
+        "FreeToolGenerateUsernamesRequest.StyleEnum": FreeToolGenerateUsernamesRequest.StyleEnum,
+        "FreeToolGenerateUsernamesResponse.NetworkEnum": FreeToolGenerateUsernamesResponse.NetworkEnum,
+        "FreeToolGenerateUsernamesResponse.StyleEnum": FreeToolGenerateUsernamesResponse.StyleEnum,
+        "FreeToolGenerateYoutubeDescriptionRequest.CtaEnum": FreeToolGenerateYoutubeDescriptionRequest.CtaEnum,
+        "FreeToolGenerateYoutubeTitlesRequest.StyleEnum": FreeToolGenerateYoutubeTitlesRequest.StyleEnum,
+        "FreeToolGetGlossaryResponseTermsInner.CategoryEnum": FreeToolGetGlossaryResponseTermsInner.CategoryEnum,
         "FreeToolGetHookTemplatesResponseHooksInner.CategoryEnum": FreeToolGetHookTemplatesResponseHooksInner.CategoryEnum,
         "FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum": FreeToolGetHookTemplatesResponseHooksInner.NetworksEnum,
         "FreeToolGetSafeZonesRequest.PlatformEnum": FreeToolGetSafeZonesRequest.PlatformEnum,
         "FreeToolGetSafeZonesResponseUnsafeAreasInner.NameEnum": FreeToolGetSafeZonesResponseUnsafeAreasInner.NameEnum,
         "FreeToolListAwarenessDaysResponseEntriesInner.TypeEnum": FreeToolListAwarenessDaysResponseEntriesInner.TypeEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
+        "FreeToolPickSocialMediaToolRequest.NeedsEnum": FreeToolPickSocialMediaToolRequest.NeedsEnum,
+        "FreeToolPickSocialMediaToolRequest.UseCaseEnum": FreeToolPickSocialMediaToolRequest.UseCaseEnum,
+        "FreeToolPickSocialMediaToolResponse.NeedsEnum": FreeToolPickSocialMediaToolResponse.NeedsEnum,
+        "FreeToolPickSocialMediaToolResponseResultsInner.MatchedEnum": FreeToolPickSocialMediaToolResponseResultsInner.MatchedEnum,
+        "FreeToolPickSocialMediaToolResponseResultsInner.MissingEnum": FreeToolPickSocialMediaToolResponseResultsInner.MissingEnum,
+        "FreeToolPickSocialMediaToolResponseResultsInner.UnknownEnum": FreeToolPickSocialMediaToolResponseResultsInner.UnknownEnum,
         "FreeToolPlanPostingFrequencyRequest.NetworksEnum": FreeToolPlanPostingFrequencyRequest.NetworksEnum,
         "FreeToolPlanPostingFrequencyResponseNetworksInner.NetworkEnum": FreeToolPlanPostingFrequencyResponseNetworksInner.NetworkEnum,
         "FreeToolPlanPostingFrequencyResponseNetworksInner.FitEnum": FreeToolPlanPostingFrequencyResponseNetworksInner.FitEnum,
@@ -904,7 +1022,11 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolScoreSocialAuditResponseTopFixesInner.KeyEnum": FreeToolScoreSocialAuditResponseTopFixesInner.KeyEnum,
         "FreeToolSearchEmojiRequest.CategoryEnum": FreeToolSearchEmojiRequest.CategoryEnum,
         "FreeToolSplitThreadRequest.NetworkEnum": FreeToolSplitThreadRequest.NetworkEnum,
+        "FreeToolVerifyWebhookSignatureRequest.AlgorithmEnum": FreeToolVerifyWebhookSignatureRequest.AlgorithmEnum,
+        "FreeToolVerifyWebhookSignatureRequest.EncodingEnum": FreeToolVerifyWebhookSignatureRequest.EncodingEnum,
+        "GenerateAltTextRequest.LengthEnum": GenerateAltTextRequest.LengthEnum,
         "GetRemoteUploadStatus200Response.StatusEnum": GetRemoteUploadStatus200Response.StatusEnum,
+        "GetRemoteUploadStatus404Response.StatusEnum": GetRemoteUploadStatus404Response.StatusEnum,
         "GuardrailError.CodeEnum": GuardrailError.CodeEnum,
         "ImageEditInput.AspectRatioEnum": ImageEditInput.AspectRatioEnum,
         "ImageEditInput.QualityEnum": ImageEditInput.QualityEnum,
@@ -922,7 +1044,7 @@ let enumsMap: {[index: string]: any} = {
         "InboxMessage.AiLabelEnum": InboxMessage.AiLabelEnum,
         "InboxReplyDraft.StatusEnum": InboxReplyDraft.StatusEnum,
         "InboxReplyDraft.SourceEnum": InboxReplyDraft.SourceEnum,
-        "InitiateRemoteUpload201Response.TypeEnum": InitiateRemoteUpload201Response.TypeEnum,
+        "InitiateRemoteUpload200Response.StatusEnum": InitiateRemoteUpload200Response.StatusEnum,
         "Media.TypeEnum": Media.TypeEnum,
         "PostOptionsInstagram.TypeEnum": PostOptionsInstagram.TypeEnum,
         "PostOptionsTikTok.PrivacyLevelEnum": PostOptionsTikTok.PrivacyLevelEnum,
@@ -1061,6 +1183,10 @@ let typeMap: {[index: string]: any} = {
     "DeleteUser400Response": DeleteUser400Response,
     "DeleteUsersBulkRequest": DeleteUsersBulkRequest,
     "DeleteWorkspacesBulkRequest": DeleteWorkspacesBulkRequest,
+    "FreeToolBuildHashtagGroupsRequest": FreeToolBuildHashtagGroupsRequest,
+    "FreeToolBuildHashtagGroupsResponse": FreeToolBuildHashtagGroupsResponse,
+    "FreeToolBuildHashtagGroupsResponseGroupsInner": FreeToolBuildHashtagGroupsResponseGroupsInner,
+    "FreeToolBuildHashtagGroupsResponseRemovedInner": FreeToolBuildHashtagGroupsResponseRemovedInner,
     "FreeToolBuildUtmUrlRequest": FreeToolBuildUtmUrlRequest,
     "FreeToolBuildUtmUrlResponse": FreeToolBuildUtmUrlResponse,
     "FreeToolCalculateAspectRatioRequest": FreeToolCalculateAspectRatioRequest,
@@ -1082,6 +1208,10 @@ let typeMap: {[index: string]: any} = {
     "FreeToolCalculateInfluencerRateResponse": FreeToolCalculateInfluencerRateResponse,
     "FreeToolCalculateInfluencerRateResponseGuideSource": FreeToolCalculateInfluencerRateResponseGuideSource,
     "FreeToolCalculateInfluencerRateResponseMultipliersInner": FreeToolCalculateInfluencerRateResponseMultipliersInner,
+    "FreeToolCalculateSmmPricingRequest": FreeToolCalculateSmmPricingRequest,
+    "FreeToolCalculateSmmPricingResponse": FreeToolCalculateSmmPricingResponse,
+    "FreeToolCalculateSmmPricingResponseLineItemsInner": FreeToolCalculateSmmPricingResponseLineItemsInner,
+    "FreeToolCalculateSmmPricingResponseRange": FreeToolCalculateSmmPricingResponseRange,
     "FreeToolCalculateSocialRoiRequest": FreeToolCalculateSocialRoiRequest,
     "FreeToolCalculateSocialRoiRequestCosts": FreeToolCalculateSocialRoiRequestCosts,
     "FreeToolCalculateSocialRoiResponse": FreeToolCalculateSocialRoiResponse,
@@ -1114,10 +1244,19 @@ let typeMap: {[index: string]: any} = {
     "FreeToolCountCharactersResponse": FreeToolCountCharactersResponse,
     "FreeToolCountCharactersResponseNetworksInner": FreeToolCountCharactersResponseNetworksInner,
     "FreeToolError": FreeToolError,
+    "FreeToolFindAutomationRecipesResponse": FreeToolFindAutomationRecipesResponse,
+    "FreeToolFindAutomationRecipesResponseRecipesInner": FreeToolFindAutomationRecipesResponseRecipesInner,
+    "FreeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner": FreeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner,
+    "FreeToolFindAutomationRecipesResponseRecipesInnerNative": FreeToolFindAutomationRecipesResponseRecipesInnerNative,
+    "FreeToolFindAutomationRecipesResponseRecipesInnerSteps": FreeToolFindAutomationRecipesResponseRecipesInnerSteps,
     "FreeToolFormatInstagramCaptionRequest": FreeToolFormatInstagramCaptionRequest,
     "FreeToolFormatInstagramCaptionResponse": FreeToolFormatInstagramCaptionResponse,
     "FreeToolFormatLinkedInPostRequest": FreeToolFormatLinkedInPostRequest,
     "FreeToolFormatLinkedInPostResponse": FreeToolFormatLinkedInPostResponse,
+    "FreeToolGenerateAltTextRequest": FreeToolGenerateAltTextRequest,
+    "FreeToolGenerateAltTextResponse": FreeToolGenerateAltTextResponse,
+    "FreeToolGenerateBioRequest": FreeToolGenerateBioRequest,
+    "FreeToolGenerateBioResponse": FreeToolGenerateBioResponse,
     "FreeToolGenerateCaptionRequest": FreeToolGenerateCaptionRequest,
     "FreeToolGenerateCaptionResponse": FreeToolGenerateCaptionResponse,
     "FreeToolGenerateFancyTextRequest": FreeToolGenerateFancyTextRequest,
@@ -1128,6 +1267,8 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGenerateHooksRequest": FreeToolGenerateHooksRequest,
     "FreeToolGenerateHooksResponse": FreeToolGenerateHooksResponse,
     "FreeToolGenerateHooksResponseHooksInner": FreeToolGenerateHooksResponseHooksInner,
+    "FreeToolGenerateLinkedInHeadlineRequest": FreeToolGenerateLinkedInHeadlineRequest,
+    "FreeToolGenerateLinkedInHeadlineResponse": FreeToolGenerateLinkedInHeadlineResponse,
     "FreeToolGenerateQrCodeRequest": FreeToolGenerateQrCodeRequest,
     "FreeToolGenerateQrCodeRequestUtm": FreeToolGenerateQrCodeRequestUtm,
     "FreeToolGenerateQrCodeResponse": FreeToolGenerateQrCodeResponse,
@@ -1136,8 +1277,18 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGenerateSocialPostsFromBlogResponsePostsInner": FreeToolGenerateSocialPostsFromBlogResponsePostsInner,
     "FreeToolGenerateSocialPostsFromBlogResponseSource": FreeToolGenerateSocialPostsFromBlogResponseSource,
     "FreeToolGenerateSocialPostsFromBlogResponseWarningsInner": FreeToolGenerateSocialPostsFromBlogResponseWarningsInner,
+    "FreeToolGenerateUsernamesRequest": FreeToolGenerateUsernamesRequest,
+    "FreeToolGenerateUsernamesResponse": FreeToolGenerateUsernamesResponse,
+    "FreeToolGenerateUsernamesResponseRules": FreeToolGenerateUsernamesResponseRules,
+    "FreeToolGenerateUsernamesResponseUsernamesInner": FreeToolGenerateUsernamesResponseUsernamesInner,
+    "FreeToolGenerateYoutubeDescriptionRequest": FreeToolGenerateYoutubeDescriptionRequest,
+    "FreeToolGenerateYoutubeDescriptionResponse": FreeToolGenerateYoutubeDescriptionResponse,
+    "FreeToolGenerateYoutubeTitlesRequest": FreeToolGenerateYoutubeTitlesRequest,
+    "FreeToolGenerateYoutubeTitlesResponse": FreeToolGenerateYoutubeTitlesResponse,
     "FreeToolGetBestTimesToPostResponse": FreeToolGetBestTimesToPostResponse,
     "FreeToolGetBestTimesToPostResponseNetworksInner": FreeToolGetBestTimesToPostResponseNetworksInner,
+    "FreeToolGetGlossaryResponse": FreeToolGetGlossaryResponse,
+    "FreeToolGetGlossaryResponseTermsInner": FreeToolGetGlossaryResponseTermsInner,
     "FreeToolGetHookTemplatesResponse": FreeToolGetHookTemplatesResponse,
     "FreeToolGetHookTemplatesResponseHooksInner": FreeToolGetHookTemplatesResponseHooksInner,
     "FreeToolGetImageSizesResponse": FreeToolGetImageSizesResponse,
@@ -1156,6 +1307,9 @@ let typeMap: {[index: string]: any} = {
     "FreeToolListAwarenessDaysResponseCovers": FreeToolListAwarenessDaysResponseCovers,
     "FreeToolListAwarenessDaysResponseEntriesInner": FreeToolListAwarenessDaysResponseEntriesInner,
     "FreeToolListItem": FreeToolListItem,
+    "FreeToolPickSocialMediaToolRequest": FreeToolPickSocialMediaToolRequest,
+    "FreeToolPickSocialMediaToolResponse": FreeToolPickSocialMediaToolResponse,
+    "FreeToolPickSocialMediaToolResponseResultsInner": FreeToolPickSocialMediaToolResponseResultsInner,
     "FreeToolPlanContentCalendarRequest": FreeToolPlanContentCalendarRequest,
     "FreeToolPlanContentCalendarRequestPostsPerWeek": FreeToolPlanContentCalendarRequestPostsPerWeek,
     "FreeToolPlanContentCalendarRequestTimes": FreeToolPlanContentCalendarRequestTimes,
@@ -1182,12 +1336,23 @@ let typeMap: {[index: string]: any} = {
     "FreeToolSplitThreadRequest": FreeToolSplitThreadRequest,
     "FreeToolSplitThreadResponse": FreeToolSplitThreadResponse,
     "FreeToolSplitThreadResponsePostsInner": FreeToolSplitThreadResponsePostsInner,
+    "FreeToolSummarizeReportRequest": FreeToolSummarizeReportRequest,
+    "FreeToolSummarizeReportRequestRowsInner": FreeToolSummarizeReportRequestRowsInner,
+    "FreeToolSummarizeReportResponse": FreeToolSummarizeReportResponse,
+    "FreeToolSummarizeReportResponseDateRange": FreeToolSummarizeReportResponseDateRange,
+    "FreeToolSummarizeReportResponseNetworksInner": FreeToolSummarizeReportResponseNetworksInner,
+    "FreeToolSummarizeReportResponseTopPostsInner": FreeToolSummarizeReportResponseTopPostsInner,
+    "FreeToolSummarizeReportResponseWeekdaysInner": FreeToolSummarizeReportResponseWeekdaysInner,
+    "FreeToolVerifyWebhookSignatureRequest": FreeToolVerifyWebhookSignatureRequest,
+    "FreeToolVerifyWebhookSignatureResponse": FreeToolVerifyWebhookSignatureResponse,
+    "GenerateAltTextRequest": GenerateAltTextRequest,
     "GetAccountHealth200Response": GetAccountHealth200Response,
     "GetBrandVoice200Response": GetBrandVoice200Response,
     "GetCompetitor200Response": GetCompetitor200Response,
     "GetInboxConversation200Response": GetInboxConversation200Response,
     "GetPostingSchedule200Response": GetPostingSchedule200Response,
     "GetRemoteUploadStatus200Response": GetRemoteUploadStatus200Response,
+    "GetRemoteUploadStatus404Response": GetRemoteUploadStatus404Response,
     "GetReportBranding200Response": GetReportBranding200Response,
     "GetRepurposeRun200Response": GetRepurposeRun200Response,
     "GuardrailError": GuardrailError,
@@ -1221,8 +1386,7 @@ let typeMap: {[index: string]: any} = {
     "InboxReplyDraftInput": InboxReplyDraftInput,
     "InitiateChunkedUpload201Response": InitiateChunkedUpload201Response,
     "InitiateChunkedUploadRequest": InitiateChunkedUploadRequest,
-    "InitiateRemoteUpload201Response": InitiateRemoteUpload201Response,
-    "InitiateRemoteUpload201ResponseOneOf": InitiateRemoteUpload201ResponseOneOf,
+    "InitiateRemoteUpload200Response": InitiateRemoteUpload200Response,
     "InitiateRemoteUploadRequest": InitiateRemoteUploadRequest,
     "LearnBrandVoiceInput": LearnBrandVoiceInput,
     "LearnBrandVoiceResponse": LearnBrandVoiceResponse,
@@ -1342,6 +1506,9 @@ let typeMap: {[index: string]: any} = {
     "UpdateMediaRequest": UpdateMediaRequest,
     "UpdatePost200Response": UpdatePost200Response,
     "UploadChunk201Response": UploadChunk201Response,
+    "UploadChunkRequest": UploadChunkRequest,
+    "UploadMediaRequest": UploadMediaRequest,
+    "UploadReportBrandingLogoRequest": UploadReportBrandingLogoRequest,
     "User": User,
     "UserInput": UserInput,
     "UserUpdateInput": UserUpdateInput,
