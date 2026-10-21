@@ -157,6 +157,10 @@ export * from './freeToolFindAutomationRecipesResponseRecipesInner';
 export * from './freeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner';
 export * from './freeToolFindAutomationRecipesResponseRecipesInnerNative';
 export * from './freeToolFindAutomationRecipesResponseRecipesInnerSteps';
+export * from './freeToolFormatCrossPostRequest';
+export * from './freeToolFormatCrossPostResponse';
+export * from './freeToolFormatCrossPostResponseNetworksInner';
+export * from './freeToolFormatCrossPostResponseNetworksInnerThreadInner';
 export * from './freeToolFormatInstagramCaptionRequest';
 export * from './freeToolFormatInstagramCaptionResponse';
 export * from './freeToolFormatLinkedInPostRequest';
@@ -215,6 +219,9 @@ export * from './freeToolListAwarenessDaysResponse';
 export * from './freeToolListAwarenessDaysResponseCovers';
 export * from './freeToolListAwarenessDaysResponseEntriesInner';
 export * from './freeToolListItem';
+export * from './freeToolPickGiveawayWinnersRequest';
+export * from './freeToolPickGiveawayWinnersRequestEntrantsInner';
+export * from './freeToolPickGiveawayWinnersResponse';
 export * from './freeToolPickSocialMediaToolRequest';
 export * from './freeToolPickSocialMediaToolResponse';
 export * from './freeToolPickSocialMediaToolResponseResultsInner';
@@ -607,6 +614,10 @@ import { FreeToolFindAutomationRecipesResponseRecipesInner } from './freeToolFin
 import { FreeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner } from './freeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner';
 import { FreeToolFindAutomationRecipesResponseRecipesInnerNative } from './freeToolFindAutomationRecipesResponseRecipesInnerNative';
 import { FreeToolFindAutomationRecipesResponseRecipesInnerSteps } from './freeToolFindAutomationRecipesResponseRecipesInnerSteps';
+import { FreeToolFormatCrossPostRequest } from './freeToolFormatCrossPostRequest';
+import { FreeToolFormatCrossPostResponse } from './freeToolFormatCrossPostResponse';
+import { FreeToolFormatCrossPostResponseNetworksInner } from './freeToolFormatCrossPostResponseNetworksInner';
+import { FreeToolFormatCrossPostResponseNetworksInnerThreadInner } from './freeToolFormatCrossPostResponseNetworksInnerThreadInner';
 import { FreeToolFormatInstagramCaptionRequest } from './freeToolFormatInstagramCaptionRequest';
 import { FreeToolFormatInstagramCaptionResponse } from './freeToolFormatInstagramCaptionResponse';
 import { FreeToolFormatLinkedInPostRequest } from './freeToolFormatLinkedInPostRequest';
@@ -665,6 +676,9 @@ import { FreeToolListAwarenessDaysResponse } from './freeToolListAwarenessDaysRe
 import { FreeToolListAwarenessDaysResponseCovers } from './freeToolListAwarenessDaysResponseCovers';
 import { FreeToolListAwarenessDaysResponseEntriesInner } from './freeToolListAwarenessDaysResponseEntriesInner';
 import { FreeToolListItem } from './freeToolListItem';
+import { FreeToolPickGiveawayWinnersRequest } from './freeToolPickGiveawayWinnersRequest';
+import { FreeToolPickGiveawayWinnersRequestEntrantsInner } from './freeToolPickGiveawayWinnersRequestEntrantsInner';
+import { FreeToolPickGiveawayWinnersResponse } from './freeToolPickGiveawayWinnersResponse';
 import { FreeToolPickSocialMediaToolRequest } from './freeToolPickSocialMediaToolRequest';
 import { FreeToolPickSocialMediaToolResponse } from './freeToolPickSocialMediaToolResponse';
 import { FreeToolPickSocialMediaToolResponseResultsInner } from './freeToolPickSocialMediaToolResponseResultsInner';
@@ -957,6 +971,8 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolCleanTextResponseChangesInner.TypeEnum": FreeToolCleanTextResponseChangesInner.TypeEnum,
         "FreeToolCountCharactersRequest.NetworkEnum": FreeToolCountCharactersRequest.NetworkEnum,
         "FreeToolFindAutomationRecipesResponseRecipesInner.TriggerEnum": FreeToolFindAutomationRecipesResponseRecipesInner.TriggerEnum,
+        "FreeToolFormatCrossPostRequest.NetworksEnum": FreeToolFormatCrossPostRequest.NetworksEnum,
+        "FreeToolFormatCrossPostResponseNetworksInner.KeyEnum": FreeToolFormatCrossPostResponseNetworksInner.KeyEnum,
         "FreeToolFormatInstagramCaptionRequest.SpacerEnum": FreeToolFormatInstagramCaptionRequest.SpacerEnum,
         "FreeToolFormatLinkedInPostRequest.StyleEnum": FreeToolFormatLinkedInPostRequest.StyleEnum,
         "FreeToolFormatLinkedInPostRequest.ListEnum": FreeToolFormatLinkedInPostRequest.ListEnum,
@@ -994,6 +1010,7 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGetSafeZonesResponseUnsafeAreasInner.NameEnum": FreeToolGetSafeZonesResponseUnsafeAreasInner.NameEnum,
         "FreeToolListAwarenessDaysResponseEntriesInner.TypeEnum": FreeToolListAwarenessDaysResponseEntriesInner.TypeEnum,
         "FreeToolListItem.KindEnum": FreeToolListItem.KindEnum,
+        "FreeToolPickGiveawayWinnersResponse.AlgorithmEnum": FreeToolPickGiveawayWinnersResponse.AlgorithmEnum,
         "FreeToolPickSocialMediaToolRequest.NeedsEnum": FreeToolPickSocialMediaToolRequest.NeedsEnum,
         "FreeToolPickSocialMediaToolRequest.UseCaseEnum": FreeToolPickSocialMediaToolRequest.UseCaseEnum,
         "FreeToolPickSocialMediaToolResponse.NeedsEnum": FreeToolPickSocialMediaToolResponse.NeedsEnum,
@@ -1050,7 +1067,6 @@ let enumsMap: {[index: string]: any} = {
         "PostOptionsTikTok.PrivacyLevelEnum": PostOptionsTikTok.PrivacyLevelEnum,
         "PostOptionsYoutube.StatusEnum": PostOptionsYoutube.StatusEnum,
         "PostStatus": PostStatus,
-        "PostWarning.CodeEnum": PostWarning.CodeEnum,
         "PostingTimeSlot.ConfidenceEnum": PostingTimeSlot.ConfidenceEnum,
         "PostingTimesDayIntervalsInnerInner.ConfidenceEnum": PostingTimesDayIntervalsInnerInner.ConfidenceEnum,
         "PostingTimesDaysInner.ConfidenceEnum": PostingTimesDaysInner.ConfidenceEnum,
@@ -1249,6 +1265,10 @@ let typeMap: {[index: string]: any} = {
     "FreeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner": FreeToolFindAutomationRecipesResponseRecipesInnerApiOperationsInner,
     "FreeToolFindAutomationRecipesResponseRecipesInnerNative": FreeToolFindAutomationRecipesResponseRecipesInnerNative,
     "FreeToolFindAutomationRecipesResponseRecipesInnerSteps": FreeToolFindAutomationRecipesResponseRecipesInnerSteps,
+    "FreeToolFormatCrossPostRequest": FreeToolFormatCrossPostRequest,
+    "FreeToolFormatCrossPostResponse": FreeToolFormatCrossPostResponse,
+    "FreeToolFormatCrossPostResponseNetworksInner": FreeToolFormatCrossPostResponseNetworksInner,
+    "FreeToolFormatCrossPostResponseNetworksInnerThreadInner": FreeToolFormatCrossPostResponseNetworksInnerThreadInner,
     "FreeToolFormatInstagramCaptionRequest": FreeToolFormatInstagramCaptionRequest,
     "FreeToolFormatInstagramCaptionResponse": FreeToolFormatInstagramCaptionResponse,
     "FreeToolFormatLinkedInPostRequest": FreeToolFormatLinkedInPostRequest,
@@ -1307,6 +1327,9 @@ let typeMap: {[index: string]: any} = {
     "FreeToolListAwarenessDaysResponseCovers": FreeToolListAwarenessDaysResponseCovers,
     "FreeToolListAwarenessDaysResponseEntriesInner": FreeToolListAwarenessDaysResponseEntriesInner,
     "FreeToolListItem": FreeToolListItem,
+    "FreeToolPickGiveawayWinnersRequest": FreeToolPickGiveawayWinnersRequest,
+    "FreeToolPickGiveawayWinnersRequestEntrantsInner": FreeToolPickGiveawayWinnersRequestEntrantsInner,
+    "FreeToolPickGiveawayWinnersResponse": FreeToolPickGiveawayWinnersResponse,
     "FreeToolPickSocialMediaToolRequest": FreeToolPickSocialMediaToolRequest,
     "FreeToolPickSocialMediaToolResponse": FreeToolPickSocialMediaToolResponse,
     "FreeToolPickSocialMediaToolResponseResultsInner": FreeToolPickSocialMediaToolResponseResultsInner,
