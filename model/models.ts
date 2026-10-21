@@ -91,6 +91,8 @@ export * from './deleteResult';
 export * from './deleteUser400Response';
 export * from './deleteUsersBulkRequest';
 export * from './deleteWorkspacesBulkRequest';
+export * from './freeToolBuildAgentSkillRequest';
+export * from './freeToolBuildAgentSkillResponse';
 export * from './freeToolBuildHashtagGroupsRequest';
 export * from './freeToolBuildHashtagGroupsResponse';
 export * from './freeToolBuildHashtagGroupsResponseGroupsInner';
@@ -548,6 +550,8 @@ import { DeleteResult } from './deleteResult';
 import { DeleteUser400Response } from './deleteUser400Response';
 import { DeleteUsersBulkRequest } from './deleteUsersBulkRequest';
 import { DeleteWorkspacesBulkRequest } from './deleteWorkspacesBulkRequest';
+import { FreeToolBuildAgentSkillRequest } from './freeToolBuildAgentSkillRequest';
+import { FreeToolBuildAgentSkillResponse } from './freeToolBuildAgentSkillResponse';
 import { FreeToolBuildHashtagGroupsRequest } from './freeToolBuildHashtagGroupsRequest';
 import { FreeToolBuildHashtagGroupsResponse } from './freeToolBuildHashtagGroupsResponse';
 import { FreeToolBuildHashtagGroupsResponseGroupsInner } from './freeToolBuildHashtagGroupsResponseGroupsInner';
@@ -940,6 +944,13 @@ let enumsMap: {[index: string]: any} = {
         "CheckoutSubscriptionRequest.CycleEnum": CheckoutSubscriptionRequest.CycleEnum,
         "CreateConnectLinkRequest.ProviderEnum": CreateConnectLinkRequest.ProviderEnum,
         "DeleteMode": DeleteMode,
+        "FreeToolBuildAgentSkillRequest.FormatEnum": FreeToolBuildAgentSkillRequest.FormatEnum,
+        "FreeToolBuildAgentSkillRequest.TasksEnum": FreeToolBuildAgentSkillRequest.TasksEnum,
+        "FreeToolBuildAgentSkillRequest.NetworksEnum": FreeToolBuildAgentSkillRequest.NetworksEnum,
+        "FreeToolBuildAgentSkillRequest.AutonomyEnum": FreeToolBuildAgentSkillRequest.AutonomyEnum,
+        "FreeToolBuildAgentSkillRequest.ConnectionEnum": FreeToolBuildAgentSkillRequest.ConnectionEnum,
+        "FreeToolBuildAgentSkillResponse.FormatEnum": FreeToolBuildAgentSkillResponse.FormatEnum,
+        "FreeToolBuildAgentSkillResponse.FilenameEnum": FreeToolBuildAgentSkillResponse.FilenameEnum,
         "FreeToolBuildHashtagGroupsRequest.NetworkEnum": FreeToolBuildHashtagGroupsRequest.NetworkEnum,
         "FreeToolBuildHashtagGroupsRequest.CaseEnum": FreeToolBuildHashtagGroupsRequest.CaseEnum,
         "FreeToolBuildHashtagGroupsRequest.FormatEnum": FreeToolBuildHashtagGroupsRequest.FormatEnum,
@@ -1199,6 +1210,8 @@ let typeMap: {[index: string]: any} = {
     "DeleteUser400Response": DeleteUser400Response,
     "DeleteUsersBulkRequest": DeleteUsersBulkRequest,
     "DeleteWorkspacesBulkRequest": DeleteWorkspacesBulkRequest,
+    "FreeToolBuildAgentSkillRequest": FreeToolBuildAgentSkillRequest,
+    "FreeToolBuildAgentSkillResponse": FreeToolBuildAgentSkillResponse,
     "FreeToolBuildHashtagGroupsRequest": FreeToolBuildHashtagGroupsRequest,
     "FreeToolBuildHashtagGroupsResponse": FreeToolBuildHashtagGroupsResponse,
     "FreeToolBuildHashtagGroupsResponseGroupsInner": FreeToolBuildHashtagGroupsResponseGroupsInner,
