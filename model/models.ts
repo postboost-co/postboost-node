@@ -97,6 +97,12 @@ export * from './freeToolBuildHashtagGroupsRequest';
 export * from './freeToolBuildHashtagGroupsResponse';
 export * from './freeToolBuildHashtagGroupsResponseGroupsInner';
 export * from './freeToolBuildHashtagGroupsResponseRemovedInner';
+export * from './freeToolBuildLinkedinCarouselRequest';
+export * from './freeToolBuildLinkedinCarouselResponse';
+export * from './freeToolBuildLinkedinCarouselResponseLimits';
+export * from './freeToolBuildLinkedinCarouselResponsePage';
+export * from './freeToolBuildLinkedinCarouselResponseSlidesInner';
+export * from './freeToolBuildLinkedinCarouselResponseWarningsInner';
 export * from './freeToolBuildUtmUrlRequest';
 export * from './freeToolBuildUtmUrlResponse';
 export * from './freeToolCalculateAspectRatioRequest';
@@ -191,6 +197,9 @@ export * from './freeToolGenerateSocialPostsFromBlogResponse';
 export * from './freeToolGenerateSocialPostsFromBlogResponsePostsInner';
 export * from './freeToolGenerateSocialPostsFromBlogResponseSource';
 export * from './freeToolGenerateSocialPostsFromBlogResponseWarningsInner';
+export * from './freeToolGenerateSocialPostsFromVideoRequest';
+export * from './freeToolGenerateSocialPostsFromVideoResponse';
+export * from './freeToolGenerateSocialPostsFromVideoResponseOutputs';
 export * from './freeToolGenerateUsernamesRequest';
 export * from './freeToolGenerateUsernamesResponse';
 export * from './freeToolGenerateUsernamesResponseRules';
@@ -556,6 +565,12 @@ import { FreeToolBuildHashtagGroupsRequest } from './freeToolBuildHashtagGroupsR
 import { FreeToolBuildHashtagGroupsResponse } from './freeToolBuildHashtagGroupsResponse';
 import { FreeToolBuildHashtagGroupsResponseGroupsInner } from './freeToolBuildHashtagGroupsResponseGroupsInner';
 import { FreeToolBuildHashtagGroupsResponseRemovedInner } from './freeToolBuildHashtagGroupsResponseRemovedInner';
+import { FreeToolBuildLinkedinCarouselRequest } from './freeToolBuildLinkedinCarouselRequest';
+import { FreeToolBuildLinkedinCarouselResponse } from './freeToolBuildLinkedinCarouselResponse';
+import { FreeToolBuildLinkedinCarouselResponseLimits } from './freeToolBuildLinkedinCarouselResponseLimits';
+import { FreeToolBuildLinkedinCarouselResponsePage } from './freeToolBuildLinkedinCarouselResponsePage';
+import { FreeToolBuildLinkedinCarouselResponseSlidesInner } from './freeToolBuildLinkedinCarouselResponseSlidesInner';
+import { FreeToolBuildLinkedinCarouselResponseWarningsInner } from './freeToolBuildLinkedinCarouselResponseWarningsInner';
 import { FreeToolBuildUtmUrlRequest } from './freeToolBuildUtmUrlRequest';
 import { FreeToolBuildUtmUrlResponse } from './freeToolBuildUtmUrlResponse';
 import { FreeToolCalculateAspectRatioRequest } from './freeToolCalculateAspectRatioRequest';
@@ -650,6 +665,9 @@ import { FreeToolGenerateSocialPostsFromBlogResponse } from './freeToolGenerateS
 import { FreeToolGenerateSocialPostsFromBlogResponsePostsInner } from './freeToolGenerateSocialPostsFromBlogResponsePostsInner';
 import { FreeToolGenerateSocialPostsFromBlogResponseSource } from './freeToolGenerateSocialPostsFromBlogResponseSource';
 import { FreeToolGenerateSocialPostsFromBlogResponseWarningsInner } from './freeToolGenerateSocialPostsFromBlogResponseWarningsInner';
+import { FreeToolGenerateSocialPostsFromVideoRequest } from './freeToolGenerateSocialPostsFromVideoRequest';
+import { FreeToolGenerateSocialPostsFromVideoResponse } from './freeToolGenerateSocialPostsFromVideoResponse';
+import { FreeToolGenerateSocialPostsFromVideoResponseOutputs } from './freeToolGenerateSocialPostsFromVideoResponseOutputs';
 import { FreeToolGenerateUsernamesRequest } from './freeToolGenerateUsernamesRequest';
 import { FreeToolGenerateUsernamesResponse } from './freeToolGenerateUsernamesResponse';
 import { FreeToolGenerateUsernamesResponseRules } from './freeToolGenerateUsernamesResponseRules';
@@ -955,6 +973,9 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolBuildHashtagGroupsRequest.CaseEnum": FreeToolBuildHashtagGroupsRequest.CaseEnum,
         "FreeToolBuildHashtagGroupsRequest.FormatEnum": FreeToolBuildHashtagGroupsRequest.FormatEnum,
         "FreeToolBuildHashtagGroupsResponseRemovedInner.ReasonEnum": FreeToolBuildHashtagGroupsResponseRemovedInner.ReasonEnum,
+        "FreeToolBuildLinkedinCarouselRequest.SizeEnum": FreeToolBuildLinkedinCarouselRequest.SizeEnum,
+        "FreeToolBuildLinkedinCarouselResponseSlidesInner.KindEnum": FreeToolBuildLinkedinCarouselResponseSlidesInner.KindEnum,
+        "FreeToolBuildLinkedinCarouselResponseWarningsInner.CodeEnum": FreeToolBuildLinkedinCarouselResponseWarningsInner.CodeEnum,
         "FreeToolCalculateAspectRatioResponse.OrientationEnum": FreeToolCalculateAspectRatioResponse.OrientationEnum,
         "FreeToolCalculateAspectRatioResponseRounding.SideEnum": FreeToolCalculateAspectRatioResponseRounding.SideEnum,
         "FreeToolCalculateCarouselSlicesRequest.RatioEnum": FreeToolCalculateCarouselSlicesRequest.RatioEnum,
@@ -1008,6 +1029,8 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGenerateSocialPostsFromBlogRequest.HashtagsEnum": FreeToolGenerateSocialPostsFromBlogRequest.HashtagsEnum,
         "FreeToolGenerateSocialPostsFromBlogRequest.CtaEnum": FreeToolGenerateSocialPostsFromBlogRequest.CtaEnum,
         "FreeToolGenerateSocialPostsFromBlogResponsePostsInner.PlatformEnum": FreeToolGenerateSocialPostsFromBlogResponsePostsInner.PlatformEnum,
+        "FreeToolGenerateSocialPostsFromVideoRequest.OutputsEnum": FreeToolGenerateSocialPostsFromVideoRequest.OutputsEnum,
+        "FreeToolGenerateSocialPostsFromVideoRequest.ToneEnum": FreeToolGenerateSocialPostsFromVideoRequest.ToneEnum,
         "FreeToolGenerateUsernamesRequest.NetworkEnum": FreeToolGenerateUsernamesRequest.NetworkEnum,
         "FreeToolGenerateUsernamesRequest.StyleEnum": FreeToolGenerateUsernamesRequest.StyleEnum,
         "FreeToolGenerateUsernamesResponse.NetworkEnum": FreeToolGenerateUsernamesResponse.NetworkEnum,
@@ -1216,6 +1239,12 @@ let typeMap: {[index: string]: any} = {
     "FreeToolBuildHashtagGroupsResponse": FreeToolBuildHashtagGroupsResponse,
     "FreeToolBuildHashtagGroupsResponseGroupsInner": FreeToolBuildHashtagGroupsResponseGroupsInner,
     "FreeToolBuildHashtagGroupsResponseRemovedInner": FreeToolBuildHashtagGroupsResponseRemovedInner,
+    "FreeToolBuildLinkedinCarouselRequest": FreeToolBuildLinkedinCarouselRequest,
+    "FreeToolBuildLinkedinCarouselResponse": FreeToolBuildLinkedinCarouselResponse,
+    "FreeToolBuildLinkedinCarouselResponseLimits": FreeToolBuildLinkedinCarouselResponseLimits,
+    "FreeToolBuildLinkedinCarouselResponsePage": FreeToolBuildLinkedinCarouselResponsePage,
+    "FreeToolBuildLinkedinCarouselResponseSlidesInner": FreeToolBuildLinkedinCarouselResponseSlidesInner,
+    "FreeToolBuildLinkedinCarouselResponseWarningsInner": FreeToolBuildLinkedinCarouselResponseWarningsInner,
     "FreeToolBuildUtmUrlRequest": FreeToolBuildUtmUrlRequest,
     "FreeToolBuildUtmUrlResponse": FreeToolBuildUtmUrlResponse,
     "FreeToolCalculateAspectRatioRequest": FreeToolCalculateAspectRatioRequest,
@@ -1310,6 +1339,9 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGenerateSocialPostsFromBlogResponsePostsInner": FreeToolGenerateSocialPostsFromBlogResponsePostsInner,
     "FreeToolGenerateSocialPostsFromBlogResponseSource": FreeToolGenerateSocialPostsFromBlogResponseSource,
     "FreeToolGenerateSocialPostsFromBlogResponseWarningsInner": FreeToolGenerateSocialPostsFromBlogResponseWarningsInner,
+    "FreeToolGenerateSocialPostsFromVideoRequest": FreeToolGenerateSocialPostsFromVideoRequest,
+    "FreeToolGenerateSocialPostsFromVideoResponse": FreeToolGenerateSocialPostsFromVideoResponse,
+    "FreeToolGenerateSocialPostsFromVideoResponseOutputs": FreeToolGenerateSocialPostsFromVideoResponseOutputs,
     "FreeToolGenerateUsernamesRequest": FreeToolGenerateUsernamesRequest,
     "FreeToolGenerateUsernamesResponse": FreeToolGenerateUsernamesResponse,
     "FreeToolGenerateUsernamesResponseRules": FreeToolGenerateUsernamesResponseRules,
