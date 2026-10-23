@@ -177,6 +177,9 @@ export * from './freeToolGenerateAltTextRequest';
 export * from './freeToolGenerateAltTextResponse';
 export * from './freeToolGenerateBioRequest';
 export * from './freeToolGenerateBioResponse';
+export * from './freeToolGenerateBrandVoiceRequest';
+export * from './freeToolGenerateBrandVoiceResponse';
+export * from './freeToolGenerateBrandVoiceResponseVoice';
 export * from './freeToolGenerateCaptionRequest';
 export * from './freeToolGenerateCaptionResponse';
 export * from './freeToolGenerateFancyTextRequest';
@@ -645,6 +648,9 @@ import { FreeToolGenerateAltTextRequest } from './freeToolGenerateAltTextRequest
 import { FreeToolGenerateAltTextResponse } from './freeToolGenerateAltTextResponse';
 import { FreeToolGenerateBioRequest } from './freeToolGenerateBioRequest';
 import { FreeToolGenerateBioResponse } from './freeToolGenerateBioResponse';
+import { FreeToolGenerateBrandVoiceRequest } from './freeToolGenerateBrandVoiceRequest';
+import { FreeToolGenerateBrandVoiceResponse } from './freeToolGenerateBrandVoiceResponse';
+import { FreeToolGenerateBrandVoiceResponseVoice } from './freeToolGenerateBrandVoiceResponseVoice';
 import { FreeToolGenerateCaptionRequest } from './freeToolGenerateCaptionRequest';
 import { FreeToolGenerateCaptionResponse } from './freeToolGenerateCaptionResponse';
 import { FreeToolGenerateFancyTextRequest } from './freeToolGenerateFancyTextRequest';
@@ -1011,6 +1017,8 @@ let enumsMap: {[index: string]: any} = {
         "FreeToolGenerateAltTextRequest.LengthEnum": FreeToolGenerateAltTextRequest.LengthEnum,
         "FreeToolGenerateBioRequest.ToneEnum": FreeToolGenerateBioRequest.ToneEnum,
         "FreeToolGenerateBioRequest.NetworkEnum": FreeToolGenerateBioRequest.NetworkEnum,
+        "FreeToolGenerateBrandVoiceResponseVoice.EmojiStyleEnum": FreeToolGenerateBrandVoiceResponseVoice.EmojiStyleEnum,
+        "FreeToolGenerateBrandVoiceResponseVoice.HashtagStrategyEnum": FreeToolGenerateBrandVoiceResponseVoice.HashtagStrategyEnum,
         "FreeToolGenerateCaptionRequest.ToneEnum": FreeToolGenerateCaptionRequest.ToneEnum,
         "FreeToolGenerateCaptionRequest.LengthEnum": FreeToolGenerateCaptionRequest.LengthEnum,
         "FreeToolGenerateCaptionRequest.NetworkEnum": FreeToolGenerateCaptionRequest.NetworkEnum,
@@ -1319,6 +1327,9 @@ let typeMap: {[index: string]: any} = {
     "FreeToolGenerateAltTextResponse": FreeToolGenerateAltTextResponse,
     "FreeToolGenerateBioRequest": FreeToolGenerateBioRequest,
     "FreeToolGenerateBioResponse": FreeToolGenerateBioResponse,
+    "FreeToolGenerateBrandVoiceRequest": FreeToolGenerateBrandVoiceRequest,
+    "FreeToolGenerateBrandVoiceResponse": FreeToolGenerateBrandVoiceResponse,
+    "FreeToolGenerateBrandVoiceResponseVoice": FreeToolGenerateBrandVoiceResponseVoice,
     "FreeToolGenerateCaptionRequest": FreeToolGenerateCaptionRequest,
     "FreeToolGenerateCaptionResponse": FreeToolGenerateCaptionResponse,
     "FreeToolGenerateFancyTextRequest": FreeToolGenerateFancyTextRequest,
